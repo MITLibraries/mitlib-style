@@ -1,0 +1,78 @@
+// mixins and extends for simple stuff that gets reused a lot
+
+@mixin sr {
+  border: 0 none;
+  clip: rect(1px, 1px, 1px, 1px);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  word-wrap: normal;
+}
+
+@mixin sr-focusable {
+  &:focus {
+    position: static;
+    display: block;
+    height: auto;
+    width: auto; 
+  }
+}
+
+@mixin clearfix {
+  &:after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+}
+
+// remove spacing from first/last children
+%clear-first-child {
+  &:first-child {
+    margin-top: 0;
+    padding-top: 0;
+    border-top: none;
+  }
+}
+
+%clear-last-child {
+  &:last-child {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: none;
+  }
+}
+
+%text-ellipsis {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+// reset of lists
+%reset-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-indent: 0;
+
+  li,
+  dt,
+  dd {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+%list-inline {
+  @extend %reset-list;
+
+  li,
+  dt,
+  dd {
+    display: inline-block;
+  }
+}
