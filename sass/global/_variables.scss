@@ -14,41 +14,49 @@ $bp-screen-xl:                  1280px;
 // #COLORS
 // ----------------------------
 
-// colors - greyscale
-$black:                         rgb(17, 16, 16);
-$black-t:                       rgb(0, 0, 0); // true black
-$white:                         rgb(252, 252, 252);
-$white-t:                       rgb(255, 255, 255); // true white
-$gray:                          rgb(167, 164, 164);
-$gray-cool:                     rgb(158, 177, 185);
+// colors - grayscale
+$black:                         #111;
+$black-t:                       #000; // true black
+$white:                         #f3f3f3;
+$white-warm:                    #ede8e2;
+$white-t:                       #fff; // true white
+$gray:                          #595959;
+$gray-d1:                       #333;
+$gray-d2:                       #111;
+$gray-l1:                       #ccc;
+$gray-l2:                       #dedede;
+$gray-warm:                     #c6b6a3;
 $transparent:                   rgba(0, 0, 0, 0);
 $shadow:                        rgba($black-t, .5);
 
-// colors - named
-$red:                           rgb(178, 6, 16);
-$yellow:                        rgb(253, 188, 86);
-$green:                         rgb(37, 184, 90);
-$blue:                          rgb(0, 121, 188);
-$pink:                          rgb(203, 89, 141);
+// moth colors - named
+$magenta:                       #9c3273;
+$yellow:                        #ffcc33;
+$orange:                        #f58632;
+$barf:                          #cca329;
+$green:                         #43926a;
+$blue:                          #338bc5;
+$blue-bright:                   #0088D0;
+$blue-muted:                    #21759B;
 
 // colors - brand
 $brand-primary:                 $blue;
 $brand-primary-accent:          rgb(14, 166, 236);
-$brand-secondary:               $pink;
+$brand-secondary:               $gray-d1;
 $brand-secondary-accent:        rgb(242, 108, 170);
 
 // colors - utilities
 $success:                       $green;
-$warning:                       $yellow;
-$error:                         $red;
-$informational:                 $gray-cool;
+$warning:                       mix($yellow,$orange,50%);
+$error:                         #AC1D22;
+$informational:                 mix($gray-warm,$black,65%);
 
 
 // ----------------------------
 // #TYPOGRAPHY
 // ----------------------------
 
-$base-fonts: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$base-font: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 $alt-fonts: 'Georgia', Cambria, 'Times New Roman', Times, serif;
 
 
