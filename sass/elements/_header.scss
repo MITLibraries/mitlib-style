@@ -1,0 +1,59 @@
+// header and navigation styles
+
+#skip {
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  height: 0;
+  width: 0;
+  color: $gray-l2;
+  background-color: $black;
+  border-bottom: 2px solid $success;
+
+  &:focus {
+    position: relative;
+    display: block;
+    height: auto;
+    width: 100%;
+    padding: 5px 2%;
+  }
+}
+
+.wrap-outer-header {
+  background-color: $black;
+  color: $white;
+}
+
+.wrap-header {
+
+  .logo-mit-lib {
+    display: inline-block;
+    fill: $white;
+
+    svg {
+      width: auto;
+      height: auto;
+    }
+  }
+
+  .link-logo-mit {
+
+    .logo-mit {
+      fill: $gray-l1;
+
+      .color {
+        fill: $white;
+      }
+    }
+  }
+}
+
+
+// breadcrumb styles
+.wrap-outer-breadcrumb {
+  background-color: $gray-l3;
+  font-size: $fs-xsmall;
+}
+
+

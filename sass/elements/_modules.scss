@@ -1,0 +1,16 @@
+// modules and other reusable bits
+
+.bit {
+  margin: 1.5rem 0 3rem 0;
+  border-top: 3px solid $gray-l2;
+  padding-top: 1rem;
+  font-size: $fs-small;
+
+  .title {
+    @extend .hd-5;
+  }
+
+  ul {
+    @extend %list-unbulleted;
+  }
+}

@@ -1,6 +1,6 @@
 // mixins and extends for simple stuff that gets reused a lot
 
-@mixin sr {
+.sr {
   border: 0 none;
   clip: rect(1px, 1px, 1px, 1px);
   height: 1px;
@@ -52,7 +52,7 @@
   text-overflow: ellipsis;
 }
 
-// reset of lists
+// lists
 %reset-list {
   margin: 0;
   padding: 0;
@@ -67,6 +67,12 @@
   }
 }
 
+%list-unbulleted {
+  list-style: none;
+  padding-left: 0;
+  text-indent: 0;
+}
+
 %list-inline {
   @extend %reset-list;
 
@@ -76,3 +82,52 @@
     display: inline-block;
   }
 }
+
+%list-inline-pipe {
+  display: inline-block;
+  padding-right: 1rem;
+
+  .item:after {
+    content: ' | ';
+    margin-left: 1rem;
+  }
+  
+  .item:last-child:after {
+    content: '';
+  }
+}
+
+.is-hidden {
+  display: none;
+}
+
+
+%link {
+  transition: color .25s ease-in-out 0s;
+  color: $brand-primary;
+  text-decoration: none;
+
+  // STATE: hover, active, focus
+  &:hover,
+  &:active,
+  &:focus {
+      color: $brand-primary-accent;
+      text-decoration: underline;
+  }
+
+  // STATE: is disabled
+  &:disabled,
+  &.is-disabled {
+      display: none;
+      color: $gray;
+  }
+
+  // STATE: is pressed or active
+  &:active,
+  &.is-pressed,
+  &.is-active {
+      color: $brand-primary-accent;
+  }
+}
+
+
