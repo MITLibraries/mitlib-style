@@ -1,0 +1,46 @@
+// MIT-hosted ebook specific styles
+
+.wrap-ebook { 
+
+  .title-page {
+    @extend .hd-subtitle1;
+    margin-bottom: 2rem;
+  }
+
+  .ebook-details {
+    border-top: 1px solid $gray-l2;
+    padding-top: 2rem;
+  }
+
+  dt {
+    @extend .hd-subtitle3;
+    margin-bottom: 0;
+  }
+
+  dd {
+    margin-bottom: 3rem;
+  }
+
+  .ebook-title {
+    font-size: $fs-xlarge;
+  }
+
+  .ebook-author {
+    font-size: $fs-large;
+  }
+
+  .ebook-pub-title {
+    margin-top: 4rem;
+    border-top: 1px solid $gray-l2;
+    padding-top: 2rem;
+  }
+
+  .ebook-pub {
+    @extend .copy-sup;
+  }
+
+  .ebook-original {
+    @extend .copy-sup;
+  }
+  
+}

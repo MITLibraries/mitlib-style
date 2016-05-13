@@ -23,8 +23,9 @@ $white-t:                       #fff; // true white
 $gray:                          #595959;
 $gray-d1:                       #333;
 $gray-d2:                       #111;
-$gray-l1:                       #ccc;
-$gray-l2:                       #dedede;
+$gray-l1:                       #999;
+$gray-l2:                       #ccc;
+$gray-l3:                       #dedede;
 $gray-warm:                     #c6b6a3;
 $transparent:                   rgba(0, 0, 0, 0);
 $shadow:                        rgba($black-t, .5);
@@ -58,6 +59,29 @@ $informational:                 mix($gray-warm,$black,65%);
 
 $base-font: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 $alt-fonts: 'Georgia', Cambria, 'Times New Roman', Times, serif;
+
+// font-sizes and line-heights
+
+$fs-xxxsmall: .9rem;
+$fs-xxsmall: 1rem;
+$fs-xsmall: 1.2rem;
+$fs-small: 1.4rem;
+$fs-base: 1.6rem;
+$fs-large: 1.8rem;
+$fs-xlarge: 2rem;
+$fs-xxlarge: 2.4rem;
+$fs-xxxlarge: 3rem;
+$fs-xxxxlarge: 3.2rem;
+
+$fw-bold: 600;
+$fw-normal: 400;
+$fw-light: 300;
+
+$lh-xtight: 1;
+$lh-tight: 1.3;
+$lh-base: 1.5;
+$lh-loose: 1.7;
+$lh-xloose: 2;
 
 
 // ----------------------------
