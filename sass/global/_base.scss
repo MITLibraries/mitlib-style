@@ -19,13 +19,19 @@ body {
 
 }
 
+ol, 
+ul {
+  padding-left: 2.5rem;
+}
+
 li > ul, 
 li > ol {
   margin-top: .5rem;
 }
 
-a {
-  @extend %link;
+dd {
+  margin-left: 0;
+  margin-bottom: 1rem;
 }
 
 hr {
@@ -34,7 +40,6 @@ hr {
   border-top: 1px solid $gray-l1;
 }
 
-dd {
-  margin-left: 0;
-  margin-bottom: 1rem;
+a {
+  @extend %link;
 }
