@@ -29,18 +29,19 @@
     font-size: $fs-large;
   }
 
-  .ebook-pub-title {
+  .ebooks-files-title {
+    font-size: $fs-base;
+    font-weight: $fw-bold; 
+  }
+
+  .ebook-supplementary-title {
+    display: none;
+  }
+
+  .ebook-supplementary {
     margin-top: 4rem;
     border-top: 1px solid $gray-l2;
     padding-top: 2rem;
-  }
-
-  .ebook-pub {
     @extend .copy-sup;
   }
-
-  .ebook-original {
-    @extend .copy-sup;
-  }
-  
 }
