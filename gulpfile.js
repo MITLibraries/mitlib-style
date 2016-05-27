@@ -1,4 +1,5 @@
 // gulpfile.js
+'use strict';
 
 var gulp = require('gulp'),
     sass = require('gulp-ruby-sass'),
@@ -16,21 +17,34 @@ var gulp = require('gulp'),
 gulp.task('styles', function() {
   return sass('sass/libraries-main.scss', { style: 'expanded' })
     .pipe(autoprefixer('last 2 version'))
-    .pipe(gulp.dest('css'))
+    .pipe(gulp.dest('dest/css'))
     .pipe(rename({suffix: '.min'}))
     .pipe(cssnano())
-    .pipe(gulp.dest('css'))
+    .pipe(gulp.dest('dest/css'))
     .pipe(notify({ message: 'Styles task complete' }));
+});
+
+// Scripts
+gulp.task('scripts', function() {
+  return gulp.src('js/**/*.js')
+    .pipe(jshint())
+    .pipe(jshint.reporter('default'))
+    .pipe(concat('libraries-main.js'))
+    .pipe(gulp.dest('dest/js'))
+    .pipe(rename({ suffix: '.min' }))
+    .pipe(uglify())
+    .pipe(gulp.dest('dest/js'))
+    .pipe(notify({ message: 'Scripts task complete' }));
 });
 
 // clean up time!
 gulp.task('clean', function() {
-    return del(['css']);
+    return del(['dest/css', 'dest/scripts']);
 });
 
 
 gulp.task('default', ['clean'], function() {
-    gulp.start('styles');
+    gulp.start('styles', 'scripts');
 });
 
 gulp.task('watch', function() {
@@ -39,7 +53,7 @@ gulp.task('watch', function() {
   gulp.watch('sass/**/*.scss', ['styles']);
 
   // Watch .js files
-  //gulp.watch('src/scripts/**/*.js', ['scripts']);
+  gulp.watch('js/**/*.js', ['scripts']);
 
   // Watch image files
   //gulp.watch('src/images/**/*', ['images']);
