@@ -6,6 +6,7 @@
 }
 
 .wrap-header, 
+.wrap-header-local,
 .wrap-breadcrumb, 
 .wrap-content, 
 .wrap-footer, 
@@ -43,6 +44,20 @@
 
   .link-logo-mit {
     float: right;
+  }
+}
+
+// local header 
+.wrap-header-local {
+
+  .wrap-local-nav {
+    margin-top: 8px;
+    
+    a { 
+      display: inline-block;
+      margin-right: 10px;
+      font-size: $fs-small;
+    } 
   }
 }
 
