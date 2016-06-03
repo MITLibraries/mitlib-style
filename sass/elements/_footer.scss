@@ -29,7 +29,7 @@
     fill: $white;
 
     svg {
-      width: auto;
+      width: 100%;
       height: auto;
     }
   }
@@ -62,6 +62,16 @@
       }
     }
   }
+}
+
+// footer - adjustments for slim
+.wrap-footer.footer-slim {
+
+  .sitemap-libraries-abbrev a {
+    @extend %list-inline-pipe;
+    font-size: $fs-small;
+  }
+
 }
 
 // MIT footer

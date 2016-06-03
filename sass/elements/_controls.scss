@@ -1,0 +1,34 @@
+
+.btn-primary {
+  transition: background-color .25s, border .25s;
+  border: 1px solid $brand-primary;
+  border-radius: 3px;
+  padding: 5px 10px;
+  background-color: $brand-primary;
+  color: $white;
+
+
+  &:hover, 
+  &:focus {
+    background-color: $brand-primary-accent;
+    border-color: $brand-primary-accent;
+    color: $white;
+    text-decoration: none;
+  }
+}
+
+.btn-secondary {
+  transition: background-color .25s, border .25s;
+  border: 1px solid $smoke;
+  border-radius: 3px;
+  padding: 5px 10px;
+  background-color: transparent;
+
+  &:hover, 
+  &:focus {
+    background-color: $brand-primary-accent;
+    border-color: $brand-primary-accent;
+    color: $white;
+    text-decoration: none;
+  }
+}

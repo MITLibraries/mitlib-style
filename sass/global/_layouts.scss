@@ -6,6 +6,7 @@
 }
 
 .wrap-header, 
+.wrap-header-local,
 .wrap-breadcrumb, 
 .wrap-content, 
 .wrap-footer, 
@@ -43,6 +44,20 @@
 
   .link-logo-mit {
     float: right;
+  }
+}
+
+// local header 
+.wrap-header-local {
+
+  .wrap-local-nav {
+    margin-top: 8px;
+
+    a { 
+      display: inline-block;
+      margin-right: 10px;
+      font-size: $fs-small;
+    } 
   }
 }
 
@@ -107,7 +122,7 @@
   }
 }
 
-// footer 
+// footer - base and full
 .wrap-footer {
   padding: 3.5rem 4%;
 
@@ -224,12 +239,38 @@
     .wrap-social {
       order: 3;
     }
-
-
   }
-
 }
 
+// footer - adjustments for slim
+.wrap-footer.footer-slim {
+  padding: 1.5rem 4%;
+
+  .footer-main {
+    display: flex;
+    align-items: center;
+  }
+
+  .wrap-sitemap {
+    margin-left: 2%;
+
+    a {
+      display: inline-block;
+      margin-right: 10px;
+    }
+  }
+
+  // large screen - able to handle several inline items
+  @media (min-width: $bp-screen-lg) {
+
+    .footer-main {
+      align-items: baseline;
+    }
+
+  }
+}
+
+// mit institute footer
 .wrap-footer-institute {
   padding: 20px 4%;
 }

@@ -49,6 +49,26 @@
   }
 }
 
+// local header and nav
+.wrap-outer-header-local {
+  border-bottom: 1px solid $gray-l2;
+  background-color: $gray-l3;
+  color: $gray-d1;
+
+  a {
+    color: $gray-d1;
+  }
+
+  .title-site {
+    @extend .hd-2;
+    margin-bottom: 0;
+  }
+
+  .action-signin {
+    @extend .btn-primary;
+  }
+}
+
 
 // breadcrumb styles
 .wrap-outer-breadcrumb {

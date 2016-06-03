@@ -21,6 +21,13 @@
   }
 }
 
+// flexbox wrapper
+.wrap-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+  
 @mixin clearfix {
   &:after {
     content: '';
