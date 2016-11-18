@@ -13,7 +13,7 @@
 .wrap-footer-institute {
   max-width: 1024px;
   margin: 0 auto;
-  padding: 8px 4%;
+  padding: 10px 4%;
 }
 
 // site header
@@ -62,9 +62,18 @@
 }
 
 // content 
-.wrap-content {
-  margin-top: 1.5rem;
-  margin-bottom: 2%;
+.wrap-outer-content {
+  background-color: $white;
+  color: $black;  
+}
+
+.wrap-content { 
+  padding-top: 3rem;
+  padding-bottom: 2%;
+
+  .content-main {
+    padding-bottom: 3rem;
+  }
 
   // 3/4 - 1/4 2-column layout
   &.layout-3q1q {
@@ -78,7 +87,6 @@
 
       .content-sup {
         width: 22%;
-        margin-top: 2.5rem;
         margin-left: 3%
       }
     }
@@ -254,19 +262,22 @@
   .wrap-sitemap {
     margin-left: 2%;
 
-    a {
-      display: inline-block;
+    .item {
+      display: block;
       margin-right: 10px;
     }
   }
 
-  // large screen - able to handle several inline items
-  @media (min-width: $bp-screen-lg) {
+  // larger screen - able to handle several inline items
+  @media (min-width: $bp-screen-md) {
 
     .footer-main {
       align-items: baseline;
     }
 
+    .wrap-sitemap .item {
+      display: inline-block;
+    }
   }
 }
 
