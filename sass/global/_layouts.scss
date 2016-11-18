@@ -5,18 +5,84 @@
   @include clearfix;
 }
 
+.wrap-gridband, 
 .wrap-header, 
 .wrap-header-local,
 .wrap-breadcrumb, 
 .wrap-content, 
 .wrap-footer, 
 .wrap-footer-institute {
-  max-width: 1024px;
+  @include clearfix;
+  max-width: 114rem;
   margin: 0 auto;
   padding: 10px 4%;
 }
 
-// site header
+// generic grid options
+
+.wrap-gridband {
+
+  .grid-item {
+    width: auto;
+    margin: 0;
+    float: none;
+  }
+
+  // 2-col generic with overflow
+  &.layout-2c {
+
+    @media (min-width: $bp-screen-md) {
+      .grid-item {
+        float: left;
+        width: 48%;
+        margin-right: 3%;
+        
+        &:nth-child(2n+0) {
+          float: right;
+          margin-right: 0;
+        }
+      }
+    }
+  }
+
+  // 3-col generic with overflow
+  &.layout-3c {
+
+    @media (min-width: $bp-screen-md) {
+      .grid-item {
+        float: left;
+        width: 32%;
+        margin-right: 2%;        
+
+        &:nth-child(3n+3) {
+          float: right;
+          margin-right: 0;
+        }
+      }
+    }
+  }
+
+  // 4-col generic with overflow
+  &.layout-4c {
+
+    @media (min-width: $bp-screen-md) {
+      .grid-item {
+        float: left;
+        width: 23%;
+        margin-right: 2%;        
+
+        &:nth-child(4n+4) {
+          float: right;
+          margin-right: 0;
+        }
+      }
+    }
+  }
+}
+
+// ----------------------------
+// #HEADER - global, slim, local
+// ----------------------------
 
 // simplified slim header for light branding
 .wrap-header {
@@ -61,7 +127,10 @@
   }
 }
 
-// content 
+// ----------------------------
+// #CONTENT
+// ----------------------------
+
 .wrap-outer-content {
   background-color: $white;
   color: $black;  
@@ -79,15 +148,34 @@
   &.layout-3q1q {
 
     @media (min-width: $bp-screen-md) {
-      display: flex;
 
       .content-main {
+        float: left;
         width: 73%;
       }
 
       .content-sup {
+        float: right;
         width: 22%;
         margin-left: 3%
+      }
+    }
+  }
+
+  // 1/4 - 3/4 2-column layout
+  &.layout-1q3q {
+
+    @media (min-width: $bp-screen-md) {
+
+      .content-sup {
+        float: left;
+        width: 22%;
+        margin-right: 3%
+      }
+
+      .content-main {
+        float: right;
+        width: 73%;
       }
     }
   }
@@ -97,18 +185,16 @@
 
     @media (min-width: $bp-screen-md) {
 
-    display: flex;
-
       .content-sup-l {
-
+        float: left;
       }
 
       .content-main {
-
+        float: left;
       }
 
       .content-sup {
-
+        float: right;
       }
     }
   }
@@ -120,17 +206,21 @@
       display: flex;
       
       .content-sup-l {
-
+        float: left;
       }
 
       .content-main {
-
+        float: right;
       }
     }
   }
 }
+ 
 
-// footer - base and full
+// ----------------------------
+// #FOOTER - base and full
+// ----------------------------
+
 .wrap-footer {
   padding: 3.5rem 4%;
 

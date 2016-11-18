@@ -19,6 +19,7 @@
 
 .button-secondary {
   transition: background-color .25s, border .25s;
+  border: 1px solid $gray-l2;
   border: 1px solid $smoke;
   border-radius: 3px;
   padding: 5px 10px;
