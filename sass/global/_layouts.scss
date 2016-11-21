@@ -21,6 +21,7 @@
 // generic grid options
 
 .gridband {
+  @include clearfix;
 
   .grid-item {
     width: auto;
