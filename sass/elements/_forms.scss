@@ -1,0 +1,76 @@
+// base form styles
+
+form {
+	margin: 1.5rem 0;
+	
+	.field-label {
+		display: inline-block;
+		margin-top: 1rem;
+		margin-bottom: .2rem;
+		font-size: $fs-small;
+		font-weight: $fw-bold;
+	}
+
+	.field {
+		display: block;
+		margin-top: .2rem;
+		margin-bottom: .2rem;
+    border: 1px solid $gray-l2;
+    border-radius: 2px;
+    background-image: none;
+	}
+
+	.field-text {
+		min-width: 25rem;
+    padding: 6px 12px;
+    background-color: $white-t;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+	}
+
+	.tip {
+		font-size: $fs-small;
+		color: $informational;
+	}
+
+	.field-error {
+		font-size: $fs-small;
+		color: $error;
+	}
+
+	.field-warning {
+		font-size: $warning;
+		color: $error;
+	}
+
+	.field-textarea {
+		display: block;
+		min-width: 25rem;
+	}
+
+	.field-select {
+		display: block;
+		padding: 3px;
+	}
+
+ .inline {
+	
+		.field-label {
+			display: inline-block;
+			max-width: 30%;
+		}
+
+		.field {
+			display: inline-block;
+			max-width: 65%;
+		}
+
+		&.field-radio {
+			display: inline-block;
+			margin-right: 1.5rem;
+		}
+	}
+
+	.disabled {
+		color: $gray-l1;
+	}
+}
