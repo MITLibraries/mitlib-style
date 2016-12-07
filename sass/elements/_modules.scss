@@ -14,3 +14,49 @@
     @extend %list-unbulleted;
   }
 }
+
+.alert {
+
+  &.success {
+    color: $success;
+  }
+
+  &.warning {
+    color: $warning;
+  }
+
+  &.error {
+    color: $error;
+  }
+
+
+}
+
+.alert-banner {
+  display: block;
+  margin-bottom: 2rem;
+  border: 1px solid rgba($error, .3);
+  border-radius: 2px;
+  padding: 1.6rem 2rem 0;
+  border: 1px solid rgba($brand-primary, .3);
+  background-color: rgba($brand-primary, .2);
+  color: $black;  
+
+  &.success {
+    border: 1px solid rgba($success, .3);
+    background-color: rgba($success, .2);
+    color: darken($success, 20%);
+  }
+
+  &.warning {
+    border: 1px solid rgba($warning, .3);
+    background-color: rgba($warning, .2);
+    color: darken($warning, 40%);
+  }
+
+  &.error {
+    border: 1px solid rgba($error, .3);
+    background-color: lighten($error, 50%);
+    color: darken($error, 20%);
+  }
+}
