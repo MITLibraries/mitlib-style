@@ -22,7 +22,7 @@
 <div class="wrap-page">
 	<div class="wrap-outer-header layout-band">
 		<div class="wrap-header">
-			<header class="header-site header-slim">
+			<header class="header-site header-slim" role="banner">
 				<div class="wrap-header-core">
 					<h1 class="name-site group nav-logo">
 						<a href="http://libraries.mit.edu/" class="logo-mit-lib" alt="MIT Libraries Logo">
@@ -43,11 +43,11 @@
 	    </div>
 		  <div class="wrap-local-nav">
 		    <div class="wrap-bar">
-		    	<nav class="local-nav">
+		    	<nav class="local-nav" aria-label="Main menu">
 		    		<a class="button-secondary" href="/">Submit a paper</a>
 		    		<a class="button-secondary"  href="/">Previous submissions</a>
 		    	</nav>
-		    	<nav class="nav-user">
+		    	<nav class="nav-user" aria-label="User menu">
 		    		<a class="action-auth" href="/">Sign in</a>
 		    	</nav>
 		    </div>
@@ -83,85 +83,97 @@
 			  </div>
 			  <div class="field-wrap">
 			    <label for="example-file" class="field-label">File input</label>
-			    <input type="file" id="example-file">
+			    <input class="field field-upload" type="file" id="example-file">
 			    <p class="tip">Select a file from your local computer</p>
 			  </div>
-			  <div class="field-checkbox">
-			    <label>
+			  <div class="field-wrap">
+			    <label class="field-checkbox">
 			      <input type="checkbox" value="option1">
 			      Option one 
 			    </label>
 			  </div>
-			  <div class="field-checkbox disabled">
-			    <label>
+			  <div class="field-wrap">
+			    <label class="field-checkbox disabled">
 			      <input type="checkbox" value="" disabled>
 			      Option two is disabled
 			    </label>
 			  </div>
 
-			  <div class="field-radio">
-			    <label>
+			  <div class="field-wrap">
+			    <label class="field-radio">
 			      <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
 			      Option one 
 			    </label>
 			  </div>
-			  <div class="field-radio">
-			    <label>
+			  <div class="field-wrap">
+			    <label class="field-radio">
 			      <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
 			      Option two
 			    </label>
 			  </div>
-			  <div class="field-radio disabled">
-			    <label>
+			  <div class="field-wrap">
+			    <label class="field-radio disabled">
 			      <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3" disabled>
 			      Option three is disabled
 			    </label>
 			  </div>
 
-			  <label for="exmaple-select-1" class="field-label">Single select drop down</label>
-			  <select id="exmaple-select-1" class="field-select">
-			    <option>Something number 1</option>
-			    <option>Another thing 2</option>
-			    <option>What is this thing 3</option>
-			    <option>Other stuff 4</option>
-			    <option>The best thing 5</option>
-			  </select>
+			  <div class="field-wrap">
+				  <label for="example-select-1" class="field-label">Single select drop down</label>
+				  <select id="example-select-1" class="field field-select">
+				    <option>Something number 1</option>
+				    <option>Another thing 2</option>
+				    <option>What is this thing 3</option>
+				    <option>Other stuff 4</option>
+				    <option>The best thing 5</option>
+				  </select>
+				 </div>
 
-			  <label for="exmaple-select-2" class="field-label">Multi select</label>
-			  <select id="exmaple-select-2" multiple class="field-select">
-			    <option>1</option>
-			    <option>2</option>
-			    <option>3</option>
-			    <option>4</option>
-			    <option>5</option>
-			  </select>
+			  <div class="field-wrap">
+				  <label for="example-select-2" class="field-label">Multi select</label>
+				  <select id="example-select-2" multiple class="field field-select">
+				    <option>One thing</option>
+				    <option>Two thing</option>
+				    <option>Three thing</option>
+				    <option>Four thing</option>
+				    <option>Five thing</option>
+				  </select>
+				 </div>
 
 			  <p>Inline</p>
-			  <label class="field-radio inline">
-			    <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> 1
-			  </label>
-			  <label class="field-radio inline">
-			    <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> 2
-			  </label>
-			  <label class="field-radio inline">
-			    <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3"> 3
-			  </label>
 
-			  <label for="example-textarea-1" class="field-label">A larger text input</label>
-			  <textarea id="example-textarea-1" class="field field-text field-textarea" rows="3"></textarea>
+				<div class="field-wrap"> 
+				  <label class="field-radio fields-inline">
+				    <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> One option
+				  </label>
+				  <label class="field-radio fields-inline">
+				    <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> Two option
+				  </label>
+				  <label class="field-radio fields-inline">
+				    <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3"> 3 option
+				  </label>
+				  <label class="field-radio fields-inline">
+				    <input type="radio" name="inlineRadioOptions" id="inlineRadio4" value="option4"> Four
+				  </label>
+				</div>
+
+				<div class="field-wrap">
+				  <label for="example-textarea-1" class="field-label">A larger text input</label>
+				  <textarea id="example-textarea-1" class="field field-text field-textarea" rows="3"></textarea>
+				</div>
 
 			  <button type="submit" class="btn button-primary">Submit</button>
 
 			</form>
 
 
-			<form class="form-inline b-search" action="/search/bento" method="get">
-			  <div class="field-wrap">
+			<form class="b-search" action="/search/bento" method="get">
+			  <div class="field-wrap fields-inline">
 			    <label for="b-search-main" class="field-label">Search the library</label>
-			      <input id="b-search-main" type="search" class="field  field-text b-search-input" name="q" placeholder="Enter your search" value="<%= params[:q] %>">
-			    <div class="b-search-submit">
-			      <button type="submit" class="btn button-primary">Search</button>
-			    </div>
+			      <input id="b-search-main" type="search" class="field field-text b-search-input" name="q" placeholder="Enter your search" value="<%= params[:q] %>">
+				  <div class="b-search-submit">
+				    <button type="submit" class="btn button-primary">Search</button>
+				  </div>
 			  </div>
 			</form>
 
@@ -338,7 +350,7 @@ How the data was generated, including equipment or software used, experimental p
 			</main>
 			<!-- close content-main -->		
 
-			<aside class="content-sup">
+			<aside class="content-sup" role="complementary">
 
 				<div class="bit">
 					<h3 class="title">Related</h3>
@@ -356,7 +368,7 @@ How the data was generated, including equipment or software used, experimental p
 	<!-- footer slim -->
 	<div class="wrap-outer-footer layout-band">
 		<div class="wrap-footer footer-slim">
-			<footer class="footer-main">
+			<footer class="footer-main" aria-label="MIT Libraries footer">
 				<div class="identity">
 					<div class="wrap-logo-lib">
 						<a href="http://libraries.mit.edu" class="logo-mit-lib" alt="MIT Libraries Logo">
@@ -366,7 +378,7 @@ How the data was generated, including equipment or software used, experimental p
 					</div>
 				</div><!-- end div.identity -->
 				<div class="wrap-sitemap">
-					<nav class="sitemap-libraries-abbrev">
+					<nav class="sitemap-libraries-abbrev" aria-label="MIT Libraries site menu">
 						<h2 class="sr">MIT Libraries navigation</h2>
 						<a href="https://libraries.mit.edu/">Home</a>
 						<a href="/search">Search</a>
@@ -381,7 +393,7 @@ How the data was generated, including equipment or software used, experimental p
 	</div>
 	<div class="wrap-outer-footer-institute layout-band">
 		<div class="wrap-footer-institute">
-			<footer class="footer-info-institute">
+			<footer class="footer-info-institute" aria-label="MIT footer" role="contentinfo">
 				<a class="link-logo-mit" href="http://www.mit.edu" alt="Massachusetts Institute of Technology Logo">
 					<svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0" y="0" width="54" height="28" viewBox="0 0 54 28" enable-background="new 0 0 54 28" xml:space="preserve" class="logo-mit"><rect x="28.9" y="8.9" width="5.8" height="19.1" class="color"/><rect width="5.8" height="28"/><rect x="9.6" width="5.8" height="18.8"/><rect x="19.3" width="5.8" height="28"/><rect x="38.5" y="8.9" width="5.8" height="19.1"/><rect x="38.8" width="15.2" height="5.6"/><rect x="28.9" width="5.8" height="5.6"/></svg>
 				</a>
@@ -401,7 +413,7 @@ How the data was generated, including equipment or software used, experimental p
 <!-- footer full -->
 	<div class="wrap-outer-footer layout-band">
 		<div class="wrap-footer">
-			<footer class="footer-main">
+			<footer class="footer-main" aria-label="MIT Libraries footer">
 				<div class="wrap-sitemap">
 					<div class="wrap-list col">
 						<h4 class="title item"><a href="/search">Search</a></h4>
@@ -498,7 +510,7 @@ How the data was generated, including equipment or software used, experimental p
 	</div>
 	<div class="wrap-outer-footer-institute layout-band">
 		<div class="wrap-footer-institute">
-			<footer class="footer-info-institute">
+			<footer class="footer-info-institute" aria-label="MIT footer" role="contentinfo">
 				<a class="link-logo-mit" href="http://www.mit.edu" alt="Massachusetts Institute of Technology Logo">
 					<svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0" y="0" width="54" height="28" viewBox="0 0 54 28" enable-background="new 0 0 54 28" xml:space="preserve" class="logo-mit"><rect x="28.9" y="8.9" width="5.8" height="19.1" class="color"/><rect width="5.8" height="28"/><rect x="9.6" width="5.8" height="18.8"/><rect x="19.3" width="5.8" height="28"/><rect x="38.5" y="8.9" width="5.8" height="19.1"/><rect x="38.8" width="15.2" height="5.6"/><rect x="28.9" width="5.8" height="5.6"/></svg>
 				</a>
@@ -512,7 +524,8 @@ How the data was generated, including equipment or software used, experimental p
 			</footer>
 		</div>
 	</div>
-
+	<!-- end footer full -->
+	
 </div>
 <!-- close wrap-page -->		
 
