@@ -21,6 +21,10 @@
     margin-bottom: .2rem;
   }
 
+  &.info {
+    color: $black;
+  }
+
   &.success {
     color: $success;
   }
@@ -32,8 +36,30 @@
   &.error {
     color: $error;
   }
+}
 
+/* global app style alerts and notices */
 
+.wrap-notices {
+  background-color: $white;
+  color: $black;
+  font-size: $fs-xsmall;
+
+  &.info {
+    border-top: 2px solid $gray-l2;
+  }
+
+  &.success {
+    border-top: 2px solid $success;
+  }
+
+  &.warning {
+    border-top: 2px solid $warning;
+  }
+
+  &.error {
+    border-top: 2px solid $error;
+  }
 }
 
 .alert-banner {
