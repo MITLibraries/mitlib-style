@@ -41,12 +41,15 @@
 /* global app style alerts and notices */
 
 .wrap-notices {
-  background-color: $white;
-  color: $black;
+  background-color: $gray-d1;
+  color: $white;
   font-size: $fs-xsmall;
 
+  a {
+    color: $brand-primary2;
+  }
+
   &.info {
-    border-top: 2px solid $gray-l2;
   }
 
   &.success {
