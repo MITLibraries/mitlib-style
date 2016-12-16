@@ -36,7 +36,7 @@
   }
 
   .wrap-usergroups {
-    @extend %list-inline-pipe;
+    @extend .list-inline-pipe;
     font-size: $fs-small;
   }
 
@@ -69,7 +69,7 @@
 .wrap-footer.footer-slim {
 
   .sitemap-libraries-abbrev a {
-    @extend %list-inline-pipe;
+    @extend .list-inline-pipe;
     font-size: $fs-small;
   }
 
@@ -99,7 +99,7 @@
   }
 
   .about-mit {
-    @extend %list-inline-pipe;
+    @extend .list-inline-pipe;
     color: $gray-l2;
     text-transform: uppercase;
   }
