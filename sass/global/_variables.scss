@@ -22,7 +22,7 @@ $white-warm:                    #ede8e2;
 $white-t:                       #fff; // true white
 $gray:                          #595959;
 $gray-d1:                       #333;
-$gray-d2:                       #111;
+$gray-d2:                       #222;
 $gray-l1:                       #999;
 $gray-l2:                       #ccc;
 $gray-l3:                       #dedede;
@@ -45,6 +45,7 @@ $blue-muted:                    #21759B;
 // colors - brand
 $brand-primary:                 $blue;
 $brand-primary-accent:          rgb(14, 166, 236);
+$brand-primary2:                #83c8ff; /* accessible on dark */
 $brand-secondary:               $gray-d1;
 $brand-secondary-accent:        rgb(242, 108, 170);
 
