@@ -11,7 +11,7 @@
   }
 
   ul {
-    @extend %list-unbulleted;
+    @extend .list-unbulleted;
   }
 }
 
@@ -87,5 +87,25 @@
     border-top: 3px solid rgba($error, .3);
     background-color: lighten($error, 50%);
     color: darken($error, 20%);
+  }
+}
+
+
+.inline-action {
+
+  @media (min-width: $bp-screen-md) {
+
+    .message {
+      display: inline-block;
+      vertical-align: middle;
+      width: 65%
+    }
+
+    .actions {
+      display: inline-block;
+      vertical-align: middle;
+      width: 34%;
+      text-align: right;
+    }
   }
 }

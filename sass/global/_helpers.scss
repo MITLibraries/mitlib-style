@@ -74,13 +74,13 @@
   }
 }
 
-%list-unbulleted {
+.list-unbulleted {
   list-style: none;
   padding-left: 0;
   text-indent: 0;
 }
 
-%list-inline {
+.list-inline {
   @extend %reset-list;
 
   li,
@@ -90,17 +90,22 @@
   }
 }
 
-%list-inline-pipe {
-  display: inline-block;
-  padding-right: 1rem;
+.list-inline-pipe {
+  padding-left: 0;
 
-  .item:after {
-    content: ' | ';
-    margin-left: 1rem;
-  }
-  
-  .item:last-child:after {
-    content: '';
+  li, 
+  .item {
+    display: inline-block;
+    padding-right: 1rem;
+
+    &:after {
+      content: ' | ';
+      margin-left: 1rem;
+    }
+    
+    &:last-child:after {
+      content: '';
+    }
   }
 }
 
