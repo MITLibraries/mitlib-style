@@ -53,15 +53,18 @@
   }
 
   &.success {
-    border-top: 2px solid $success;
+    border-bottom: 2px solid $success;
+    background-color: darken($success, 20%);;
   }
 
   &.warning {
-    border-top: 2px solid $warning;
+    border-bottom: 2px solid $warning;
+    background-color: darken($warning, 40%);;
   }
 
   &.error {
-    border-top: 2px solid $error;
+    border-bottom: 2px solid $error;
+    background-color: darken($error, 20%);;
   }
 }
 
