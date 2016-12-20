@@ -35,3 +35,8 @@
     text-decoration: none;
   }
 }
+
+.button-subtle {
+  @extend .button-secondary;
+  border: 0;
+}

@@ -122,3 +122,32 @@
   padding: 2rem 2.5rem;
   margin: 2rem 0;
 }
+
+// pagination nav
+
+.pagination {
+  margin: 1rem;
+
+  .page {
+    display: inline-block;
+    min-width: 3rem;
+    text-align: center;
+  }
+
+  a {
+    @extend .button-subtle;
+  }
+
+  .gap {
+
+  }
+
+  .next {
+
+  }
+
+  .last {
+    
+  }
+}
+
