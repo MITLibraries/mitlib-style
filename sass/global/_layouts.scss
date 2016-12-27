@@ -144,78 +144,106 @@
   .content-main {
     padding-bottom: 3rem;
   }
+}
 
-  // 3/4 - 1/4 2-column layout
-  &.layout-3q1q {
+// 3/4 - 1/4 2-column layout
+.layout-3q1q {
 
-    @media (min-width: $bp-screen-md) {
+  @media (min-width: $bp-screen-md) {
 
-      .content-main {
-        float: left;
-        width: 73%;
-      }
-
-      .content-sup {
-        float: right;
-        width: 22%;
-        margin-left: 3%
-      }
+    .content-main {
+      float: left;
+      width: 73%;
     }
-  }
 
-  // 1/4 - 3/4 2-column layout
-  &.layout-1q3q {
-
-    @media (min-width: $bp-screen-md) {
-
-      .content-sup {
-        float: left;
-        width: 22%;
-        margin-right: 3%
-      }
-
-      .content-main {
-        float: right;
-        width: 73%;
-      }
-    }
-  }
-
-  // 1/4 - 1/2 - 1/4 3-column layout
-  &.layout-1q2q1q {
-
-    @media (min-width: $bp-screen-md) {
-
-      .content-sup-l {
-        float: left;
-      }
-
-      .content-main {
-        float: left;
-      }
-
-      .content-sup {
-        float: right;
-      }
-    }
-  }
-
-  // 1/3 - 2/3 2-column layout
-  &.layout-1t2t {
-
-    @media (min-width: $bp-screen-md) {
-      display: flex;
-      
-      .content-sup-l {
-        float: left;
-      }
-
-      .content-main {
-        float: right;
-      }
+    .content-sup {
+      float: right;
+      width: 22%;
+      margin-left: 3%
     }
   }
 }
+
+// 1/4 - 3/4 2-column layout
+.layout-1q3q {
+
+  @media (min-width: $bp-screen-md) {
+
+    .content-sup {
+      float: left;
+      width: 22%;
+      margin-right: 3%
+    }
+
+    .content-main {
+      float: right;
+      width: 73%;
+    }
+  }
+}
+
+// 1/4 - 1/2 - 1/4 3-column layout
+.layout-1q2q1q {
+
+  @media (min-width: $bp-screen-md) {
+
+    .content-sup-l {
+      float: left;
+      width: 22%;
+      margin-right: 3%
+    }
+
+    .content-main {
+      float: left;
+      width: 48%;
+      margin-right: 3%
+    }
+
+    .content-sup {
+      float: right;
+      width: 22%;
+    }
+  }
+}
+
+// 1/3 - 2/3 2-column layout
+.layout-1t2t {
+
+  @media (min-width: $bp-screen-md) {
+    display: flex;
+    
+    .content-sup-l {
+      float: left;
+      width: 33%;
+      margin-right: 3%
+    }
+
+    .content-main {
+      float: right;
+      width: 63%;
+    }
+  }
+}
+
+// 2/3 - 1/3 2-column layout
+.layout-2t1t {
+
+  @media (min-width: $bp-screen-md) {
+    display: flex;
+    
+    .content-main {
+      float: left;
+      width: 63%;
+      margin-right: 3%
+    }
+
+    .content-sup {
+      float: right;
+      width: 33%;
+    }
+  }
+}
+
  
 
 // ----------------------------
