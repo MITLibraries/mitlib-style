@@ -151,12 +151,12 @@
 
   @media (min-width: $bp-screen-md) {
 
-    .content-main {
+    .col3q {
       float: left;
       width: 73%;
     }
 
-    .content-sup {
+    .col1q-r {
       float: right;
       width: 22%;
       margin-left: 3%
@@ -169,13 +169,13 @@
 
   @media (min-width: $bp-screen-md) {
 
-    .content-sup {
+    .col1q {
       float: left;
       width: 22%;
       margin-right: 3%
     }
 
-    .content-main {
+    .col3q {
       float: right;
       width: 73%;
     }
@@ -187,7 +187,7 @@
 
   @media (min-width: $bp-screen-md) {
 
-    .content-sup-l {
+    .col1q {
       float: left;
       width: 22%;
       margin-right: 3%
@@ -199,7 +199,7 @@
       margin-right: 3%
     }
 
-    .content-sup {
+    .col1q-r {
       float: right;
       width: 22%;
     }
@@ -212,13 +212,13 @@
   @media (min-width: $bp-screen-md) {
     display: flex;
     
-    .content-sup-l {
+    .col1t {
       float: left;
       width: 33%;
       margin-right: 3%
     }
 
-    .content-main {
+    .col2t {
       float: right;
       width: 63%;
     }
@@ -231,13 +231,13 @@
   @media (min-width: $bp-screen-md) {
     display: flex;
     
-    .content-main {
+    .col2t {
       float: left;
       width: 63%;
       margin-right: 3%
     }
 
-    .content-sup {
+    .col1t{
       float: right;
       width: 33%;
     }
