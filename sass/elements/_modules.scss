@@ -46,7 +46,7 @@
   color: $white;
   font-size: $fs-xsmall;
 
-  a {
+  .link {
     color: $brand-primary2;
   }
 
@@ -54,18 +54,15 @@
   }
 
   &.success {
-    border-bottom: 2px solid $success;
-    background-color: darken($success, 20%);;
+    border-bottom: 4px solid $success;
   }
 
   &.warning {
-    border-bottom: 2px solid $warning;
-    background-color: darken($warning, 40%);;
+    border-bottom: 4px solid $warning;
   }
 
   &.error {
-    border-bottom: 2px solid $error;
-    background-color: darken($error, 20%);;
+    border-bottom: 4px solid $error;
   }
 }
 
@@ -118,13 +115,12 @@
 }
 
 .well {
-  box-shadow: inset 0 0 15px $smoke;
+  box-shadow: inset 0 0 5px $shadow;
   padding: 2rem 2.5rem;
   margin: 2rem 0;
 }
 
-// pagination nav
-
+// ruby pagination nav
 .pagination {
   margin: 1rem;
 
