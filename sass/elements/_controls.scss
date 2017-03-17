@@ -16,6 +16,17 @@
     color: $white;
     text-decoration: none;
   }
+
+  &.green {
+    border: 1px solid darken($green, 5%);
+    background-color: $green;
+
+    &:hover, 
+    &:focus {
+      background-color: saturate($green, 20%);
+      border-color: $green;
+    }
+  }
 }
 
 .button-secondary {
@@ -33,6 +44,18 @@
     border-color: $brand-primary-accent;
     color: $white;
     text-decoration: none;
+  }
+
+  &.green {
+    border: 1px solid $green;
+    color: $green;
+
+    &:hover, 
+    &:focus {
+      background-color: saturate($green, 20%);
+      border-color: $green;
+      color: $white;
+    }
   }
 }
 
