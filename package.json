@@ -4,7 +4,7 @@
   "author": "frrrances",
   "license": "MIT",
   "description": "The (working) Visual, UI, and Front End Styleguide for MIT Libraries",
-  "homepage": "http://libraries.mit.edu",
+  "homepage": "https://libraries.mit.edu",
   "repository": {
     "type": "git",
     "url": "git://github.com/frrrances/mitlib-style.git"
