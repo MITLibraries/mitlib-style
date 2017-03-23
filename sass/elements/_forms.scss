@@ -12,6 +12,10 @@ form {
 		margin-bottom: .2rem;
 		font-size: $fs-small;
 		font-weight: $fw-bold;
+
+		&.error {
+			color: $error;
+		}
 	}
 
 	.field {
@@ -26,6 +30,10 @@ form {
     	border-color: $brand-primary;
     	box-shadow: 0 0 5px rgba($brand-primary-accent,.8);
     }
+
+    &.error {
+			border-color: $error;
+    }
 	}
 
 	.field-text {
@@ -39,16 +47,10 @@ form {
 		font-size: $fs-small;
 		color: $informational;
 		margin-bottom: 0;
-	}
 
-	.field-error {
-		font-size: $fs-small;
-		color: $error;
-	}
-
-	.field-warning {
-		font-size: $warning;
-		color: $error;
+		&.error {
+			color: $error;
+		}
 	}
 
 	.field-textarea {
