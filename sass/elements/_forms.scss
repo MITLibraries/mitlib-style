@@ -91,3 +91,17 @@ form {
 		cursor: not-allowed;
 	}
 }
+
+fieldset {
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+	border: 1px solid $gray-l2;
+	padding: 2rem;
+}
+
+legend {
+	padding: 0 1rem;
+	font-size: $fs-small;
+	color: $gray;
+	text-transform: uppercase;
+}
