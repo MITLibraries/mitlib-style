@@ -3,6 +3,20 @@
 form {
   margin: 1.5rem 0;
 
+  fieldset {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    border: 1px solid $gray-l2;
+    padding: 2rem;
+  }
+
+  legend {
+    padding: 0 1rem;
+    font-size: $fs-small;
+    color: $gray;
+    text-transform: uppercase;
+  }
+
   .field-wrap {
     margin-bottom: 1rem;
   }
@@ -12,10 +26,6 @@ form {
     margin-bottom: .2rem;
     font-size: $fs-small;
     font-weight: $fw-bold;
-
-    &.error {
-      color: $error;
-    }
   }
 
   .field {
@@ -29,10 +39,6 @@ form {
     &:focus, &:active {
       border-color: $brand-primary;
       box-shadow: 0 0 5px rgba($brand-primary-accent,.8);
-    }
-
-    &.error {
-      border-color: $error;
     }
 
     &.wide {
@@ -108,19 +114,24 @@ form {
     color: $gray;
     cursor: not-allowed;
   }
+
+// CASE: form/field error - error class should go on field-wrap
+  .error {
+
+    .field-label {
+      color: $error;
+    }
+
+    .field {
+      border-color: $error;
+    }
+
+    .tip, 
+    .hint {
+      color: $error;
+    }
+
+  }
+
 }
 
-
-fieldset {
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-  border: 1px solid $gray-l2;
-  padding: 2rem;
-}
-
-legend {
-  padding: 0 1rem;
-  font-size: $fs-small;
-  color: $gray;
-  text-transform: uppercase;
-}
