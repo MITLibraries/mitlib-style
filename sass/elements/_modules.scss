@@ -148,3 +148,41 @@
   }
 }
 
+.panel {
+  margin: 1.5rem 0;
+  border: 1px solid $gray-l2;
+  background-color: $white;
+  border-top: 4px solid $brand-primary;
+
+  .panel-heading {
+    @extend .copy-lead;
+    margin: 1.5rem 2rem .5rem 2rem;
+  }
+
+  .panel-body {
+    margin: .5rem 2rem 1.5rem 2rem;
+  }
+
+  .panel-footer {
+    font-size: $fs-small;
+    border-top: 1px solid $gray-l2;
+    background-color: $wisp;
+    padding: 1rem 2rem;
+  }
+
+  &.panel-info {
+    border-top: 4px solid $brand-primary;
+  }
+
+  &.panel-success {
+    border-top: 4px solid $success;
+  }
+
+  &.panel-warning {
+    border-top: 4px solid $warning;
+  }
+
+  &.panel-danger {
+    border-top: 4px solid $error;
+  }
+}
