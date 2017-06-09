@@ -177,7 +177,7 @@
         <form>
           <div class="field-wrap">
             <label for="example-email-1" class="field-label">Email address</label>
-            <input type="email" class="field field-text" id="example-email-1" placeholder="Email">
+            <input type="email" class="field field-text wide" id="example-email-1" placeholder="Email">
           </div>
           <div class="field-wrap">
             <label for="exampleInputPassword1" class="field-label">Password</label>
@@ -189,36 +189,40 @@
             <input class="field field-upload" type="file" id="example-file">
             <p class="tip">Select a file from your local computer</p>
           </div>
-          <div class="field-wrap">
-            <label class="field-checkbox">
-              <input type="checkbox" value="option1">
-              Option one 
-            </label>
+          <div class="field-wrap list-checkboxes">
+            <h3 class="field-label">Funders</h3>
+            <div class="field-subitem">
+              <label class="field-checkbox">
+                <input type="checkbox" value="option1">
+                Option one 
+              </label>
+            </div>
+            <div class="field-subitem">
+              <label class="field-checkbox disabled">
+                <input type="checkbox" value="" disabled>
+                Option two is disabled
+              </label>
+            </div>
           </div>
-          <div class="field-wrap">
-            <label class="field-checkbox disabled">
-              <input type="checkbox" value="" disabled>
-              Option two is disabled
-            </label>
-          </div>
-
-          <div class="field-wrap">
-            <label class="field-radio">
-              <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
-              Option one 
-            </label>
-          </div>
-          <div class="field-wrap">
-            <label class="field-radio">
-              <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
-              Option two
-            </label>
-          </div>
-          <div class="field-wrap">
-            <label class="field-radio disabled">
-              <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3" disabled>
-              Option three is disabled
-            </label>
+          <div class="field-wrap list-radios">
+            <div class="field-subitem">
+              <label class="field-radio">
+                <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+                Option one 
+              </label>
+            </div>
+            <div class="field-subitem">
+              <label class="field-radio">
+                <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+                Option two
+              </label>
+            </div>
+            <div class="field-subitem">
+              <label class="field-radio disabled">
+                <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3" disabled>
+                Option three is disabled
+              </label>
+            </div>
           </div>
 
           <div class="field-wrap">

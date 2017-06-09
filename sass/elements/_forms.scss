@@ -34,6 +34,10 @@ form {
     &.error {
       border-color: $error;
     }
+
+    &.wide {
+      width: 90%;
+    }
   }
 
   .field-text {
@@ -43,7 +47,8 @@ form {
     box-shadow: inset 0 0 3px rgba(0,0,0,.2);
   }
 
-  .tip {
+  .tip, 
+  .hint {
     font-size: $fs-small;
     color: $informational;
     margin-bottom: 0;

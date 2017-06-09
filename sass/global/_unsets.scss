@@ -23,3 +23,7 @@ a {
   text-decoration: none;
 }
 
+input[type=checkbox], 
+input[type=radio] {
+	margin-right: .5rem;
+}
