@@ -68,6 +68,19 @@ form {
 		border: none;
 	}
 
+	.group-inline {
+		margin-bottom: 1rem;
+
+		.field-wrap {
+			display: inline-block;
+			margin-bottom: .2rem;
+		}		
+
+		.field-select {
+			min-width: auto;
+		}
+	}
+
  .fields-inline {
 	
 		.field-label {
@@ -91,6 +104,7 @@ form {
 		cursor: not-allowed;
 	}
 }
+
 
 fieldset {
 	margin-top: 2rem;
