@@ -27,6 +27,24 @@
       border-color: $green;
     }
   }
+
+  &.warn {
+    border: 1px solid darken($error, 10%);
+    background-color: darken($error, 5%);
+
+    &:before {
+      font-family: FontAwesome;
+      content: "\f071 ";
+      font-size: .8em;
+      margin-right: 5px;
+    }
+
+    &:hover, 
+    &:focus {
+      background-color: saturate($error, 20%);
+      border-color: $error;
+    }
+  }
 }
 
 .button-secondary {
@@ -54,6 +72,24 @@
     &:focus {
       background-color: saturate($green, 20%);
       border-color: $green;
+      color: $white;
+    }
+  }
+
+  &.warn {
+    color: $error;
+
+    &:before {
+      font-family: FontAwesome;
+      content: "\f071 ";
+      font-size: .8em;
+      margin-right: 5px;
+    }
+
+    &:hover, 
+    &:focus {
+      background-color: saturate($error, 20%);
+      border-color: $error;
       color: $white;
     }
   }
