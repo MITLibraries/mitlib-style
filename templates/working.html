@@ -116,6 +116,39 @@
               </div>
 
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque odio soluta fuga esse accusantium, voluptate, eos quod impedit! Quas cum saepe eaque quisquam culpa libero ipsum fuga necessitatibus tempore? Sequi!</p>
+
+
+              <div class="wrap-filters">
+                  View:
+                 <a class="btn button-small button-secondary" href="/submissions">All</a>
+                 <a class="btn button-small button-secondary" href="/submissions?filter=failed">Failed</a>
+                 <a class="btn button-small button-secondary" href="/submissions?filter=in+review+queue">In Review Queue</a>
+                 <a class="btn button-small button-secondary" href="/submissions?filter=approved">Approved</a>
+              </div>
+
+
+              <div class="panel panel-warning">
+                <div class="panel-heading">
+                  Fantastic Places of Mars
+                </div>
+                <div class="panel-body">
+                  Submitter: <br>
+                  Submitted: less than a minute ago<br>
+                  Status: unknown<br>
+                  Permanent URL: pending submission processing
+                  <br>
+                </div>
+                  <div class="panel-footer">
+                    <a href="/submissions/1">View Details</a>
+                    --
+                    <a href="/submissions/package/1">View Sword Package</a>
+                    --
+                    <a rel="nofollow" data-method="post" href="/submissions/resubmit/1">Resubmit Package</a>
+                    --
+                    <a rel="nofollow" data-method="delete" href="/submissions/1">Delete Submission</a>
+                  </div>
+              </div>
+
             </div>
             <aside class="content-sup col1q-r" role="complementary">
 
@@ -158,6 +191,8 @@
 
         <hr /> 
 
+        <h2 id="forms-examples">Forms</h2>
+
         <div class="alert alert-banner">
           <p>Hmm, maybe you meant to enter a search term?</p>
         </div>
@@ -177,7 +212,12 @@
         <form>
           <div class="field-wrap">
             <label for="example-email-1" class="field-label">Email address</label>
-            <input type="email" class="field field-text" id="example-email-1" placeholder="Email">
+            <input type="email" class="field field-text wide" id="example-email-1" placeholder="Email">
+          </div>
+          <div class="field-wrap error">
+            <label for="example-text-1" class="field-label">Something wrong</label>
+            <input type="text" class="field field-text" id="example-text-1" placeholder="nopenopenope" aria-invalid="true">
+            <p class="tip">That's not going to work - be sure to include the aria attribute</p>
           </div>
           <div class="field-wrap">
             <label for="exampleInputPassword1" class="field-label">Password</label>
@@ -189,36 +229,40 @@
             <input class="field field-upload" type="file" id="example-file">
             <p class="tip">Select a file from your local computer</p>
           </div>
-          <div class="field-wrap">
-            <label class="field-checkbox">
-              <input type="checkbox" value="option1">
-              Option one 
-            </label>
+          <div class="field-wrap list-checkboxes">
+            <h3 class="field-label">Funders</h3>
+            <div class="field-subitem">
+              <label class="field-checkbox">
+                <input type="checkbox" value="option1">
+                Option one 
+              </label>
+            </div>
+            <div class="field-subitem">
+              <label class="field-checkbox disabled">
+                <input type="checkbox" value="" disabled>
+                Option two is disabled
+              </label>
+            </div>
           </div>
-          <div class="field-wrap">
-            <label class="field-checkbox disabled">
-              <input type="checkbox" value="" disabled>
-              Option two is disabled
-            </label>
-          </div>
-
-          <div class="field-wrap">
-            <label class="field-radio">
-              <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
-              Option one 
-            </label>
-          </div>
-          <div class="field-wrap">
-            <label class="field-radio">
-              <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
-              Option two
-            </label>
-          </div>
-          <div class="field-wrap">
-            <label class="field-radio disabled">
-              <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3" disabled>
-              Option three is disabled
-            </label>
+          <div class="field-wrap list-radios">
+            <div class="field-subitem">
+              <label class="field-radio">
+                <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+                Option one 
+              </label>
+            </div>
+            <div class="field-subitem">
+              <label class="field-radio">
+                <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+                Option two
+              </label>
+            </div>
+            <div class="field-subitem">
+              <label class="field-radio disabled">
+                <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3" disabled>
+                Option three is disabled
+              </label>
+            </div>
           </div>
 
           <div class="field-wrap">
@@ -231,6 +275,47 @@
               <option>The best thing 5</option>
             </select>
            </div>
+
+           <div class="group-inline">
+             <div class="field-wrap">
+               <label for="example-select-1" class="field-label">Month</label>
+                <select id="submission_pub_date_2i" name="submission[pub_date(2i)]" class="date required field field-select">
+                  <option value=""></option>
+                  <option value="1">January</option>
+                  <option value="2">February</option>
+                  <option value="3">March</option>
+                  <option value="4">April</option>
+                  <option value="5">May</option>
+                  <option value="6">June</option>
+                  <option value="7">July</option>
+                  <option value="8">August</option>
+                  <option value="9">September</option>
+                  <option value="10">October</option>
+                  <option value="11">November</option>
+                  <option value="12">December</option>
+                </select>
+             </div>
+             <div class="field-wrap">
+               <label for="example-select-1" class="field-label">Year</label>
+                <select id="submission_pub_date_1i" name="submission[pub_date(1i)]" class="date required field field-select">
+                  <option value=""></option>
+                  <option value="2007">2007</option>
+                  <option value="2008">2008</option>
+                  <option value="2009">2009</option>
+                  <option value="2010">2010</option>
+                  <option value="2011">2011</option>
+                  <option value="2012">2012</option>
+                  <option value="2013">2013</option>
+                  <option value="2014">2014</option>
+                  <option value="2015">2015</option>
+                  <option value="2016">2016</option>
+                  <option value="2017">2017</option>
+                  <option value="2018">2018</option>
+                  <option value="2019">2019</option>
+                </select>
+             </div>
+             <p class="tip">Example help for the group here.</p>
+            </div>
 
           <fieldset>
             <legend>title or explanatory caption</legend>
@@ -285,11 +370,30 @@
         </form>
 -->
 
-        <div class="buttons">
+<hr />
+        <div id="buttons">
           <h2>Buttons</h2>
+          <p>
+            <a class="btn button-primary" href="">Primary</a>
+            <a class="btn button-secondary" href="">Secondary</a>
+          </p>
+
           <p>
             <a class="btn button-primary green" href="">Green primary</a>
             <a class="btn button-secondary green" href="">Green secondary</a>
+          </p>
+
+          <p>
+            <a class="btn button-primary warn" href="">Warn primary</a>
+            <a class="btn button-secondary warn" href="">Warn secondary</a>
+          </p>
+
+          <p>
+            <a class="btn button-subtle" href="">Subtle</a>
+          </p>
+
+          <p>
+            <a class="btn button-secondary button-small" href="">Small</a>
           </p>
         </div>
 
