@@ -13,6 +13,9 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
 <link rel="stylesheet" href="../dest/css/libraries-main.min.css">
 
+<!-- guide styles only: not for production -->
+<link rel="stylesheet" href="../dest/css/guide-helper.css">
+
 
 <script type='text/javascript' src='https://libraries.mit.edu/wp-content/themes/libraries/js/modernizr.js?ver=2.8.1'></script>
 </head>
@@ -160,7 +163,7 @@
 
 
           <aside class="content-sup col1q-r" role="complementary">
-            <p>This area is an example of secondary/supplementary content which is usually in a sidebar.</p>
+            <p class="copy-sup">This area is an example of secondary/supplementary content which is usually in a sidebar.</p>
 
             <div class="bit">
               <h3 class="title">On this page</h3>
@@ -420,47 +423,154 @@
 
         <h2 id="colors" class="subtitle3">colors</a></h2>
 
-        $black:                         #111;
-        $black-t:                       #000; // true black
-        $white:                         #fafafa;
-        $white-warm:                    #ede8e2;
-        $white-t:                       #fff; // true white
-        $gray:                          #595959;
-        $gray-d1:                       #333;
-        $gray-d2:                       #222;
-        $gray-l1:                       #999;
-        $gray-l2:                       #ccc;
-        $gray-l3:                       #dedede;
-        $gray-l4:                       #f3f3f3;
-        $gray-warm:                     #c6b6a3;
-        $transparent:                   rgba(0, 0, 0, 0);
-        $glare:                         rgba($white-t, .3);
-        $shadow:                        rgba($black-t, .5);
-        $smoke:                         rgba($gray, .3);
-        $wisp:                          rgba($gray, .1);
+        <h3>// grayscale</h3>
 
-        // moth colors - named
-        $magenta:                       #9c3273;
-        $yellow:                        #ffcc33;
-        $orange:                        #f58632;
-        $barf:                          #cca329;
-        $green:                         #43926a;
-        $blue:                          #338bc5;
-        $blue-bright:                   #0088D0;
-        $blue-muted:                    #21759B;
+        <div class="box-color black">
+          <p>$black: #111;</p>
+        </div>
 
-        // colors - brand
-        $brand-primary:                 $blue;
-        $brand-primary-accent:          rgb(14, 166, 236);
-        $brand-primary2:                #83c8ff; // accessible on dark 
-        $brand-secondary:               $gray-d1;
-        $brand-secondary-accent:        rgb(242, 108, 170);
+        <div class="box-color black-t">
+          <p>$black-t: #000; // true black</p>
+        </div>
 
-        // colors - utilities
-        $success:                       $green;
-        $warning:                       mix($yellow,$orange,50%);
-        $error:                         #AC1D22;
-        $informational:                 mix($gray-warm,$black,55%);
+        <div class="box-color white">
+          <p>$white: #fafafa;</p>
+        </div>
+
+        <div class="box-color white-warm">
+          <p>$white-warm: #ede8e2;</p>
+        </div>
+
+        <div class="box-color white-t">
+          <p>$white-t: #fff; // true white</p>        
+        </div>
+
+        <div class="box-color gray">
+          <p>$gray: #595959;</p>        
+        </div>
+
+        <div class="box-color gray-d1">
+          <p>$gray-d1: #333;</p>        
+        </div>
+
+        <div class="box-color gray-d2">
+          <p>$gray-d2: #222;</p>        
+        </div>
+
+        <div class="box-color gray-l1">
+          <p>$gray-l1: #999;</p>        
+        </div>
+
+        <div class="box-color gray-l2">
+          <p>$gray-l2: #ccc;</p>        
+        </div>
+
+        <div class="box-color gray-l3">
+          <p>$gray-l3: #dedede;</p>        
+        </div>
+
+        <div class="box-color gray-l4">
+          <p>$gray-l4: #f3f3f3;</p>        
+        </div>
+
+        <div class="box-color gray-warm">
+          <p>$gray-warm: #c6b6a3;</p>        
+        </div>
+
+        <div class="box-color transparent">
+          <p>$transparent: rgba(0, 0, 0, 0);</p>        
+        </div>
+
+        <div class="box-color glare">
+          <p>$glare: rgba($white-t, .3);</p>        
+        </div>
+
+        <div class="box-color shadow">
+          <p>$shadow: rgba($black-t, .5);</p>        
+        </div>
+
+        <div class="box-color smoke">
+          <p>$smoke: rgba($gray, .3);</p>        
+        </div>
+
+        <div class="box-color wisp">
+          <p>$wisp: rgba($gray, .1);</p>        
+        </div>
+
+        <h3>// moth colors - named</h3>
+
+        <div class="box-color magenta">
+          <p>$magenta: #9c3273;</p>        
+        </div>
+
+        <div class="box-color yellow">
+          <p>$yellow: #ffcc33;</p>        
+        </div>
+
+        <div class="box-color orange">
+          <p>$orange: #f58632;</p>        
+        </div>
+
+        <div class="box-color barf">
+          <p>$barf: #cca329;</p>        
+        </div>
+
+        <div class="box-color green">
+          <p>$green: #43926a;</p>        
+        </div>
+
+        <div class="box-color blue">
+          <p>$blue: #338bc5;</p>        
+        </div>
+
+        <div class="box-color blue-bright">
+          <p>$blue-bright: #0088D0;</p>        
+        </div>
+
+        <div class="box-color blue-muted">
+          <p>$blue-muted: #21759B;</p>        
+        </div>
+
+        <h3>// colors - brand</h3>
+
+        <div class="box-color brand-primary">
+          <p>$brand-primary: $blue;</p>        
+        </div>
+
+        <div class="box-color brand-primary-accent">
+          <p>$brand-primary-accent: rgb(14, 166, 236);</p>        
+        </div>
+
+        <div class="box-color brand-primary2">
+          <p>$brand-primary2: #83c8ff; // accessible on dark </p>        
+        </div>
+
+        <div class="box-color brand-secondary">
+          <p>$brand-secondary: $gray-d1;</p>        
+        </div>
+
+        <div class="box-color brand-secondary-accent">
+          <p>$brand-secondary-accent: rgb(242, 108, 170);</p>        
+        </div>
+
+        <h3>// colors - utilities</h3>
+
+        <div class="box-color success">
+          <p>$success: $green;</p>        
+        </div>
+
+        <div class="box-color warning">
+          <p>$warning: mix($yellow,$orange,50%);</p>        
+        </div>
+
+        <div class="box-color error">
+          <p>$error: #AC1D22;</p>        
+        </div>
+
+        <div class="box-color informational">
+          <p>$informational: mix($gray-warm,$black,55%);</p>        
+        </div>
+
 
         <hr />
 
@@ -574,6 +684,7 @@
           <div class="col1q">
             <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren.</p>
           </div>
+
           <div class="content-main">
             <h3>Example 1 quarter - content main - 1 quarter layout</h3>
             <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren.</p>
@@ -581,8 +692,8 @@
             <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren.</p>
 
             <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren.</p>
-
           </div>
+
           <div class="col1q-r">
             <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren.</p>
           </div>
@@ -595,6 +706,9 @@
             <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren.</p>
           </div>
           <div class="col2t">
+    
+            <h3>Example 1 third - 2 third layout</h3>
+
             <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren.</p>
 
             <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren.</p>

@@ -1,0 +1,67 @@
+// styles for guide display only (helpers)
+@import 'global/variables';
+
+
+@function contrast-color($color) {
+  @if (lightness($color) > 50) {
+    @return #333; // Lighter backgorund, return dark color
+  } @else {
+    @return #eee; // Darker background, return light color
+  }
+}
+
+.box-color {
+  display: inline-block;
+  overflow: hidden;
+  height: 100px;
+  width: 100px;
+  margin: 5px;
+  border: 1px solid $gray-l2;
+  padding: 1rem;
+  font-size: 1.2rem;
+  text-align: center;
+  line-height: 1.3;
+  word-wrap: break-word;
+
+  &.black {background-color: $black; color: contrast-color($black);}
+  &.black-t {background-color: $black-t; color: contrast-color($black-t);} // true black
+  &.white {background-color: $white; color: contrast-color($white);}
+  &.white-warm {background-color: $white-warm; color: contrast-color($white-warm);}
+  &.white-t {background-color: $white-t; color: contrast-color($white-t);}
+  &.gray {background-color: $gray; color: contrast-color($gray);}
+  &.gray-d1 {background-color: $gray-d1; color: contrast-color($gray-d1);}
+  &.gray-d2 {background-color: $gray-d2; color: contrast-color($gray-d2);}
+  &.gray-l1 {background-color: $gray-l1; color: contrast-color($gray-l1);}
+  &.gray-l2 {background-color: $gray-l2; color: contrast-color($gray-l2);}
+  &.gray-l3 {background-color: $gray-l3; color: contrast-color($gray-l3);}
+  &.gray-l4 {background-color: $gray-l4; color: contrast-color($gray-l4);}
+  &.gray-warm {background-color: $gray-warm; color: contrast-color($gray-warm);}
+  &.transparent {background-color: $transparent; color: $black;}
+  &.glare {background-color: $glare; color: $black;}
+  &.shadow {background-color: $shadow; color: $black;}
+  &.smoke {background-color: $smoke; color: $black;}
+  &.wisp {background-color: $wisp; color: $black;}
+
+  // moth colors - named
+  &.magenta {background-color: $magenta; color: contrast-color($magenta);}
+  &.yellow {background-color: $yellow; color: contrast-color($yellow);}
+  &.orange {background-color: $orange; color: contrast-color($orange);}
+  &.barf {background-color: $barf; color: contrast-color($barf);}
+  &.green {background-color: $green; color: contrast-color($green);}
+  &.blue {background-color: $blue; color: contrast-color($blue);}
+  &.blue-bright {background-color: $blue-bright; color: contrast-color($blue-bright);}
+  &.blue-muted {background-color: $blue-muted; color: contrast-color($blue-muted);}
+
+  // colors - brand
+  &.brand-primary {background-color: $brand-primary; color: contrast-color($brand-primary);}
+  &.brand-primary-accent {background-color: $brand-primary-accent; color: contrast-color($brand-primary-accent);}
+  &.brand-primary2 {background-color: $brand-primary2; color: contrast-color($brand-primary2);} 
+  &.brand-secondary {background-color: $brand-secondary; color: contrast-color($brand-secondary);}
+  &.brand-secondary-accent {background-color: $brand-secondary-accent; color: contrast-color($brand-secondary-accent);}
+
+  // colors - utilities
+  &.success {background-color: $success; color: contrast-color($success);}
+  &.warning {background-color: $warning; color: contrast-color($warning);}
+  &.error {background-color: $error; color: contrast-color($error);}
+  &.informational {background-color: $informational; color: contrast-color($informational);}
+}
