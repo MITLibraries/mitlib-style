@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<!--[if lte IE 9]><html class="no-js lte-ie9" lang="en"><![endif]-->
+<!--[if !(IE 8) | !(IE 9) ]><!-->
+<html lang="en-US" class="no-js">
+<!--<![endif]-->
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Base Libraries Page</title>
+
+  {% include assets-site-head.html %}
+
+</head>
+
+<body class="">
+  <a id="skip" class="skip sr sr-focusable" href="#content-main">Skip to main content</a>
+
+  <div class="wrap-page">
+    <div class="wrap-notices info layout-band">
+      <div class="wrap-notice">
+        <div class="alert alert-global" role="alert">
+          <p>This is a beta service. Try it out or <a class="link" href="https://libraries.mit.edu">return to our main site</a>.</p>
+        </div>
+      </div>
+    </div>
+
+    {% include header-site-slim.html %}
+
+    <div class="wrap-outer-header-local layout-band">
+      <div class="wrap-header-local">
+        <div class="local-identity">
+          <h2 class="title title-site"><a href="/">Local App Title</a></h2>
+        </div>
+        <div class="wrap-local-nav">
+          <div class="wrap-bar">
+            <nav class="local-nav" aria-label="Main menu">
+              <a class="button-secondary" href="/">One action</a>
+              <a class="button-secondary"  href="/">Something else</a>
+            </nav>
+            <nav class="nav-user" aria-label="User menu">
+              <a class="action-auth" href="/">Sign in</a>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="wrap-outer-breadcrumb layout-band">
+      <div class="wrap-breadcrumb" role="navigation" aria-label="breadcrumbs">
+        <div class="breadcrumbs">
+          <a href="https://libraries.mit.edu" title="MIT Libraries">Home</a>  &raquo;  Research support
+        </div>
+      </div>
+    </div>
+
+    <div class="wrap-outer-content layout-band">
+
+      <div class="wrap-content">
+        <main id="content-main" class="content-main" role="main">
+
+          {{ content }}
+
+        </main>
+        <!-- close content-main -->
+
+      </div>
+    </div>
+
+  {% include footer-site-slim.html %}
+
+  {% include footer-site.html %}
+
+  {% include scripts-site-foot.html %}
+
+  </div>
+  <!-- close wrap-page -->
+
+</body>
+</html>
