@@ -24,6 +24,13 @@ gulp.task('styles', function() {
     .pipe(notify({ message: 'Styles task complete' }));
 });
 
+gulp.task('guide-styles', function() {
+  return sass('sass/guide-helper.scss', { style: 'expanded' })
+    .pipe(autoprefixer('last 2 version'))
+    .pipe(gulp.dest('dest/css'))
+    .pipe(notify({ message: 'Styles task complete' }));
+});
+
 // Scripts
 gulp.task('scripts', function() {
   return gulp.src('js/**/*.js')
@@ -44,7 +51,7 @@ gulp.task('clean', function() {
 
 
 gulp.task('default', ['clean'], function() {
-    gulp.start('styles', 'scripts');
+    gulp.start('styles', 'guide-styles', 'scripts');
 });
 
 gulp.task('watch', function() {

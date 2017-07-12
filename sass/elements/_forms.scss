@@ -4,10 +4,10 @@ form {
   margin: 1.5rem 0;
 
   fieldset {
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
     border: 1px solid $gray-l2;
-    padding: 2rem;
+    padding: 1rem 1.5rem;
   }
 
   legend {
@@ -134,5 +134,18 @@ form {
 
   }
 
+}
+
+// simple input - button type form
+.form-horizontal {
+  .form-input {
+    display: inline-block;
+    width: 80%;
+  }
+
+  .form-action {
+    display: inline-block;
+    width: 18%;
+  }
 }
 
