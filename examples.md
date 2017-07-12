@@ -14,6 +14,7 @@
         <li><a href="#helpers">helpers and utility classes</a></li>
         <li><a href="#layouts">layout examples</a></li>
         <li><a href="#layout-elements">notes on layout elements</a></li>
+        <li><a href="#layout-pieces">layout pieces</a></li>
         <li><a href="#wordpress">wordpress entry content</a></li>
       </ul>
     </div>
@@ -38,7 +39,7 @@
       <h6>Heading 6</h6>
     </div>
 
-    <h2 class="hd-2 title title-page">Page level header (usually h2)</h2>
+    <h2 class="hd-2 title title-page">Page level header (usually h2) - Creating semantic structure</h2>
 
     <p>Content should be semantically correct with headers levels appropriately representing the tree structure of the page. Want to know what your pages look like semantically? <a href="https://www.w3.org/2003/12/semantic-extractor.html">You can!</a> (<a href="http://webaim.org/techniques/semanticstructure/">Why should I bother?</a>)</p>
 
@@ -108,7 +109,7 @@
 
 <hr />
 
-<h2 id="buttons" class="subtitle3">buttons</a></h2>
+<h2 id="buttons" class="subtitle3">Buttons</h2>
 
 <h3 class="hd-6">Base buttons</h3>
 
@@ -175,7 +176,7 @@
 
 <hr />
 
-<h2 id="forms" class="subtitle3">forms</a></h2>
+<h2 id="forms" class="subtitle3">Forms</h2>
 
 <p>See <a href="#modules">modules</a> for examples of banner/page-level alerts for forms which can also be used elsewhere.</p>
 
@@ -344,7 +345,7 @@
 
 <hr />
 
-<h2 id="colors" class="subtitle3">colors</a></h2>
+<h2 id="colors" class="subtitle3">Colors</h2>
 
 <h3>// grayscale</h3>
 
@@ -497,11 +498,26 @@
 
 <hr />
 
-<h2 id="helpers" class="subtitle3">helpers and utility classes</a></h2>
+<h2 id="helpers" class="subtitle3">Helpers and utility classes</h2>
+
+<p>These classes can come in handy on occassion.</p>
+
+<dl>
+<dt><code>.sr</code></dt><dd>screenreader text - use this to hide text visually but allow screenreaders to speak it</dd>
+<dt><code>.list-unbulleted</code></dt><dd>make a list not have bullets or indenting</dd>
+<dt><code>.list-inline</code></dt><dd>make a list not have bullets or indenting AND display inline</dd>
+<dt><code>.list-inline</code></dt><dd>make a list not have bullets or indenting AND display inline AND have little pipes in between the items</dd>
+<dt><code>.is-hidden</code></dt><dd>hide something visually AND from screenreaders</dd>
+</dl>
+
+<h3>Shame file</h3>
+<p>If there is ever a rule you just need to make work and you are not sure where is the right place, or if you are using something like <code>!important</code> (which you shouldn't but if you did), you can put it in the shame file for later cleanup.</p>
+
+
 
 <hr />
 
-<h2 id="modules" class="subtitle3">modules</a></h2>
+<h2 id="modules" class="subtitle3">Modules</h2>
 
 <p>Page-level/banner alert styles:</p>
 
@@ -579,7 +595,7 @@
 
 <hr />
 
-<h2 id="layouts" class="subtitle3">layouts</a></h2>
+<h2 id="layouts" class="subtitle3">Layouts</h2>
 
 <div class="layout-3q1q layout-band">
   <div class="col3q">
@@ -730,7 +746,7 @@
 
 <hr />
 
-<h2 id="layout-elements" class="subtitle3">notes on layout elements</a></h2>
+<h2 id="layout-elements" class="subtitle3">Notes on layout elements</h2>
 
 <h3>Layout-bands and Gridbands</h3>
 <p>Layout-bands (.layout-band) are bands within the layout and can be used to allow for full bleed backgrounds. They can also be used to contain generic content, similar to gridbands but without enabling the grid functionality.</p>
@@ -774,11 +790,32 @@
   </li>
 </ul>
 
+<hr />
 
+<h2 id="layout-pieces" class="subtitle3">Layout pieces</h2>
+
+<p>This example page includes various layout pieces that make up a page, but are not usually all on one page. These pieces are: </p>
+
+<dl>
+<dt><a href="#notice-global">Global notice band</a></dt>
+<dd>The global notice band has various states (error, warning, info, success) and is used for app-level notifications like service status. Use conservatively.</dd>
+
+<dt>Full and <a href="#header-site-slim">slim header</a></dt>
+<dd>There are (or rather will be) two versions of the header - slim and full. The slim header is used to ground standalone apps in the MIT Libraries branding and product suite (see local app header below). The full header is used to unify apps or tools that should exist as part of the core MIT Libraries website. This header has the core site navigation with dropdown menus to subsections.</dd>
+
+<dt><a href="#header-local">Local app header</a></dt>
+<dd>When making a standalone app, the local header can be used to hold branding and navigation within the app in conjunction with the slim header which allows users to be aware that the app is a product of the MIT Libraries and also provides a link back to the main Libraries website.</dd>
+
+<dt><a href="#breadcrumb">Breadcrumb</a></dt>
+<dd>The breadcrumb pattern can be used to reflect the current page place within a static structure, or to dynamically reflect the user's path to the current state.</dd>
+
+<dt><a href="#footer-site">Full</a> and <a href="#footer-site-slim">slim footer</a></dt>
+<dd>There are two versions of the footer - slim and full. The slim footer is used to ground standalone apps in the MIT Libraries branding and product suite and will usually be used in conjunction with the slim header and local app header. The full footer is used to unify apps or tools that should exist as part of the core MIT Libraries website. This footer has the core site navigation.</dd>
+</dl>
 
 <hr />
 
-<h2 id="wordpress" class="subtitle3">wordpress entry content</a></h2>
+<h2 id="wordpress" class="subtitle3">Wordpress entry content</h2>
 
 <div class="entry-content">
 

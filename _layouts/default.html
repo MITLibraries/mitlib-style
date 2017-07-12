@@ -10,47 +10,22 @@
 
   {% include assets-site-head.html %}
 
+  <link rel="stylesheet" href="{{ '/css/styles.css?v=' | append: site.github.build_revision | relative_url }}">
+
 </head>
 
 <body class="">
   <a id="skip" class="skip sr sr-focusable" href="#content-main">Skip to main content</a>
 
   <div class="wrap-page">
-    <div class="wrap-notices info layout-band">
-      <div class="wrap-notice">
-        <div class="alert alert-global" role="alert">
-          <p>This is a beta service. Try it out or <a class="link" href="https://libraries.mit.edu">return to our main site</a>.</p>
-        </div>
-      </div>
-    </div>
+
+    {% include notice-global.html %}
 
     {% include header-site-slim.html %}
 
-    <div class="wrap-outer-header-local layout-band">
-      <div class="wrap-header-local">
-        <div class="local-identity">
-          <h2 class="title title-site"><a href="/">Local App Title</a></h2>
-        </div>
-        <div class="wrap-local-nav">
-          <div class="wrap-bar">
-            <nav class="local-nav" aria-label="Main menu">
-              <a class="button-secondary" href="/">One action</a>
-              <a class="button-secondary"  href="/">Something else</a>
-            </nav>
-            <nav class="nav-user" aria-label="User menu">
-              <a class="action-auth" href="/">Sign in</a>
-            </nav>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="wrap-outer-breadcrumb layout-band">
-      <div class="wrap-breadcrumb" role="navigation" aria-label="breadcrumbs">
-        <div class="breadcrumbs">
-          <a href="https://libraries.mit.edu" title="MIT Libraries">Home</a>  &raquo;  Research support
-        </div>
-      </div>
-    </div>
+    {% include header-local.html %}
+
+    {% include breadcrumb.html %}
 
     <div class="wrap-outer-content layout-band">
 

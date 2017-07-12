@@ -6,7 +6,7 @@ This repo holds the work-in-progress living style guide for the MIT Libraries.
 
 [Examples](examples.md)
 
-### In use on:
+## In use on:
 * lib.mit.edu
 * ebooks app
 * publicaccessquicksubmit.mit.edu
