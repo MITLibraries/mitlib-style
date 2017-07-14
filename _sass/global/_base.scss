@@ -29,6 +29,10 @@ li > ol {
   margin-top: .5rem;
 }
 
+dt {
+  font-weight: $fw-bold;
+}
+
 dd {
   margin-left: 0;
   margin-bottom: 1rem;
