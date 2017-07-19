@@ -506,7 +506,7 @@
 <dt><code>.sr</code></dt><dd>screenreader text - use this to hide text visually but allow screenreaders to speak it</dd>
 <dt><code>.list-unbulleted</code></dt><dd>make a list not have bullets or indenting</dd>
 <dt><code>.list-inline</code></dt><dd>make a list not have bullets or indenting AND display inline</dd>
-<dt><code>.list-inline</code></dt><dd>make a list not have bullets or indenting AND display inline AND have little pipes in between the items</dd>
+<dt><code>.list-inline-pipe</code></dt><dd>make a list not have bullets or indenting AND display inline AND have little pipes in between the items</dd>
 <dt><code>.is-hidden</code></dt><dd>hide something visually AND from screenreaders</dd>
 </dl>
 
