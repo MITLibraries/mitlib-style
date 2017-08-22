@@ -1,5 +1,11 @@
 // modules and other reusable bits
 
+.box-content {
+  border: 1px solid $gray-l3;
+  background-color: $white-t;
+  padding: 3%;
+}
+
 .bit {
   margin: 0 0 3rem 0;
   border-top: 3px solid $gray-l2;

@@ -519,7 +519,7 @@
 
 <h2 id="modules" class="subtitle3">Modules</h2>
 
-<p>Page-level/banner alert styles:</p>
+<h3 class="hd-4">Page-level/banner alert styles:</h3>
 
 <div class="alert alert-banner">
   <p>Info-style: Hmm, maybe you meant to enter a search term?</p>
@@ -537,7 +537,10 @@
   <p>Success-style: Yes! Rock on.</p>
 </div>
 
-<p>Bit module (often used in a sidebar context)</p>
+<h3 class="hd-4">Boxed content (usually used to highlight the main content area)</h3>
+<p class="box-content">Use the <code>.box-content</code> class on the content you want boxed (see <a href="#layouts">Layouts</a> for examples).</p>
+
+<h3 class="hd-4">Bit module (often used in a sidebar context)</h3>
 <div class="bit">
   <h3 class="title">This is the title</h3>
   <p>Here is some content Lorem ipsum dolor sit amet, consetetur sadipscing elitr. And sometimes there are lists:</p>
@@ -549,7 +552,7 @@
   </ul>
 </div>
 
-<p>Informational panel:</p>
+<h3 class="hd-4">Informational panel:</h3>
 
 <div class="panel panel-warning">
   <div class="panel-heading">
@@ -573,7 +576,7 @@
   </div>
 </div>
 
-<p>Sunken well for missing or callout content (regular and with action):</p>
+<h3 class="hd-4">Sunken well for missing or callout content (regular and with action):</h3>
 
 <div class="about-bento well">
   <h3 class="title">About Discovery search</h3>
@@ -598,8 +601,8 @@
 <h2 id="layouts" class="subtitle3">Layouts</h2>
 
 <div class="layout-3q1q layout-band">
-  <div class="col3q">
-    <h3>Example 3 quarter - 1 quarter layout</h3>
+  <div class="col3q box-content">
+    <h3>Example 3 quarter - 1 quarter layout (with .box-content)</h3>
     <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren.</p>
 
     <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren.</p>
