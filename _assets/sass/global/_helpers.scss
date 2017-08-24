@@ -36,6 +36,15 @@
   }
 }
 
+%unbutton {
+  @extend %link;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
+}
+
 // remove spacing from first/last children
 %clear-first-child {
   &:first-child {

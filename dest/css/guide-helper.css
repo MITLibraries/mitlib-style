@@ -47,6 +47,14 @@ input[type=radio] {
       align-items: center;
 }
 
+.js .expand-collapse-control .button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
+}
+
 .list-inline {
   margin: 0;
   padding: 0;
@@ -103,20 +111,20 @@ input[type=radio] {
   display: none;
 }
 
-a, .wrap-footer a, .wrap-outer-footer-institute a {
+.js .expand-collapse-control .button, a, .wrap-footer a, .wrap-outer-footer-institute a {
   transition: color .25s ease-in-out 0s;
   color: #338bc5;
   text-decoration: none;
 }
-a:hover, a:active, a:focus {
+.js .expand-collapse-control .button:hover, a:hover, .js .expand-collapse-control .button:active, a:active, .js .expand-collapse-control .button:focus, a:focus {
   color: #0ea6ec;
   text-decoration: underline;
 }
-a:disabled, a.is-disabled {
+.js .expand-collapse-control .button:disabled, a:disabled, .js .expand-collapse-control .is-disabled.button, a.is-disabled {
   display: none;
   color: #595959;
 }
-a:active, a.is-pressed, a.is-active {
+.js .expand-collapse-control .button:active, a:active, .js .expand-collapse-control .is-pressed.button, a.is-pressed, .js .expand-collapse-control .is-active.button, a.is-active {
   color: #0ea6ec;
 }
 
@@ -1067,6 +1075,28 @@ form .error .hint {
 
 abbr.required {
   text-decoration: none;
+}
+
+.no-js .expand-collapse-control {
+  display: none;
+}
+
+.js .expand-collapse-wrap {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 2rem;
+  padding-bottom: 2rem;
+  transition: height 200ms;
+}
+.js .expand-collapse-control {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  margin: 0;
+  padding: 4rem .5rem .5rem .5rem;
+  background: #fff;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, #f3f3f3 50%);
 }
 
 .box-color {

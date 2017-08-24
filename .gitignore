@@ -31,6 +31,4 @@ nbproject
 .sass-cache
 *.map
 _site
-_tmp_preview_config.yml
-bower_components
 node_modules
