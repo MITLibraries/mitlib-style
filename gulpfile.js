@@ -15,7 +15,7 @@ var gulp = require('gulp'),
     del = require('del');
 
 gulp.task('styles', function() {
-  return sass('_sass/libraries-main.scss', { style: 'expanded' })
+  return sass('_assets/sass/libraries-main.scss', { style: 'expanded' })
     .pipe(autoprefixer('last 2 version'))
     .pipe(gulp.dest('dest/css'))
     .pipe(rename({suffix: '.min'}))
@@ -25,7 +25,7 @@ gulp.task('styles', function() {
 });
 
 gulp.task('guide-styles', function() {
-  return sass('_sass/guide-helper.scss', { style: 'expanded' })
+  return sass('_assets/sass/guide-helper.scss', { style: 'expanded' })
     .pipe(autoprefixer('last 2 version'))
     .pipe(gulp.dest('dest/css'))
     .pipe(notify({ message: 'Styles task complete' }));
@@ -33,7 +33,7 @@ gulp.task('guide-styles', function() {
 
 // Scripts
 gulp.task('scripts', function() {
-  return gulp.src('js/**/*.js')
+  return gulp.src('_assets/js/**/*.js')
     .pipe(jshint())
     .pipe(jshint.reporter('default'))
     .pipe(concat('libraries-main.js'))
@@ -49,7 +49,6 @@ gulp.task('clean', function() {
     return del(['dest/css', 'dest/scripts']);
 });
 
-
 gulp.task('default', ['clean'], function() {
     gulp.start('styles', 'guide-styles', 'scripts');
 });
@@ -57,10 +56,10 @@ gulp.task('default', ['clean'], function() {
 gulp.task('watch', function() {
 
   // Watch .scss files
-  gulp.watch('_sass/**/*.scss', ['styles']);
+  gulp.watch('_assets/sass/**/*.scss', ['styles']);
 
   // Watch .js files
-  gulp.watch('js/**/*.js', ['scripts']);
+  gulp.watch('_assets/js/**/*.js', ['scripts']);
 
   // Watch image files
   //gulp.watch('src/images/**/*', ['images']);
