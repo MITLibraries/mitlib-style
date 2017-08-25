@@ -1,3 +1,10 @@
+2.0.0 - move assets around and switch to gulp compile
+1.1.0 - add box content style
+1.0.0 - convert to jekyll/github pages 
+0.6.0 - add color swatches
+0.5.0 - add warn buttons
+0.4.0 - add panel styles
+0.3.0 - add form improvements
 0.2.0 - make links https and have explicit roots
 0.1.0 - move repo to MITLibraries; update dependencies
 0.0.2 - template structure changes
