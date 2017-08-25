@@ -28,7 +28,6 @@ nbproject
 .idea
 
 #Ignore: Front End/Local Development
-/dest/*
 .sass-cache
 *.map
 _site
