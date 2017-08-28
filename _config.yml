@@ -1,9 +1,8 @@
 # Exclude the following from the Jekyll build process.
-exclude: ["_assets",
-          "CHANGELOG.txt",
+exclude: ["CHANGELOG.txt",
           "Gemfile",
           "Gemfile.lock",
-          "gulpfile.js",
-          "node_modules",
-          "package.json", 
           "templates"]
+
+sass:
+    sass_dir: _sass

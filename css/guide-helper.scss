@@ -1,7 +1,11 @@
+---
+---
+//this file puts all the main styles with some guide helper styles
+
+// get the main styles
+@import 'core';
+
 // styles for guide display only (helpers)
-@import 'libraries-main';
-
-
 @function contrast-color($color) {
   @if (lightness($color) > 50) {
     @return #333; // Lighter backgorund, return dark color

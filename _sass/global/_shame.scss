@@ -1,0 +1,29 @@
+// remove the forms required asterisk abbr underline
+abbr.required {
+	text-decoration: none;
+}
+
+
+// only enable show/hide with js
+.no-js .expand-collapse-control {
+  display: none;
+}
+
+.js .expand-collapse-wrap {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 2rem;
+  padding-bottom: 2rem;
+  transition: height 200ms;
+}
+
+.js .expand-collapse-control {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  margin: 0;
+  padding: 4rem .5rem .5rem .5rem;
+  background: #fff; // fallback
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, #f3f3f3 50%);
+}

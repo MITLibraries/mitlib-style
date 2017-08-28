@@ -22,6 +22,176 @@
 
   <div class="col3q">
 
+
+  <h3 class="hd-4">Expand/collapse "see more" style</h3>
+  <div class="expand-collapse-wrap">
+    <p class="expand-collapse-control"><a class="button" href="#">See more</a></p>
+    <div class="expand-container">
+      <ul class="list-local-locations list-unbulleted">
+        <li class="result-local-location">
+            <i class="fa fa-times" aria-hidden="true"></i>
+          <span class="sr">Not available at MIT</span>
+          Hayden Library Stacks: PQ2631.R63.A7 2002 v.1
+          
+        </li>
+        <li class="result-local-location">
+            <i class="fa fa-check" aria-hidden="true"></i>
+          <span class="sr">Available</span>
+          Hayden Library Stacks: PQ2631.R63.A7 2002
+           v.2 
+        </li>
+        <li class="result-local-location">
+            <i class="fa fa-check" aria-hidden="true"></i>
+          <span class="sr">Available</span>
+          Hayden Library Stacks: PQ2631.R63.A7 2002
+           v.3 
+        </li>
+        <li class="result-local-location">
+            <i class="fa fa-check" aria-hidden="true"></i>
+          <span class="sr">Available</span>
+          Hayden Library Stacks: PQ2631.R63.A7 2002
+           v.4 
+        </li>
+        <li class="result-local-location">
+            <i class="fa fa-check" aria-hidden="true"></i>
+          <span class="sr">Available</span>
+          Hayden Library Stacks: PQ2631.R63.A7 2002
+           v.5 
+        </li>
+        <li class="result-local-location">
+            <i class="fa fa-times" aria-hidden="true"></i>
+          <span class="sr">Not available at MIT</span>
+          Hayden Library Stacks: PQ2631.R63.A7 2002
+           v.6 
+        </li>
+      </ul>
+    </div>
+  </div>
+
+    <div class="expand-collapse-wrap">
+    <p class="expand-collapse-control is-collapsed"><a class="button" href="#see-more">See more</a></p>
+    <div class="expand-container">
+      <ul class="list-local-locations list-unbulleted">
+        <li class="result-local-location">
+            <i class="fa fa-times" aria-hidden="true"></i>
+          <span class="sr">Not available at MIT</span>
+          Hayden Library Stacks: PQ2631.R63.A7 2002 v.1
+          
+        </li>
+        <li class="result-local-location">
+            <i class="fa fa-check" aria-hidden="true"></i>
+          <span class="sr">Available</span>
+          Hayden Library Stacks: PQ2631.R63.A7 2002
+           v.2 
+        </li>
+        <li class="result-local-location">
+            <i class="fa fa-check" aria-hidden="true"></i>
+          <span class="sr">Available</span>
+          Hayden Library Stacks: PQ2631.R63.A7 2002
+           v.3 
+        </li>
+        <li class="result-local-location">
+            <i class="fa fa-check" aria-hidden="true"></i>
+          <span class="sr">Available</span>
+          Hayden Library Stacks: PQ2631.R63.A7 2002
+           v.4 
+        </li>
+        <li class="result-local-location">
+            <i class="fa fa-check" aria-hidden="true"></i>
+          <span class="sr">Available</span>
+          Hayden Library Stacks: PQ2631.R63.A7 2002
+           v.5 
+        </li>
+        <li class="result-local-location">
+            <i class="fa fa-times" aria-hidden="true"></i>
+          <span class="sr">Not available at MIT</span>
+          Hayden Library Stacks: PQ2631.R63.A7 2002
+           v.6 
+        </li>
+        <li class="result-local-location">
+            <i class="fa fa-check" aria-hidden="true"></i>
+          <span class="sr">Available</span>
+          Hayden Library Stacks: PQ2631.R63.A7 2002
+           v.5 
+        </li>
+        <li class="result-local-location">
+            <i class="fa fa-times" aria-hidden="true"></i>
+          <span class="sr">Not available at MIT</span>
+          Hayden Library Stacks: PQ2631.R63.A7 2002
+           v.6 
+        </li>
+      </ul>
+    </div>
+  </div>
+
+    <div class="expand-collapse-wrap">
+    <p class="expand-collapse-control is-collapsed"><a class="button" href="#see-more">See more</a></p>
+    <div class="expand-container">
+      <ul class="list-local-locations list-unbulleted">
+        <li class="result-local-location">
+            <i class="fa fa-times" aria-hidden="true"></i>
+          <span class="sr">Not available at MIT</span>
+          Hayden Library Stacks: PQ2631.R63.A7 2002 v.1
+          
+        </li>
+        <li class="result-local-location">
+            <i class="fa fa-check" aria-hidden="true"></i>
+          <span class="sr">Available</span>
+          Hayden Library Stacks: PQ2631.R63.A7 2002
+           v.2 
+        </li>
+        <li class="result-local-location">
+            <i class="fa fa-check" aria-hidden="true"></i>
+          <span class="sr">Available</span>
+          Hayden Library Stacks: PQ2631.R63.A7 2002
+           v.3 
+        </li>
+        <li class="result-local-location">
+            <i class="fa fa-check" aria-hidden="true"></i>
+          <span class="sr">Available</span>
+          Hayden Library Stacks: PQ2631.R63.A7 2002
+           v.4 
+        </li>
+        <li class="result-local-location">
+            <i class="fa fa-check" aria-hidden="true"></i>
+          <span class="sr">Available</span>
+          Hayden Library Stacks: PQ2631.R63.A7 2002
+           v.5 
+        </li>
+        <li class="result-local-location">
+            <i class="fa fa-times" aria-hidden="true"></i>
+          <span class="sr">Not available at MIT</span>
+          Hayden Library Stacks: PQ2631.R63.A7 2002
+           v.6 
+        </li>
+        <li class="result-local-location">
+            <i class="fa fa-check" aria-hidden="true"></i>
+          <span class="sr">Available</span>
+          Hayden Library Stacks: PQ2631.R63.A7 2002
+           v.3 
+        </li>
+        <li class="result-local-location">
+            <i class="fa fa-check" aria-hidden="true"></i>
+          <span class="sr">Available</span>
+          Hayden Library Stacks: PQ2631.R63.A7 2002
+           v.4 
+        </li>
+        <li class="result-local-location">
+            <i class="fa fa-check" aria-hidden="true"></i>
+          <span class="sr">Available</span>
+          Hayden Library Stacks: PQ2631.R63.A7 2002
+           v.5 
+        </li>
+        <li class="result-local-location">
+            <i class="fa fa-times" aria-hidden="true"></i>
+          <span class="sr">Not available at MIT</span>
+          Hayden Library Stacks: PQ2631.R63.A7 2002
+           v.6 
+        </li>
+      </ul>
+    </div>
+  </div>
+
     <h2 id="typography" class="subtitle3">typography</h2>
 
     <div class="title-page">
