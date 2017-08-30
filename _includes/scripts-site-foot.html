@@ -2,7 +2,7 @@
 <script src="https://code.jquery.com/jquery-1.12.3.min.js" integrity="sha256-aaODHAgvwQW1bFOGXMeX+pC4PZIPsvn2h1sArYOhgXQ=" crossorigin="anonymous"></script>
 <script src="https://code.jquery.com/jquery-migrate-1.4.0.min.js" integrity="sha256-nxdiQ4FdTm28eUNNQIJz5JodTMCF5/l32g5LwfUwZUo=" crossorigin="anonymous"></script>
 
-<script type='text/javascript' src='../dest/js/libraries-main.min.js'></script>
+<script type='text/javascript' src='{{ '/dest/js/libraries-main.min.js?v=' | append: site.github.build_revision | relative_url }}'></script>
 
 <!-- ga -->
 <!-- put GA tracking code here -->
