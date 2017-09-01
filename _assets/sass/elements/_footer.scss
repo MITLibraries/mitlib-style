@@ -87,9 +87,9 @@
   }
 
   .link-logo-mit {
+    display: inline-block;
 
     .logo-mit {
-      display: inline-block;
       fill: $gray-l1;
 
       .color {
@@ -100,6 +100,7 @@
 
   .about-mit {
     @extend .list-inline-pipe;
+    display: inline-block;
     color: $gray-l2;
     text-transform: uppercase;
   }

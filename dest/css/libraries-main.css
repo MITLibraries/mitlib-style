@@ -1057,14 +1057,17 @@ form .error .hint {
 .wrap-outer-footer-institute a {
   color: #fafafa;
 }
-.wrap-outer-footer-institute .link-logo-mit .logo-mit {
+.wrap-outer-footer-institute .link-logo-mit {
   display: inline-block;
+}
+.wrap-outer-footer-institute .link-logo-mit .logo-mit {
   fill: #999;
 }
 .wrap-outer-footer-institute .link-logo-mit .logo-mit .color {
   fill: #fafafa;
 }
 .wrap-outer-footer-institute .about-mit {
+  display: inline-block;
   color: #ccc;
   text-transform: uppercase;
 }
