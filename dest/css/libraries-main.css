@@ -1093,6 +1093,9 @@ abbr.required {
   padding-bottom: 2rem;
   transition: height 200ms;
 }
+.js .expand-container {
+  margin-bottom: 4rem;
+}
 .js .expand-collapse-control {
   position: absolute;
   bottom: 0;
