@@ -522,7 +522,7 @@
 <h3 class="hd-4">Expand/collapse "see more" style</h3>
 <p>In the expand-collapse.js file, you can set how much content to show - <code>0</code> for hide it all, <code>100</code> for show 100px, etc.</p>
 
-<div class="expand-collapse-wrap is-collapsed">
+<div class="expand-collapse-wrap">
   <p class="expand-collapse-control"><button class="button">See more</button></p>
   <div class="expand-container">
     <ul class="list-local-locations list-unbulleted">
