@@ -39,6 +39,23 @@
       <h6>Heading 6</h6>
     </div>
 
+    <h3 class="subtitle">Subtitle 1</h3>
+    <h3 class="subtitle2">Subtitle 2</h3>
+    <h3 class="subtitle3">Subtitle 3</h3>
+
+    <p>You can also use classes to adjust appearance without messing up semantics: </p>
+
+    <h3 class="hd-2">This is an H3 that looks like an H2</h3>
+
+    <p>Copy types:</p>
+    <p class="copy-lead">Lead copy for making an impact. This should only be used for short swaths of text - no more than a paragraph usually.</p>
+
+    <p class="copy-base">Base copy size and line-height - set up for easy legibility in body copy.</p>
+
+    <p class="copy-sup">Supplementary copy is useful for text that is not the primary focus but is still part of the experience for users.</p>
+
+    <p class="copy-micro">Micro copy is good for legalese and other copy that no one wants to read but may have to post - Be careful with this use as it borders on inaccessible to low-vision users.</p>
+
     <h2 class="hd-2 title title-page">Page level header (usually h2) - Creating semantic structure</h2>
 
     <p>Content should be semantically correct with headers levels appropriately representing the tree structure of the page. Want to know what your pages look like semantically? <a href="https://www.w3.org/2003/12/semantic-extractor.html">You can!</a> (<a href="http://webaim.org/techniques/semanticstructure/">Why should I bother?</a>)</p>
