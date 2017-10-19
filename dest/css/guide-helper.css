@@ -168,7 +168,7 @@ dd {
 hr {
   margin: 2rem 0;
   border: none;
-  border-top: 1px solid #999;
+  border-top: 1px solid #767676;
 }
 
 .wrap-outer-header.reasons {
@@ -240,14 +240,14 @@ hr {
   margin-bottom: .5em;
   font-size: 1.4rem;
   text-transform: uppercase;
-  color: #999;
+  color: #767676;
 }
 
 .hd-subtitle3, .wrap-content .subtitle3 {
   margin-bottom: .5em;
   font-size: 1.2rem;
   text-transform: uppercase;
-  color: #999;
+  color: #767676;
 }
 
 .copy-lead, .panel .panel-heading {
@@ -967,7 +967,7 @@ form .error .hint {
   max-width: 100%;
 }
 .wrap-header .link-logo-mit .logo-mit {
-  fill: #999;
+  fill: #767676;
 }
 .wrap-header .link-logo-mit .logo-mit .color {
   fill: #fafafa;
@@ -1054,7 +1054,7 @@ form .error .hint {
 .wrap-outer-footer-institute {
   background-color: #595959;
   font-size: 1rem;
-  color: #999;
+  color: #767676;
 }
 .wrap-outer-footer-institute a {
   color: #fafafa;
@@ -1063,7 +1063,7 @@ form .error .hint {
   display: inline-block;
 }
 .wrap-outer-footer-institute .link-logo-mit .logo-mit {
-  fill: #999;
+  fill: #767676;
 }
 .wrap-outer-footer-institute .link-logo-mit .logo-mit .color {
   fill: #fafafa;
@@ -1153,8 +1153,8 @@ abbr.required {
   color: #eee;
 }
 .box-color.gray-l1 {
-  background-color: #999;
-  color: #333;
+  background-color: #767676;
+  color: #eee;
 }
 .box-color.gray-l2 {
   background-color: #ccc;
