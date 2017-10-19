@@ -20,15 +20,16 @@ $black-t:                       #000; // true black
 $white:                         #fafafa;
 $white-warm:                    #ede8e2;
 $white-t:                       #fff; // true white
-$gray:                          #595959;
+$gray:                          #595959; // accessible on #f3f3f3
 $gray-d1:                       #333;
 $gray-d2:                       #222;
-$gray-l1:                       #999;
+$gray-l1:                       #767676; // accessible on #fff
 $gray-l2:                       #ccc;
 $gray-l3:                       #dedede;
 $gray-l4:                       #f3f3f3;
 $gray-warm:                     #c6b6a3;
-$transparent:                   rgba(0, 0, 0, 0);
+$transparent:                   rgba(0, 0, 0, 0); // transparent black
+$transparent-w:                 rgba(255,255,255,0); // transparent white
 $glare:                         rgba($white-t, .3);
 $shadow:                        rgba($black-t, .5);
 $smoke:                         rgba($gray, .3);
