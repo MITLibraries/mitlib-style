@@ -31,6 +31,7 @@
   .logo-mit-lib {
     display: inline-block;
     fill: $white;
+    color: $white;
 
     img {
       width: auto;
@@ -40,6 +41,7 @@
   }
 
   .link-logo-mit {
+    color: $white;
 
     .logo-mit {
       fill: $gray-l1;
@@ -54,7 +56,7 @@
 // local header and nav
 .wrap-outer-header-local {
   border-bottom: 1px solid $gray-l2;
-  background-color: $gray-l3;
+  background-color: $white-t;
   color: $gray-d1;
 
   .wrap-header-local {
@@ -78,7 +80,7 @@
 
 // breadcrumb styles
 .wrap-outer-breadcrumb {
-  background-color: $gray-l3;
+  background-color: $white;
   color: $gray;
   font-size: $fs-xsmall;
 }

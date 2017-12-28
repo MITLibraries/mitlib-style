@@ -125,29 +125,37 @@
 
 %link {
   transition: color .25s ease-in-out 0s;
-  color: $brand-primary;
+  color: $brand-primary-accent;
   text-decoration: none;
 
   // STATE: hover, active, focus
   &:hover,
   &:active,
   &:focus {
-      color: $brand-primary-accent;
+      color: $brand-secondary;
       text-decoration: underline;
   }
 
   // STATE: is disabled
   &:disabled,
   &.is-disabled {
-      display: none;
-      color: $gray;
+    border: none;
+    background-color: $gray-l3;
+    color: $gray-d1;
+
+    &:hover {
+      border: none;
+      background-color: $gray-l3;
+      color: $gray-d1;
+      cursor: not-allowed;
+    }
   }
 
   // STATE: is pressed or active
   &:active,
   &.is-pressed,
   &.is-active {
-      color: $brand-primary-accent;
+      color: $brand-secondary;
   }
 }
 
