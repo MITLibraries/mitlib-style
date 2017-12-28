@@ -1,3 +1,4 @@
+2.1.0 - small improvements
 2.0.0 - move assets around and switch to gulp compile
 1.1.0 - add box content style
 1.0.0 - convert to jekyll/github pages 
