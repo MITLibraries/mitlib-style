@@ -28,7 +28,7 @@ gulp.task('guide-styles', function() {
   return sass('_assets/sass/guide-helper.scss', { style: 'expanded' })
     .pipe(autoprefixer('last 2 version'))
     .pipe(gulp.dest('dest/css'))
-    .pipe(notify({ message: 'Styles task complete' }));
+    .pipe(notify({ message: 'Guide styles task complete' }));
 });
 
 // Scripts
@@ -44,13 +44,21 @@ gulp.task('scripts', function() {
     .pipe(notify({ message: 'Scripts task complete' }));
 });
 
+// Images
+gulp.task('images', function(){
+  return gulp.src('_assets/i/**/*.+(png|jpg|gif|svg)')
+  .pipe(cache(imagemin()))
+  .pipe(gulp.dest('dest/i'))
+  .pipe(notify({ message: 'Images task complete' }));
+});
+
 // clean up time!
 gulp.task('clean', function() {
-    return del(['dest/css', 'dest/scripts']);
+    return del(['dest/css', 'dest/scripts', 'dest/i']);
 });
 
 gulp.task('default', ['clean'], function() {
-    gulp.start('styles', 'guide-styles', 'scripts');
+    gulp.start('styles', 'guide-styles', 'scripts', 'images');
 });
 
 gulp.task('watch', function() {
@@ -62,6 +70,6 @@ gulp.task('watch', function() {
   gulp.watch('_assets/js/**/*.js', ['scripts']);
 
   // Watch image files
-  //gulp.watch('src/images/**/*', ['images']);
+  gulp.watch('_assets/i/**/*', ['images']);
 
 });
