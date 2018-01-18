@@ -537,9 +537,9 @@
 <h2 id="modules" class="subtitle3">Modules</h2>
 
 <h3 class="hd-4">Expand/collapse "see more" style</h3>
-<p>In the expand-collapse.js file, you can set how much content to show - <code>0</code> for hide it all, <code>100</code> for show 100px, etc.</p>
+<p>In the expand-collapse.js file, you can set how much content to show - <code>0</code> for hide it all, <code>100</code> for show 100px, etc. using the <code>data-xheight</code> attribute.</p>
 
-<div class="expand-collapse-wrap">
+<div class="expand-collapse-wrap is-collapsed" data-xheight="150">
   <p class="expand-collapse-control"><button class="button">See more</button></p>
   <div class="expand-container">
     <ul class="list-local-locations list-unbulleted">
@@ -583,7 +583,7 @@
   </div>
 </div>
 
-<div class="expand-collapse-wrap is-collapsed">
+<div class="expand-collapse-wrap is-collapsed" data-xheight="250">
   <p class="expand-collapse-control"><button class="button">See more</button></p>
   <div class="expand-container">
     <ul class="list-local-locations list-unbulleted">
