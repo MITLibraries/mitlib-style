@@ -8,7 +8,7 @@ $(function() {
     $( element ).height( xheight );
   });
 
-  b.click(function(xheight) {
+  b.click(function( xheight ) {
 
     var tb = $( this ); // this button
     var te = tb.parent().next( '.expand-container' ); // this div to expand
@@ -21,10 +21,10 @@ $(function() {
       tb.html( 'Show more' );
     } else {
       tw.addClass( 'is-expanded' );
-      tw.height( te.outerHeight(true) );
+      tw.height( te.outerHeight( true ) );
       tb.html( 'Show less' );
     }
-  
   });
+
 });
 
