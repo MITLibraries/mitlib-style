@@ -29,6 +29,7 @@
 
     .button {
       @extend %unbutton;
+      @extend .button-secondary;
     }
   }
 }
