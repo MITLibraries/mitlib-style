@@ -1,12 +1,13 @@
 // footer styles
 
 .wrap-outer-footer {
-  background-color: $gray-d1;
+  background-color: $black;
   color: $white;
   font-size: $fs-xsmall;
 }
 
 .wrap-footer {
+    background: $black url('/dest/i/vi-shape7-tp.svg') no-repeat 10% center;
 
   a {
     @extend %link;
@@ -28,10 +29,10 @@
   .logo-mit-lib {
     fill: $white;
 
-    svg {
-      width: auto;
-      height: auto;
+    img {
+      max-height: 60px;
       max-width: 100%;
+      vertical-align: baseline;
     }
   }
 
