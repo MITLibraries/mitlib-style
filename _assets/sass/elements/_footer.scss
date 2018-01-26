@@ -7,7 +7,7 @@
 }
 
 .wrap-footer {
-    background: $black url('/dest/i/vi-shape7-tp.svg') no-repeat 10% center;
+    background: $black url('#{$image-path}/vi-shape7-tp.svg') no-repeat 10% center;
 
   a {
     @extend %link;
