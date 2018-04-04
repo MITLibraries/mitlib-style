@@ -120,8 +120,7 @@
   .wrap-local-nav {
     margin-top: 8px;
 
-    .nav-item, 
-    a {
+    .nav-item {
       @extend .button-subtle; 
       display: inline-block;
       margin-right: 10px;

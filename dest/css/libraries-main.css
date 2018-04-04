@@ -375,8 +375,7 @@ hr {
 .wrap-header-local .wrap-local-nav {
   margin-top: 8px;
 }
-.wrap-header-local .wrap-local-nav .nav-item,
-.wrap-header-local .wrap-local-nav a {
+.wrap-header-local .wrap-local-nav .nav-item {
   display: inline-block;
   margin-right: 10px;
   font-size: 1.4rem;
@@ -671,8 +670,7 @@ hr {
   border-color: #D50606;
 }
 
-.button-secondary, .button-subtle, .wrap-header-local .wrap-local-nav .nav-item,
-.wrap-header-local .wrap-local-nav a, .pagination a, .js .expand-collapse-control .button {
+.button-secondary, .button-subtle, .wrap-header-local .wrap-local-nav .nav-item, .pagination a, .js .expand-collapse-control .button {
   -webkit-transition: background-color .25s, border .25s;
   transition: background-color .25s, border .25s;
   display: inline-block;
@@ -681,60 +679,47 @@ hr {
   padding: 5px 10px;
   background-color: transparent;
 }
-.button-secondary:hover, .button-subtle:hover, .wrap-header-local .wrap-local-nav .nav-item:hover,
-.wrap-header-local .wrap-local-nav a:hover, .pagination a:hover, .js .expand-collapse-control .button:hover, .button-secondary:focus, .button-subtle:focus, .wrap-header-local .wrap-local-nav .nav-item:focus,
-.wrap-header-local .wrap-local-nav a:focus, .pagination a:focus, .js .expand-collapse-control .button:focus {
+.button-secondary:hover, .button-subtle:hover, .wrap-header-local .wrap-local-nav .nav-item:hover, .pagination a:hover, .js .expand-collapse-control .button:hover, .button-secondary:focus, .button-subtle:focus, .wrap-header-local .wrap-local-nav .nav-item:focus, .pagination a:focus, .js .expand-collapse-control .button:focus {
   background-color: #0000FF;
   border-color: #0000FF;
   color: #fafafa;
   text-decoration: none;
 }
-.button-secondary.green, .green.button-subtle, .wrap-header-local .wrap-local-nav .green.nav-item,
-.wrap-header-local .wrap-local-nav a.green, .pagination a.green, .js .expand-collapse-control .green.button {
+.button-secondary.green, .green.button-subtle, .wrap-header-local .wrap-local-nav .green.nav-item, .pagination a.green, .js .expand-collapse-control .green.button {
   border: 1px solid #008700;
   color: #008700;
 }
-.button-secondary.green:hover, .green.button-subtle:hover, .wrap-header-local .wrap-local-nav .green.nav-item:hover,
-.wrap-header-local .wrap-local-nav a.green:hover, .pagination a.green:hover, .js .expand-collapse-control .green.button:hover, .button-secondary.green:focus, .green.button-subtle:focus, .wrap-header-local .wrap-local-nav .green.nav-item:focus,
-.wrap-header-local .wrap-local-nav a.green:focus, .pagination a.green:focus, .js .expand-collapse-control .green.button:focus {
+.button-secondary.green:hover, .green.button-subtle:hover, .wrap-header-local .wrap-local-nav .green.nav-item:hover, .pagination a.green:hover, .js .expand-collapse-control .green.button:hover, .button-secondary.green:focus, .green.button-subtle:focus, .wrap-header-local .wrap-local-nav .green.nav-item:focus, .pagination a.green:focus, .js .expand-collapse-control .green.button:focus {
   background-color: #00c800;
   border-color: #00C800;
   color: #fafafa;
 }
-.button-secondary.magenta, .magenta.button-subtle, .wrap-header-local .wrap-local-nav .magenta.nav-item,
-.wrap-header-local .wrap-local-nav a.magenta, .pagination a.magenta, .js .expand-collapse-control .magenta.button {
+.button-secondary.magenta, .magenta.button-subtle, .wrap-header-local .wrap-local-nav .magenta.nav-item, .pagination a.magenta, .js .expand-collapse-control .magenta.button {
   border: 1px solid #C702C7;
   color: #C702C7;
 }
-.button-secondary.magenta:hover, .magenta.button-subtle:hover, .wrap-header-local .wrap-local-nav .magenta.nav-item:hover,
-.wrap-header-local .wrap-local-nav a.magenta:hover, .pagination a.magenta:hover, .js .expand-collapse-control .magenta.button:hover, .button-secondary.magenta:focus, .magenta.button-subtle:focus, .wrap-header-local .wrap-local-nav .magenta.nav-item:focus,
-.wrap-header-local .wrap-local-nav a.magenta:focus, .pagination a.magenta:focus, .js .expand-collapse-control .magenta.button:focus {
+.button-secondary.magenta:hover, .magenta.button-subtle:hover, .wrap-header-local .wrap-local-nav .magenta.nav-item:hover, .pagination a.magenta:hover, .js .expand-collapse-control .magenta.button:hover, .button-secondary.magenta:focus, .magenta.button-subtle:focus, .wrap-header-local .wrap-local-nav .magenta.nav-item:focus, .pagination a.magenta:focus, .js .expand-collapse-control .magenta.button:focus {
   background-color: magenta;
   border-color: #FF00FF;
   color: #fafafa;
 }
-.button-secondary.warn, .warn.button-subtle, .wrap-header-local .wrap-local-nav .warn.nav-item,
-.wrap-header-local .wrap-local-nav a.warn, .pagination a.warn, .js .expand-collapse-control .warn.button {
+.button-secondary.warn, .warn.button-subtle, .wrap-header-local .wrap-local-nav .warn.nav-item, .pagination a.warn, .js .expand-collapse-control .warn.button {
   border: 1px solid #D50606;
   color: #D50606;
 }
-.button-secondary.warn:before, .warn.button-subtle:before, .wrap-header-local .wrap-local-nav .warn.nav-item:before,
-.wrap-header-local .wrap-local-nav a.warn:before, .pagination a.warn:before, .js .expand-collapse-control .warn.button:before {
+.button-secondary.warn:before, .warn.button-subtle:before, .wrap-header-local .wrap-local-nav .warn.nav-item:before, .pagination a.warn:before, .js .expand-collapse-control .warn.button:before {
   font-family: FontAwesome;
   content: "\f071 ";
   font-size: .8em;
   margin-right: 5px;
 }
-.button-secondary.warn:hover, .warn.button-subtle:hover, .wrap-header-local .wrap-local-nav .warn.nav-item:hover,
-.wrap-header-local .wrap-local-nav a.warn:hover, .pagination a.warn:hover, .js .expand-collapse-control .warn.button:hover, .button-secondary.warn:focus, .warn.button-subtle:focus, .wrap-header-local .wrap-local-nav .warn.nav-item:focus,
-.wrap-header-local .wrap-local-nav a.warn:focus, .pagination a.warn:focus, .js .expand-collapse-control .warn.button:focus {
+.button-secondary.warn:hover, .warn.button-subtle:hover, .wrap-header-local .wrap-local-nav .warn.nav-item:hover, .pagination a.warn:hover, .js .expand-collapse-control .warn.button:hover, .button-secondary.warn:focus, .warn.button-subtle:focus, .wrap-header-local .wrap-local-nav .warn.nav-item:focus, .pagination a.warn:focus, .js .expand-collapse-control .warn.button:focus {
   background-color: #db0000;
   border-color: #D50606;
   color: #fafafa;
 }
 
-.button-subtle, .wrap-header-local .wrap-local-nav .nav-item,
-.wrap-header-local .wrap-local-nav a, .pagination a {
+.button-subtle, .wrap-header-local .wrap-local-nav .nav-item, .pagination a {
   border: 0;
 }
 
