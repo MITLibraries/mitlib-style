@@ -133,11 +133,18 @@
 <p>
   <a class="btn button-primary" href="">Primary</a>
   <a class="btn button-secondary" href="">Secondary</a>
+  <a class="btn button-primary is-disabled" href="">Primary (disabled)</a>
+  <a class="btn button-secondary is-disabled" href="">Secondary (disabled)</a>
 </p>
 
 <p>
   <a class="btn button-primary green" href="">Green primary</a>
   <a class="btn button-secondary green" href="">Green secondary</a>
+</p>
+
+<p>
+  <a class="btn button-primary magenta" href="">Magenta primary</a>
+  <a class="btn button-secondary magenta" href="">Magenta secondary</a>
 </p>
 
 <p>
@@ -218,7 +225,7 @@
     <p class="tip">Select a file from your local computer</p>
   </div>
   <div class="field-wrap list-checkboxes">
-    <h3 class="field-label">Funders</h3>
+    <h3 class="field-label">Funders - checkboxes</h3>
     <div class="field-subitem">
       <label class="field-checkbox">
         <input type="checkbox" value="option1">
@@ -233,6 +240,7 @@
     </div>
   </div>
   <div class="field-wrap list-radios">
+    <h3 class="field-label">Funders - radio buttons</h3>
     <div class="field-subitem">
       <label class="field-radio">
         <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
@@ -254,8 +262,8 @@
   </div>
 
   <div class="field-wrap">
-    <label for="example-select-1" class="field-label">Single select drop down</label>
-    <select id="example-select-1" class="field field-select">
+    <label for="example-singleselect" class="field-label">Single select drop down</label>
+    <select id="example-singleselect" class="field field-select">
       <option>Something number 1</option>
       <option>Another thing 2</option>
       <option>What is this thing 3</option>
@@ -266,8 +274,8 @@
 
    <div class="group-inline">
      <div class="field-wrap">
-       <label for="example-select-1" class="field-label">Month</label>
-        <select id="submission_pub_date_2i" name="submission[pub_date(2i)]" class="date required field field-select">
+       <label for="example-inlineselect1" class="field-label">Month</label>
+        <select id="example-inlineselect1" name="example-inlineselect1" class="date required field field-select">
           <option value=""></option>
           <option value="1">January</option>
           <option value="2">February</option>
@@ -284,8 +292,8 @@
         </select>
      </div>
      <div class="field-wrap">
-       <label for="example-select-1" class="field-label">Year</label>
-        <select id="submission_pub_date_1i" name="submission[pub_date(1i)]" class="date required field field-select">
+       <label for="example-inlineselect2" class="field-label">Year</label>
+        <select id="example-inlineselect2" name="example-select-2" class="date required field field-select">
           <option value=""></option>
           <option value="2007">2007</option>
           <option value="2008">2008</option>
@@ -438,61 +446,86 @@
   <p>$wisp: rgba($gray, .1);</p>
 </div>
 
-<h3>// moth colors - named</h3>
+<h3>// pentagram colors - named</h3>
 
 <div class="box-color magenta">
-  <p>$magenta: #9c3273;</p>
+  <p>$magenta: #FF00FF;</p>
 </div>
 
-<div class="box-color yellow">
-  <p>$yellow: #ffcc33;</p>
+<div class="box-color red">
+  <p>$red: #FF0000;</p>
 </div>
 
 <div class="box-color orange">
-  <p>$orange: #f58632;</p>
+  <p>$orange: #FF7700;</p>
 </div>
 
-<div class="box-color barf">
-  <p>$barf: #cca329;</p>
+<div class="box-color yellow">
+  <p>$yellow: #FFC800;</p>
 </div>
 
 <div class="box-color green">
-  <p>$green: #43926a;</p>
+  <p>$green: #00C800;</p>
 </div>
 
 <div class="box-color blue">
-  <p>$blue: #338bc5;</p>
+  <p>$blue: #0000FF;</p>
 </div>
 
 <div class="box-color blue-bright">
   <p>$blue-bright: #0088D0;</p>
 </div>
 
-<div class="box-color blue-muted">
-  <p>$blue-muted: #21759B;</p>
+
+<h3>// colors - pentagram secondary</h3>
+
+<div class="box-color magenta-muted">
+  <p>$magenta-muted: #C702C7;</p>
 </div>
+
+<div class="box-color red-muted">
+  <p>$red-muted: #B00606;</p>
+</div>
+
+<div class="box-color orange-muted">
+  <p>$orange-muted: #B00606;</p>
+</div>
+
+<div class="box-color yellow-muted">
+  <p>$yellow-muted: #B00606;</p>
+</div>
+
+<div class="box-color green-muted">
+  <p>$green-muted: #0CA40C;</p>
+</div>
+
+<div class="box-color blue-muted">
+  <p>$blue-muted: #1A1A83;</p>
+</div>
+
+<div class="box-color blue-bright-muted">
+  <p>$blue-bright-muted: #04A6CF;</p>
+</div>
+
 
 <h3>// colors - brand</h3>
 
 <div class="box-color brand-primary">
-  <p>$brand-primary: $blue;</p>
+  <p>$brand-primary: $blue-muted;</p>
 </div>
 
 <div class="box-color brand-primary-accent">
-  <p>$brand-primary-accent: rgb(14, 166, 236);</p>
+  <p>$brand-primary-accent: $blue;</p>
 </div>
 
 <div class="box-color brand-primary2">
-  <p>$brand-primary2: #83c8ff; // accessible on dark </p>
+  <p>$brand-primary2: #5BA0DF; // accessible on dark </p>
 </div>
 
 <div class="box-color brand-secondary">
-  <p>$brand-secondary: $gray-d1;</p>
+  <p>$brand-secondary: $magenta;</p>
 </div>
 
-<div class="box-color brand-secondary-accent">
-  <p>$brand-secondary-accent: rgb(242, 108, 170);</p>
-</div>
 
 <h3>// colors - utilities</h3>
 

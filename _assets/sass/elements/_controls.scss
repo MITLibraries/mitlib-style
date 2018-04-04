@@ -18,13 +18,24 @@
   }
 
   &.green {
-    border: 1px solid darken($green, 5%);
-    background-color: $green;
+    border: 1px solid darken($green-muted, 5%);
+    background-color: $green-muted;
 
     &:hover, 
     &:focus {
       background-color: saturate($green, 20%);
       border-color: $green;
+    }
+  }
+
+  &.magenta {
+    border: 1px solid darken($magenta-muted, 5%);
+    background-color: $magenta-muted;
+
+    &:hover, 
+    &:focus {
+      background-color: saturate($magenta, 20%);
+      border-color: $magenta;
     }
   }
 
@@ -51,7 +62,6 @@
   transition: background-color .25s, border .25s;
   display: inline-block;
   border: 1px solid $gray-l2;
-  border: 1px solid $smoke;
   border-radius: 3px;
   padding: 5px 10px;
   background-color: transparent;
@@ -65,8 +75,8 @@
   }
 
   &.green {
-    border: 1px solid $green;
-    color: $green;
+    border: 1px solid $green-muted;
+    color: $green-muted;
 
     &:hover, 
     &:focus {
@@ -76,7 +86,20 @@
     }
   }
 
+  &.magenta {
+    border: 1px solid $magenta-muted;
+    color: $magenta-muted;
+
+    &:hover, 
+    &:focus {
+      background-color: saturate($magenta, 20%);
+      border-color: $magenta;
+      color: $white;
+    }
+  }
+
   &.warn {
+    border: 1px solid $error;
     color: $error;
 
     &:before {
@@ -117,6 +140,10 @@
 
   a {
     @extend .button-subtle;
+  }
+
+  .current {
+    font-weight: $fw-bold;
   }
 
   .gap {

@@ -11,7 +11,7 @@
 
   a {
     @extend %link;
-    color: $gray-l2;
+    color: $white;
   }
 
   .title {
@@ -57,7 +57,7 @@
       width: 2em;
       border-radius: 50%;
       padding: 0.2em;
-      background: $gray-l2 none repeat scroll 0 0;
+      background: $white none repeat scroll 0 0;
 
       path {
         fill: $gray-d1;      
@@ -78,9 +78,9 @@
 
 // MIT footer
 .wrap-outer-footer-institute {
-  background-color: $gray;
+  background-color: $gray-d1;
   font-size: $fs-xxsmall;
-  color: $gray-l1;
+  color: $gray-l3;
 
   a {
     @extend %link;
@@ -91,7 +91,7 @@
     display: inline-block;
 
     .logo-mit {
-      fill: $gray-l1;
+      fill: $gray-l2;
 
       .color {
         fill: $white;
@@ -102,12 +102,12 @@
   .about-mit {
     @extend .list-inline-pipe;
     display: inline-block;
-    color: $gray-l2;
+    color: $gray-l3;
     text-transform: uppercase;
   }
 
   .license {
     margin-top: 1rem;
-    color: $gray-l2;
+    color: $gray-l3;
   }
 }

@@ -45,22 +45,30 @@ $image-path: '/mitlib-style/dest/i';
   &.smoke {background-color: $smoke; color: $black;}
   &.wisp {background-color: $wisp; color: $black;}
 
-  // moth colors - named
+  // pentagram colors - named
   &.magenta {background-color: $magenta; color: contrast-color($magenta);}
-  &.yellow {background-color: $yellow; color: contrast-color($yellow);}
+  &.red {background-color: $red; color: contrast-color($red);}
   &.orange {background-color: $orange; color: contrast-color($orange);}
-  &.barf {background-color: $barf; color: contrast-color($barf);}
+  &.yellow {background-color: $yellow; color: contrast-color($yellow);}
   &.green {background-color: $green; color: contrast-color($green);}
   &.blue {background-color: $blue; color: contrast-color($blue);}
   &.blue-bright {background-color: $blue-bright; color: contrast-color($blue-bright);}
   &.blue-muted {background-color: $blue-muted; color: contrast-color($blue-muted);}
+
+  // pentagram colors - secondary
+  &.magenta-muted {background-color: $magenta-muted; color: contrast-color($magenta-muted);}
+  &.red-muted {background-color: $red-muted; color: contrast-color($red-muted);}
+  &.orange-muted {background-color: $orange-muted; color: contrast-color($orange-muted);}
+  &.yellow-muted {background-color: $yellow-muted; color: contrast-color($yellow-muted);}
+  &.green-muted {background-color: $green-muted; color: contrast-color($green-muted);}
+  &.blue-muted {background-color: $blue-muted; color: contrast-color($blue-muted);}
+  &.blue-bright-muted {background-color: $blue-bright-muted; color: contrast-color($blue-bright-muted);}
 
   // colors - brand
   &.brand-primary {background-color: $brand-primary; color: contrast-color($brand-primary);}
   &.brand-primary-accent {background-color: $brand-primary-accent; color: contrast-color($brand-primary-accent);}
   &.brand-primary2 {background-color: $brand-primary2; color: contrast-color($brand-primary2);} 
   &.brand-secondary {background-color: $brand-secondary; color: contrast-color($brand-secondary);}
-  &.brand-secondary-accent {background-color: $brand-secondary-accent; color: contrast-color($brand-secondary-accent);}
 
   // colors - utilities
   &.success {background-color: $success; color: contrast-color($success);}
