@@ -1,3 +1,4 @@
+3.1.0 - new branding all over the place
 3.0.0 - new branding fall 2017
 2.1.0 - small improvements
 2.0.0 - move assets around and switch to gulp compile
