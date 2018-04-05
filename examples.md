@@ -7,6 +7,7 @@
       <h3 class="title">On this page</h3>
       <ul>
         <li><a href="#typography">typography</a></li>
+        <li><a href="#tables">tables</a></li>
         <li><a href="#buttons">buttons</a></li>
         <li><a href="#forms">forms</a></li>
         <li><a href="#modules">modules</a></li>
@@ -123,6 +124,246 @@
 
 </div>
 <!-- close layout-band -->
+
+<hr />
+
+<h2 id="tables" class="subtitle3">Tables</h2>
+
+<h3 class="hd-6">Basic table</h3>
+<table class="table">
+  <tr>
+    <th scope="col">First</th>
+    <th scope="col">Last</th>
+    <th scope="col">Lineage</th>
+  </tr>
+  <tr>
+    <td>Aragorn II</td>
+    <td>Elessar</td>
+    <td>Son of Arathorn</td>
+  </tr>
+  <tr>
+    <td>Bilbo</td>
+    <td>Baggins</td>
+    <td>Bag End</td>
+  </tr>
+  <tr>
+    <td>Meriadoc</td>
+    <td>Brandybuck</td>
+    <td>Buckland</td>
+  </tr>
+  <tr>
+    <td>Treebeard</td>
+    <td>Fangorn</td>
+    <td>Fangorn Forest</td>
+  </tr>
+</table>
+
+
+<h3 class="hd-6">Simplified and cozy</h3>
+<p>A tighter table layout.</p>
+
+<table class="table table-simplified table-cozy">
+  <tr>
+    <th scope="col">First</th>
+    <th scope="col">Last</th>
+    <th scope="col">Lineage</th>
+  </tr>
+  <tr>
+    <td>Aragorn II</td>
+    <td>Elessar</td>
+    <td>Son of Arathorn</td>
+  </tr>
+  <tr>
+    <td>Bilbo</td>
+    <td>Baggins</td>
+    <td>Bag End</td>
+  </tr>
+  <tr>
+    <td>Meriadoc</td>
+    <td>Brandybuck</td>
+    <td>Buckland</td>
+  </tr>
+  <tr>
+    <td>Treebeard</td>
+    <td>Fangorn</td>
+    <td>Fangorn Forest</td>
+  </tr>
+</table>
+
+<h3 class="hd-6">Full Semantic Set</h3>
+<p>Tables can include a variety of elements that carry semantic meaning; the following example includes a caption, colgroups with highlighted columns, headers for both columns and rows, and a table footer. It also includes some classes for special cases: a wrapper div that allows for scrolling on smaller screens, highlights for columns or cells, and classes for overriding text alignment.</p>
+
+<div class="wrapper-table-scrollable">
+  <table class="table">
+    <caption>Some fantastical towns and their key characteristics</caption>
+    <colgroup class="colgroup">
+      <col class="col col1">
+    </colgroup>
+    <colgroup class="colgroup">
+      <col class="col col2">
+      <col class="col col3 is-highlighted">
+      <col class="col col4">
+      <col class="col col5">
+    </colgroup>
+    <colgroup class="colgroup is-highlighted">
+      <col class="col col6">
+    </colgroup>
+    <thead>
+      <tr>
+        <th scope="col">Town Name</th>
+        <th scope="col">Founding feature</th>
+        <th scope="col">Weaknesses</th>
+        <th scope="col">Strengths</th>
+        <th scope="col">Primary Inhabitants</th>
+        <th scope="col">No. Inhabitants</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">Pernrith</th>
+        <td>Ancient water source</td>
+        <td>Low economy</td>
+        <td>Rare animal training and herbalism</td>
+        <td>People</td>
+        <td class="align-right">15</td>
+      </tr>
+      <tr>
+        <th scope="row">Fandralore</th>
+        <td>Strong metal ores</td>
+        <td>Armorsmithing</td>
+        <td>Sustainable hunting and prosperous trade</td>
+        <td>Elves</td>
+        <td class="align-right">20</td>
+      </tr>
+      <tr class="highlight">
+        <th scope="row">Kasmord</th>
+        <td>Precious gems</td>
+        <td>Medicine</td>
+        <td>Strong magicians and refined baking</td>
+        <td>Elves</td>
+        <td class="align-right">25</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr class="align-right">
+        <th scope="row" colspan="5">Total World Inhabitants</th>
+        <td class="align-right">60</td>
+      </tr>
+    </tfoot>
+  </table>
+</div>
+
+<h3 class="hd-6">Responsive (with Column hiding)</h3>
+<p>The example below shows a way to hide non-essential table columns to accommodate small screens.</p>
+
+<table class="table table-responsive">
+  <colgroup class="colgroup">
+    <col class="col col1">
+  </colgroup>
+  <colgroup class="colgroup">
+    <col class="col col2">
+    <col class="col col3">
+    <col class="col col4">
+    <col class="col col5">
+  </colgroup>
+  <colgroup class="colgroup">
+    <col class="col col6">
+  </colgroup>
+  <thead>
+    <tr>
+      <th scope="col">Town Name</th>
+      <th scope="col">Founding feature</th>
+      <th scope="col" class="supplemental">Weaknesses</th>
+      <th scope="col" class="supplemental">Strengths</th>
+      <th scope="col">Primary Inhabitants</th>
+      <th scope="col">No. Inhabitants</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">Pernrith</th>
+      <td>Ancient water source</td>
+      <td class="supplemental">Low economy</td>
+      <td class="supplemental">Rare animal training and herbalism</td>
+      <td>People</td>
+      <td>15</td>
+    </tr>
+    <tr>
+      <th scope="row">Fandralore</th>
+      <td>Strong metal ores</td>
+      <td class="supplemental">Armorsmithing</td>
+      <td class="supplemental">Sustainable hunting and prosperous trade</td>
+      <td>Elves</td>
+      <td>20</td>
+    </tr>
+    <tr>
+      <th scope="row">Kasmord</th>
+      <td>Precious gems</td>
+      <td class="supplemental">Medicine</td>
+      <td class="supplemental">Strong magicians and refined baking</td>
+      <td>Elves</td>
+      <td>25</td>
+    </tr>
+  </tbody>
+</table>
+
+<!--
+sorting coming soon
+<h3 class="hd-6">Sortable</h3>
+<div class="example-set">
+  <table class="table table-sortable">
+    <tr>
+      <th scope="col" class="sortable sort-current sort-descending">
+        First
+        <button class="sort action-sort">
+          <span class="icon-fallback icon-fallback-text">
+            <span class="icon icon-sort" aria-hidden="true"></span>
+            <span class="text">Sort<span class="sr">&nbsp;Ascending</span></span>
+          </span>
+        </button>
+      </th>
+      <th scope="col" class="sortable">
+        Last
+        <button class="sort action-sort">
+          <span class="icon-fallback icon-fallback-text">
+            <span class="icon icon-sort" aria-hidden="true"></span>
+            <span class="text">Sort<span class="sr">&nbsp;Ascending</span></span>
+          </span>
+        </button>
+      </th>
+      <th scope="col" class="sortable">
+        Lineage
+        <button class="sort action-sort">
+          <span class="icon-fallback icon-fallback-text">
+            <span class="icon icon-sort" aria-hidden="true"></span>
+            <span class="text">Sort<span class="sr">&nbsp;Ascending</span></span>
+          </span>
+        </button>
+      </th>
+    </tr>
+    <tr>
+      <td>Aragorn II</td>
+      <td>Elessar</td>
+      <td>Son of Arathorn</td>
+    </tr>
+    <tr>
+      <td>Bilbo</td>
+      <td>Baggins</td>
+      <td>Bag End</td>
+    </tr>
+    <tr>
+      <td>Meriadoc</td>
+      <td>Brandybuck</td>
+      <td>Buckland</td>
+    </tr>
+    <tr>
+      <td>Treebeard</td>
+      <td>Fangorn</td>
+      <td>Fangorn Forest</td>
+    </tr>
+  </table>
+</div>
+-->
 
 <hr />
 

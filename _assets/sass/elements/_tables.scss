@@ -1,0 +1,145 @@
+// tables
+
+.highlight {
+  background-color: lighten($warning, 20%);
+}
+
+%table-base {
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+
+  caption {
+    margin-bottom: .5rem;
+    font-size: $fs-small;
+    text-align: left;
+  }
+
+  tr:hover {
+    background-color: $smoke;
+  }
+
+  th {
+    font-weight: $fw-bold;
+    text-align: left;
+  }
+
+  th,
+  td {
+    padding: .75rem;
+    border: 1px solid $gray-l3;
+  }
+
+  tfoot {
+
+    tr {
+      border-top: 2px solid $gray-l3;
+      font-weight: $fw-bold;
+    }
+  }
+
+  // can be used on cols, rows, or cells
+  .is-highlighted {
+    @extend .highlight;
+  }
+
+  // can be used on rows or cells only
+  .align-left {
+    text-align: left;
+  }
+
+  .align-center {
+    text-align: center;
+  }
+
+  .align-right {
+    text-align: right;
+  }
+}
+
+.table {
+  @extend %table-base;
+}
+
+.table-simplified {
+  @extend %table-base;
+
+  th,
+  td {
+    border: none;
+    border-bottom: 1px solid $gray-l3;
+  }
+}
+
+// extra cozy
+.table-cozy {
+
+  th,
+  td {
+    padding: .5rem;
+  }
+}
+
+// extra comfortable
+.table-spacious {
+
+  th,
+  td {
+    padding: 1.2rem;
+  }
+}
+
+// wrapping div allows horizontally large tables to scroll on small screens
+.wrapper-table-scrollable {
+  width: 100%;
+  overflow-y: auto;
+}
+
+// responsive table enables `supplemental` columns to hide on small screens
+.table-responsive {
+
+  th.supplemental,
+  td.supplemental {
+    display: none;
+  }
+
+  @media(min-width: $bp-screen-md) {
+
+    th.supplemental,
+    td.supplemental {
+      display: table-cell;
+    }
+  }
+}
+
+// sortable table includes button to sort by column - needs JS to actually sort
+// js not supported yet
+/* 
+.table-sortable {
+
+  // sortable header
+  .sortable {
+    position: relative;
+    margin-left: .1rem;
+
+    // sorting button
+    .action-sort {
+      @extend %btn-link;
+      position: absolute;
+      right: 0;
+      border: 0;
+      color: $gray;
+
+      &:hover {
+        color: $brand-primary-accent;
+      }
+    }
+
+    &.sort-current {
+
+      .action-sort {
+        color: $brand-primary;
+      }
+    }
+  }
+}
+*/
