@@ -648,7 +648,7 @@ sorting coming soon
 </div>
 
 <div class="box-color gray-l1">
-  <p>$gray-l1: #999;</p>
+  <p>$gray-l1: #767676; // accessible on #fff</p>
 </div>
 
 <div class="box-color gray-l2">
@@ -714,7 +714,7 @@ sorting coming soon
 </div>
 
 <div class="box-color blue-bright">
-  <p>$blue-bright: #0088D0;</p>
+  <p>$blue-bright: #00C8FF;</p>
 </div>
 
 
@@ -725,19 +725,19 @@ sorting coming soon
 </div>
 
 <div class="box-color red-muted">
-  <p>$red-muted: #B00606;</p>
+  <p>$red-muted: #D50606;</p>
 </div>
 
 <div class="box-color orange-muted">
-  <p>$orange-muted: #B00606;</p>
+  <p>$orange-muted: #E46212;</p>
 </div>
 
 <div class="box-color yellow-muted">
-  <p>$yellow-muted: #B00606;</p>
+  <p>$yellow-muted: #FFC422;</p>
 </div>
 
 <div class="box-color green-muted">
-  <p>$green-muted: #0CA40C;</p>
+  <p>$green-muted: #008700;</p>
 </div>
 
 <div class="box-color blue-muted">
@@ -752,7 +752,7 @@ sorting coming soon
 <h3>// colors - brand</h3>
 
 <div class="box-color brand-primary">
-  <p>$brand-primary: $blue-muted;</p>
+  <p>$brand-primary: $black;</p>
 </div>
 
 <div class="box-color brand-primary-accent">
@@ -760,11 +760,11 @@ sorting coming soon
 </div>
 
 <div class="box-color brand-primary2">
-  <p>$brand-primary2: #5BA0DF; // accessible on dark </p>
+  <p>$brand-primary2: $blue-bright; // #5BA0DF accessible on dark </p>
 </div>
 
 <div class="box-color brand-secondary">
-  <p>$brand-secondary: $magenta;</p>
+  <p>$brand-secondary: $magenta-muted;</p>
 </div>
 
 
@@ -775,15 +775,15 @@ sorting coming soon
 </div>
 
 <div class="box-color warning">
-  <p>$warning: mix($yellow,$orange,50%);</p>
+  <p>$warning: $yellow;</p>
 </div>
 
 <div class="box-color error">
-  <p>$error: #AC1D22;</p>
+  <p>$error: $red-muted;</p>
 </div>
 
 <div class="box-color informational">
-  <p>$informational: mix($gray-warm,$black,55%);</p>
+  <p>$informational: $gray;</p>
 </div>
 
 
