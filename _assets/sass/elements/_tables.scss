@@ -110,36 +110,3 @@
     }
   }
 }
-
-// sortable table includes button to sort by column - needs JS to actually sort
-// js not supported yet
-/* 
-.table-sortable {
-
-  // sortable header
-  .sortable {
-    position: relative;
-    margin-left: .1rem;
-
-    // sorting button
-    .action-sort {
-      @extend %btn-link;
-      position: absolute;
-      right: 0;
-      border: 0;
-      color: $gray;
-
-      &:hover {
-        color: $brand-primary-accent;
-      }
-    }
-
-    &.sort-current {
-
-      .action-sort {
-        color: $brand-primary;
-      }
-    }
-  }
-}
-*/
