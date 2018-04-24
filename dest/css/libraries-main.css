@@ -115,8 +115,8 @@ input[type=radio] {
 }
 
 .js .expand-collapse-control .button, a, .wrap-footer a, .wrap-outer-footer-institute a {
-  -webkit-transition: color .25s ease-in-out 0s;
-  transition: color .25s ease-in-out 0s;
+  -webkit-transition: all .25s ease-in-out 0s;
+  transition: all .25s ease-in-out 0s;
   color: #0000FF;
   text-decoration: none;
 }
@@ -822,6 +822,7 @@ form .group-inline {
 }
 form .group-inline .field-wrap {
   display: inline-block;
+  vertical-align: middle;
   margin-bottom: .2rem;
 }
 form .group-inline .field-select {

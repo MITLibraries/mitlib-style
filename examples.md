@@ -551,6 +551,10 @@ sorting coming soon
           <option value="2019">2019</option>
         </select>
      </div>
+     <div class="field-wrap">
+       <label for="example-inlinenumber" class="field-label">Year</label>
+        <input id="example-inlinenumber" name="example-number" class="date required field field-number" type="number" />
+     </div>
      <p class="tip">Example help for the group here.</p>
     </div>
 
