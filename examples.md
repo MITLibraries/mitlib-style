@@ -452,18 +452,18 @@ sorting coming soon
   </div>
   <div class="field-wrap error">
     <label for="example-text-1" class="field-label">Something wrong</label>
-    <input type="text" class="field field-text" id="example-text-1" placeholder="nopenopenope" aria-invalid="true">
-    <p class="tip">That's not going to work - be sure to include the aria-invalid attribute</p>
+    <input type="text" class="field field-text" id="example-text-1" placeholder="nopenopenope" aria-describedby="example-text-1-tip" aria-invalid="true">
+    <p class="tip" id="example-text-1-tip">That's not going to work - be sure to include the aria-invalid attribute</p>
   </div>
   <div class="field-wrap">
     <label for="exampleInputPassword1" class="field-label">Password</label>
-    <input type="password" class="field field-text" id="exampleInputPassword1" placeholder="Password">
-    <p class="tip">Example tip help text here.</p>
+    <input type="password" class="field field-text" id="exampleInputPassword1" placeholder="Password" aria-describedby="exampleInputPassword1-tip">
+    <p class="tip" id="exampleInputPassword1-tip">Example tip help text here.</p>
   </div>
   <div class="field-wrap">
     <label for="example-file" class="field-label">File input</label>
-    <input class="field field-upload" type="file" id="example-file">
-    <p class="tip">Select a file from your local computer</p>
+    <input class="field field-upload" type="file" id="example-file" aria-describedby="example-file">
+    <p class="tip" id="example-file-tip">Select a file from your local computer</p>
   </div>
   <div class="field-wrap list-checkboxes">
     <h3 class="field-label">Funders - checkboxes</h3>
@@ -553,9 +553,9 @@ sorting coming soon
      </div>
      <div class="field-wrap">
        <label for="example-inlinenumber" class="field-label">Year</label>
-        <input id="example-inlinenumber" name="example-number" class="date required field field-number" type="number" />
+        <input id="example-inlinenumber" name="example-number" class="date required field field-number" type="number" aria-describedby="example-inlinenumber-tip" />
      </div>
-     <p class="tip">Example help for the group here.</p>
+     <p class="tip" id="example-inlinenumber-tip">Example help for the group here.</p>
     </div>
 
   <h3 class="hd-6">Do you need a fieldset? Here you go:</h3>
