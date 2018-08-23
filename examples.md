@@ -65,6 +65,8 @@
 
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque odio soluta fuga esse accusantium, voluptate, eos quod impedit! Quas cum saepe eaque quisquam culpa libero ipsum fuga necessitatibus tempore? Sequi! Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
 
+    <p><a class="cta-link" href="">This is a bold callout link</a></p>
+
     <p>Here are some things in lists to give you examples:</p>
 
     <h4 class="title">Unordered list and Sub-section header (usually h4)</h4>
@@ -944,19 +946,19 @@ sorting coming soon
 <h3 class="hd-4">Page-level/banner alert styles:</h3>
 
 <div class="alert alert-banner">
-  <p>Info-style: Hmm, maybe you meant to enter a search term?</p>
+  <p><i class="fa fa-info-circle fa-lg"></i> Info-style: Hmm, maybe you meant to enter a search term?</p>
 </div>
 
 <div class="alert alert-banner error">
-  <p>Danger-style: Whoa! Hold up there, cowboy!</p>
+  <p><i class="fa fa-exclamation-triangle fa-lg"></i> Danger-style: Whoa! Hold up there, cowboy!</p>
 </div>
 
 <div class="alert alert-banner warning">
-  <p>Warning-style: Uh oh... Are you sure?</p>
+  <p><i class="fa fa-exclamation-circle fa-lg"></i> Warning-style: Uh oh... Are you sure?</p>
 </div>
 
 <div class="alert alert-banner success">
-  <p>Success-style: Yes! Rock on.</p>
+  <p><i class="fa fa-check-circle fa-lg"></i> Success-style: Yes! Rock on.</p>
 </div>
 
 <h3 class="hd-4">Boxed content (usually used to highlight the main content area)</h3>

@@ -8,7 +8,6 @@
   background-color: $brand-primary;
   color: $white;
 
-
   &:hover, 
   &:focus {
     background-color: $brand-primary-accent;
@@ -18,24 +17,24 @@
   }
 
   &.green {
-    border: 1px solid darken($green-muted, 5%);
-    background-color: $green-muted;
+    border: 1px solid darken($black, 5%);
+    background-color: $black;
 
     &:hover, 
     &:focus {
-      background-color: saturate($green, 20%);
-      border-color: $green;
+      background-color: saturate($green-muted, 20%);
+      border-color: $green-muted;
     }
   }
 
   &.magenta {
-    border: 1px solid darken($magenta-muted, 5%);
-    background-color: $magenta-muted;
+    border: 1px solid darken($black, 5%);
+    background-color: $black;
 
     &:hover, 
     &:focus {
-      background-color: saturate($magenta, 20%);
-      border-color: $magenta;
+      background-color: saturate($magenta-muted, 20%);
+      border-color: $magenta-muted;
     }
   }
 
@@ -65,6 +64,7 @@
   border-radius: 3px;
   padding: 5px 10px;
   background-color: transparent;
+  color: $black;
 
   &:hover, 
   &:focus {
@@ -75,31 +75,28 @@
   }
 
   &.green {
-    border: 1px solid $green-muted;
-    color: $green-muted;
+    color: $black;
 
     &:hover, 
     &:focus {
-      background-color: saturate($green, 20%);
-      border-color: $green;
+      background-color: saturate($green-muted, 20%);
+      border-color: $green-muted;
       color: $white;
     }
   }
 
   &.magenta {
-    border: 1px solid $magenta-muted;
-    color: $magenta-muted;
+    color: $black;
 
     &:hover, 
     &:focus {
-      background-color: saturate($magenta, 20%);
-      border-color: $magenta;
+      background-color: saturate($magenta-muted, 20%);
+      border-color: $magenta-muted;
       color: $white;
     }
   }
 
   &.warn {
-    border: 1px solid $error;
     color: $error;
 
     &:before {

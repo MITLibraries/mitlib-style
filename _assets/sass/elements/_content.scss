@@ -55,5 +55,20 @@
     padding: .5rem 0 1rem 0;
     font-weight: $fw-bold;
   }
+
+  .cta-link {
+    transition: background-color ease-in-out .3s;
+    display: inline-block;
+    padding: .5em;
+    color: $black;
+    font-size: $fs-large;
+    font-weight: $fw-bold;
+    text-decoration: underline;
+
+    &:hover {
+      background-color: $brand-secondary;
+      color: $white;
+    }
+  }
 }
 
