@@ -121,7 +121,7 @@ input[type=radio] {
   text-decoration: none;
 }
 .js .expand-collapse-control .button:hover, a:hover, .js .expand-collapse-control .button:active, a:active, .js .expand-collapse-control .button:focus, a:focus {
-  color: #C702C7;
+  color: #111;
   text-decoration: underline;
 }
 .js .expand-collapse-control .button:disabled, a:disabled, .js .expand-collapse-control .is-disabled.button, a.is-disabled {
@@ -630,6 +630,20 @@ hr {
   padding: .5rem 0 1rem 0;
   font-weight: 600;
 }
+.wrap-content .cta-link {
+  -webkit-transition: background-color ease-in-out .3s;
+  transition: background-color ease-in-out .3s;
+  display: inline-block;
+  padding: .5em;
+  color: #111;
+  font-size: 2rem;
+  font-weight: 600;
+  text-decoration: underline;
+}
+.wrap-content .cta-link:hover {
+  background-color: #C702C7;
+  color: #fafafa;
+}
 
 .button-primary, .wrap-outer-header-local .action-auth {
   -webkit-transition: background-color .25s, border .25s;
@@ -648,20 +662,20 @@ hr {
   text-decoration: none;
 }
 .button-primary.green, .wrap-outer-header-local .green.action-auth {
-  border: 1px solid #006e00;
-  background-color: #008700;
+  border: 1px solid #040404;
+  background-color: #111;
 }
 .button-primary.green:hover, .wrap-outer-header-local .green.action-auth:hover, .button-primary.green:focus, .wrap-outer-header-local .green.action-auth:focus {
-  background-color: #00c800;
-  border-color: #00C800;
+  background-color: #008700;
+  border-color: #008700;
 }
 .button-primary.magenta, .wrap-outer-header-local .magenta.action-auth {
-  border: 1px solid #ae02ae;
-  background-color: #C702C7;
+  border: 1px solid #040404;
+  background-color: #111;
 }
 .button-primary.magenta:hover, .wrap-outer-header-local .magenta.action-auth:hover, .button-primary.magenta:focus, .wrap-outer-header-local .magenta.action-auth:focus {
-  background-color: magenta;
-  border-color: #FF00FF;
+  background-color: #c900c9;
+  border-color: #C702C7;
 }
 .button-primary.warn, .wrap-outer-header-local .warn.action-auth {
   border: 1px solid #a30505;
@@ -686,6 +700,7 @@ hr {
   border-radius: 3px;
   padding: 5px 10px;
   background-color: transparent;
+  color: #111;
 }
 .button-secondary:hover, .button-subtle:hover, .wrap-header-local .wrap-local-nav .nav-item:hover, .pagination a:hover, .js .expand-collapse-control .button:hover, .button-secondary:focus, .button-subtle:focus, .wrap-header-local .wrap-local-nav .nav-item:focus, .pagination a:focus, .js .expand-collapse-control .button:focus {
   background-color: #0000FF;
@@ -694,25 +709,22 @@ hr {
   text-decoration: none;
 }
 .button-secondary.green, .green.button-subtle, .wrap-header-local .wrap-local-nav .green.nav-item, .pagination a.green, .js .expand-collapse-control .green.button {
-  border: 1px solid #008700;
-  color: #008700;
+  color: #111;
 }
 .button-secondary.green:hover, .green.button-subtle:hover, .wrap-header-local .wrap-local-nav .green.nav-item:hover, .pagination a.green:hover, .js .expand-collapse-control .green.button:hover, .button-secondary.green:focus, .green.button-subtle:focus, .wrap-header-local .wrap-local-nav .green.nav-item:focus, .pagination a.green:focus, .js .expand-collapse-control .green.button:focus {
-  background-color: #00c800;
-  border-color: #00C800;
+  background-color: #008700;
+  border-color: #008700;
   color: #fafafa;
 }
 .button-secondary.magenta, .magenta.button-subtle, .wrap-header-local .wrap-local-nav .magenta.nav-item, .pagination a.magenta, .js .expand-collapse-control .magenta.button {
-  border: 1px solid #C702C7;
-  color: #C702C7;
+  color: #111;
 }
 .button-secondary.magenta:hover, .magenta.button-subtle:hover, .wrap-header-local .wrap-local-nav .magenta.nav-item:hover, .pagination a.magenta:hover, .js .expand-collapse-control .magenta.button:hover, .button-secondary.magenta:focus, .magenta.button-subtle:focus, .wrap-header-local .wrap-local-nav .magenta.nav-item:focus, .pagination a.magenta:focus, .js .expand-collapse-control .magenta.button:focus {
-  background-color: magenta;
-  border-color: #FF00FF;
+  background-color: #c900c9;
+  border-color: #C702C7;
   color: #fafafa;
 }
 .button-secondary.warn, .warn.button-subtle, .wrap-header-local .wrap-local-nav .warn.nav-item, .pagination a.warn, .js .expand-collapse-control .warn.button {
-  border: 1px solid #D50606;
   color: #D50606;
 }
 .button-secondary.warn:before, .warn.button-subtle:before, .wrap-header-local .wrap-local-nav .warn.nav-item:before, .pagination a.warn:before, .js .expand-collapse-control .warn.button:before {
@@ -884,7 +896,7 @@ form .error .hint {
   color: #111;
 }
 .alert.success {
-  color: #00C800;
+  color: #008700;
 }
 .alert.warning {
   color: #FFC800;
@@ -902,7 +914,7 @@ form .error .hint {
   color: #00C8FF;
 }
 .wrap-notices.success {
-  border-bottom: 4px solid #00C800;
+  border-bottom: 4px solid #008700;
 }
 .wrap-notices.warning {
   border-bottom: 4px solid #FFC800;
@@ -915,25 +927,29 @@ form .error .hint {
   display: block;
   margin-bottom: 2rem;
   border-radius: 2px;
-  background-color: #ccccff;
   padding: 1.6rem 2rem;
-  border-top: 3px solid #0000FF;
+  border: 1px solid #111;
+  border-top: 5px solid #111;
   color: #000;
   font-weight: 600;
 }
+.alert-banner .fa {
+  display: inline-block;
+  margin-right: 0.5em;
+}
 .alert-banner.success {
-  border-top: 3px solid #00C800;
-  background-color: #95ff95;
+  border: 1px solid #008700;
+  border-top: 3px solid #008700;
   color: #000;
 }
 .alert-banner.warning {
-  border-top: 3px solid #FFC800;
-  background-color: #fff4cc;
+  border: 1px solid #FFC800;
+  border-top: 5px solid #FFC800;
   color: #000;
 }
 .alert-banner.error {
-  border-top: 3px solid #D50606;
-  background-color: #fdaaaa;
+  border: 1px solid #D50606;
+  border-top: 5px solid #D50606;
   color: #000;
 }
 
@@ -982,7 +998,7 @@ form .error .hint {
   border-top: 4px solid #111;
 }
 .panel.panel-success {
-  border-top: 4px solid #00C800;
+  border-top: 4px solid #008700;
 }
 .panel.panel-warning {
   border-top: 4px solid #FFC800;
@@ -1072,7 +1088,7 @@ form .error .hint {
   width: 0;
   color: #ccc;
   background-color: #111;
-  border-bottom: 2px solid #00C800;
+  border-bottom: 2px solid #008700;
 }
 #skip:focus {
   position: relative;
@@ -1411,7 +1427,7 @@ abbr.required {
   color: #eee;
 }
 .box-color.success {
-  background-color: #00C800;
+  background-color: #008700;
   color: #eee;
 }
 .box-color.warning {

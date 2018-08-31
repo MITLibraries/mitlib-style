@@ -76,27 +76,32 @@
   display: block;
   margin-bottom: 2rem;
   border-radius: 2px;
-  background-color: lighten($brand-primary-accent, 40%);
   padding: 1.6rem 2rem;
-  border-top: 3px solid $brand-primary-accent;
+  border: 1px solid $brand-primary;
+  border-top: 5px solid $brand-primary;
   color: $black-t;
   font-weight: $fw-bold;
 
+  .fa {
+    display: inline-block;
+    margin-right: .5em
+  }
+
   &.success {
+    border: 1px solid $success;
     border-top: 3px solid $success;
-    background-color: lighten($success, 40%);
     color: $black-t;
   }
 
   &.warning {
-    border-top: 3px solid $warning;
-    background-color: lighten($warning, 40%);
+    border: 1px solid $warning;
+    border-top: 5px solid $warning;
     color: $black-t;
   }
 
   &.error {
-    border-top: 3px solid $error;
-    background-color: lighten($error, 40%);
+    border: 1px solid $error;
+    border-top: 5px solid $error;
     color: $black-t;
   }
 }
