@@ -117,12 +117,11 @@ input[type=radio] {
 .js .expand-collapse-control .button, a, .wrap-footer a, .wrap-outer-footer-institute a {
   -webkit-transition: all .25s ease-in-out 0s;
   transition: all .25s ease-in-out 0s;
-  color: #0000FF;
-  text-decoration: none;
-}
-.js .expand-collapse-control .button:hover, a:hover, .js .expand-collapse-control .button:active, a:active, .js .expand-collapse-control .button:focus, a:focus {
   color: #111;
   text-decoration: underline;
+}
+.js .expand-collapse-control .button:hover, a:hover, .js .expand-collapse-control .button:active, a:active, .js .expand-collapse-control .button:focus, a:focus {
+  color: #0000FF;
 }
 .js .expand-collapse-control .button:disabled, a:disabled, .js .expand-collapse-control .is-disabled.button, a.is-disabled {
   border: none;
@@ -384,6 +383,7 @@ hr {
   display: inline-block;
   margin-right: 10px;
   font-size: 1.4rem;
+  text-decoration: none;
 }
 .wrap-header-local .wrap-local-nav .nav-item.current {
   border: 1px solid #0000FF;
@@ -654,6 +654,7 @@ hr {
   padding: 5px 10px;
   background-color: #111;
   color: #fafafa;
+  text-decoration: none;
 }
 .button-primary:hover, .wrap-outer-header-local .action-auth:hover, .button-primary:focus, .wrap-outer-header-local .action-auth:focus {
   background-color: #0000FF;
@@ -701,6 +702,7 @@ hr {
   padding: 5px 10px;
   background-color: transparent;
   color: #111;
+  text-decoration: none;
 }
 .button-secondary:hover, .button-subtle:hover, .wrap-header-local .wrap-local-nav .nav-item:hover, .pagination a:hover, .js .expand-collapse-control .button:hover, .button-secondary:focus, .button-subtle:focus, .wrap-header-local .wrap-local-nav .nav-item:focus, .pagination a:focus, .js .expand-collapse-control .button:focus {
   background-color: #0000FF;
@@ -1136,6 +1138,7 @@ form .error .hint {
 }
 .wrap-outer-header-local a {
   color: #333;
+  text-decoration: none;
 }
 .wrap-outer-header-local .title-site {
   margin-bottom: 0;
@@ -1163,6 +1166,7 @@ form .error .hint {
 }
 .wrap-footer a {
   color: #fafafa;
+  text-decoration: none;
 }
 .wrap-footer .title {
   margin-bottom: .8rem;
