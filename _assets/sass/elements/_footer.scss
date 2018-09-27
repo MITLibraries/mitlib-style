@@ -12,6 +12,7 @@
   a {
     @extend %link;
     color: $white;
+    text-decoration: none;
   }
 
   .title {

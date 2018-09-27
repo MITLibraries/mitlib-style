@@ -125,15 +125,14 @@
 
 %link {
   transition: all .25s ease-in-out 0s;
-  color: $brand-primary-accent;
-  text-decoration: none;
+  color: $brand-primary;
+  text-decoration: underline;
 
   // STATE: hover, active, focus
   &:hover,
   &:active,
   &:focus {
-      color: $black;
-      text-decoration: underline;
+      color: $brand-primary-accent;
   }
 
   // STATE: is disabled

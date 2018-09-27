@@ -125,6 +125,7 @@
       display: inline-block;
       margin-right: 10px;
       font-size: $fs-small;
+      text-decoration: none;
 
       &.current {
         border: 1px solid $brand-primary-accent;
