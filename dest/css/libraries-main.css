@@ -117,7 +117,7 @@ input[type=radio] {
 .js .expand-collapse-control .button, a, .wrap-footer a, .wrap-outer-footer-institute a {
   -webkit-transition: all .25s ease-in-out 0s;
   transition: all .25s ease-in-out 0s;
-  color: #111;
+  color: #000;
   text-decoration: underline;
 }
 .js .expand-collapse-control .button:hover, a:hover, .js .expand-collapse-control .button:active, a:active, .js .expand-collapse-control .button:focus, a:focus {
@@ -150,7 +150,7 @@ html, body {
 
 body {
   background-color: #595959;
-  color: #fafafa;
+  color: #fff;
   font-size: 16px;
   font-size: 1.6rem;
   line-height: 1.2;
@@ -391,7 +391,7 @@ hr {
 
 .wrap-outer-content {
   background-color: #fff;
-  color: #111;
+  color: #000;
 }
 
 .wrap-content {
@@ -635,44 +635,44 @@ hr {
   transition: background-color ease-in-out .3s;
   display: inline-block;
   padding: .5em;
-  color: #111;
+  color: #000;
   font-size: 2rem;
   font-weight: 600;
   text-decoration: underline;
 }
 .wrap-content .cta-link:hover {
   background-color: #C702C7;
-  color: #fafafa;
+  color: #fff;
 }
 
 .button-primary, .wrap-outer-header-local .action-auth {
   -webkit-transition: background-color .25s, border .25s;
   transition: background-color .25s, border .25s;
   display: inline-block;
-  border: 1px solid #111;
+  border: 1px solid #000;
   border-radius: 3px;
   padding: 5px 10px;
-  background-color: #111;
-  color: #fafafa;
+  background-color: #000;
+  color: #fff;
   text-decoration: none;
 }
 .button-primary:hover, .wrap-outer-header-local .action-auth:hover, .button-primary:focus, .wrap-outer-header-local .action-auth:focus {
   background-color: #0000FF;
   border-color: #0000FF;
-  color: #fafafa;
+  color: #fff;
   text-decoration: none;
 }
 .button-primary.green, .wrap-outer-header-local .green.action-auth {
-  border: 1px solid #040404;
-  background-color: #111;
+  border: 1px solid black;
+  background-color: #000;
 }
 .button-primary.green:hover, .wrap-outer-header-local .green.action-auth:hover, .button-primary.green:focus, .wrap-outer-header-local .green.action-auth:focus {
   background-color: #008700;
   border-color: #008700;
 }
 .button-primary.magenta, .wrap-outer-header-local .magenta.action-auth {
-  border: 1px solid #040404;
-  background-color: #111;
+  border: 1px solid black;
+  background-color: #000;
 }
 .button-primary.magenta:hover, .wrap-outer-header-local .magenta.action-auth:hover, .button-primary.magenta:focus, .wrap-outer-header-local .magenta.action-auth:focus {
   background-color: #c900c9;
@@ -701,30 +701,30 @@ hr {
   border-radius: 3px;
   padding: 5px 10px;
   background-color: transparent;
-  color: #111;
+  color: #000;
   text-decoration: none;
 }
 .button-secondary:hover, .button-subtle:hover, .wrap-header-local .wrap-local-nav .nav-item:hover, .pagination a:hover, .js .expand-collapse-control .button:hover, .button-secondary:focus, .button-subtle:focus, .wrap-header-local .wrap-local-nav .nav-item:focus, .pagination a:focus, .js .expand-collapse-control .button:focus {
   background-color: #0000FF;
   border-color: #0000FF;
-  color: #fafafa;
+  color: #fff;
   text-decoration: none;
 }
 .button-secondary.green, .green.button-subtle, .wrap-header-local .wrap-local-nav .green.nav-item, .pagination a.green, .js .expand-collapse-control .green.button {
-  color: #111;
+  color: #000;
 }
 .button-secondary.green:hover, .green.button-subtle:hover, .wrap-header-local .wrap-local-nav .green.nav-item:hover, .pagination a.green:hover, .js .expand-collapse-control .green.button:hover, .button-secondary.green:focus, .green.button-subtle:focus, .wrap-header-local .wrap-local-nav .green.nav-item:focus, .pagination a.green:focus, .js .expand-collapse-control .green.button:focus {
   background-color: #008700;
   border-color: #008700;
-  color: #fafafa;
+  color: #fff;
 }
 .button-secondary.magenta, .magenta.button-subtle, .wrap-header-local .wrap-local-nav .magenta.nav-item, .pagination a.magenta, .js .expand-collapse-control .magenta.button {
-  color: #111;
+  color: #000;
 }
 .button-secondary.magenta:hover, .magenta.button-subtle:hover, .wrap-header-local .wrap-local-nav .magenta.nav-item:hover, .pagination a.magenta:hover, .js .expand-collapse-control .magenta.button:hover, .button-secondary.magenta:focus, .magenta.button-subtle:focus, .wrap-header-local .wrap-local-nav .magenta.nav-item:focus, .pagination a.magenta:focus, .js .expand-collapse-control .magenta.button:focus {
   background-color: #c900c9;
   border-color: #C702C7;
-  color: #fafafa;
+  color: #fff;
 }
 .button-secondary.warn, .warn.button-subtle, .wrap-header-local .wrap-local-nav .warn.nav-item, .pagination a.warn, .js .expand-collapse-control .warn.button {
   color: #D50606;
@@ -738,7 +738,7 @@ hr {
 .button-secondary.warn:hover, .warn.button-subtle:hover, .wrap-header-local .wrap-local-nav .warn.nav-item:hover, .pagination a.warn:hover, .js .expand-collapse-control .warn.button:hover, .button-secondary.warn:focus, .warn.button-subtle:focus, .wrap-header-local .wrap-local-nav .warn.nav-item:focus, .pagination a.warn:focus, .js .expand-collapse-control .warn.button:focus {
   background-color: #db0000;
   border-color: #D50606;
-  color: #fafafa;
+  color: #fff;
 }
 
 .button-subtle, .wrap-header-local .wrap-local-nav .nav-item, .pagination a {
@@ -895,7 +895,7 @@ form .error .hint {
   margin-bottom: .2rem;
 }
 .alert.info {
-  color: #111;
+  color: #000;
 }
 .alert.success {
   color: #008700;
@@ -909,7 +909,7 @@ form .error .hint {
 
 .wrap-notices {
   background-color: #333;
-  color: #fafafa;
+  color: #fff;
   font-size: 1.2rem;
 }
 .wrap-notices a {
@@ -930,8 +930,8 @@ form .error .hint {
   margin-bottom: 2rem;
   border-radius: 2px;
   padding: 1.6rem 2rem;
-  border: 1px solid #111;
-  border-top: 5px solid #111;
+  border: 1px solid #000;
+  border-top: 5px solid #000;
   color: #000;
   font-weight: 600;
 }
@@ -981,8 +981,8 @@ form .error .hint {
   position: relative;
   margin: 1.5rem 0;
   border: 1px solid #ccc;
-  background-color: #fafafa;
-  border-top: 4px solid #111;
+  background-color: #fff;
+  border-top: 4px solid #000;
 }
 .panel .panel-heading {
   margin: 1.5rem 2rem .5rem 2rem;
@@ -997,7 +997,7 @@ form .error .hint {
   padding: 1rem 2rem;
 }
 .panel.panel-info {
-  border-top: 4px solid #111;
+  border-top: 4px solid #000;
 }
 .panel.panel-success {
   border-top: 4px solid #008700;
@@ -1089,7 +1089,7 @@ form .error .hint {
   height: 0;
   width: 0;
   color: #ccc;
-  background-color: #111;
+  background-color: #000;
   border-bottom: 2px solid #008700;
 }
 #skip:focus {
@@ -1101,17 +1101,17 @@ form .error .hint {
 }
 
 .wrap-outer-header {
-  background-color: #111;
-  color: #fafafa;
+  background-color: #000;
+  color: #fff;
 }
 
 .wrap-header {
-  background: #111 url("/dest/i/vi-shape7-tp.svg") no-repeat 0 65%;
+  background: #000 url("/dest/i/vi-shape7-tp.svg") no-repeat 0 65%;
 }
 .wrap-header .logo-mit-lib {
   display: inline-block;
-  fill: #fafafa;
-  color: #fafafa;
+  fill: #fff;
+  color: #fff;
 }
 .wrap-header .logo-mit-lib img {
   width: auto;
@@ -1119,13 +1119,13 @@ form .error .hint {
   max-width: 100%;
 }
 .wrap-header .link-logo-mit {
-  color: #fafafa;
+  color: #fff;
 }
 .wrap-header .link-logo-mit .logo-mit {
   fill: #767676;
 }
 .wrap-header .link-logo-mit .logo-mit .color {
-  fill: #fafafa;
+  fill: #fff;
 }
 
 .wrap-outer-header-local {
@@ -1145,7 +1145,7 @@ form .error .hint {
 }
 
 .wrap-outer-breadcrumb {
-  background-color: #fafafa;
+  background-color: #fff;
   color: #595959;
   font-size: 1.2rem;
 }
@@ -1156,16 +1156,16 @@ form .error .hint {
 }
 
 .wrap-outer-footer {
-  background-color: #111;
-  color: #fafafa;
+  background-color: #000;
+  color: #fff;
   font-size: 1.2rem;
 }
 
 .wrap-footer {
-  background: #111 url("/dest/i/vi-shape7-tp.svg") no-repeat 10% center;
+  background: #000 url("/dest/i/vi-shape7-tp.svg") no-repeat 10% center;
 }
 .wrap-footer a {
-  color: #fafafa;
+  color: #fff;
   text-decoration: none;
 }
 .wrap-footer .title {
@@ -1178,7 +1178,7 @@ form .error .hint {
   font-weight: 300;
 }
 .wrap-footer .logo-mit-lib {
-  fill: #fafafa;
+  fill: #fff;
 }
 .wrap-footer .logo-mit-lib img {
   max-height: 60px;
@@ -1201,7 +1201,7 @@ form .error .hint {
   width: 2em;
   border-radius: 50%;
   padding: 0.2em;
-  background: #fafafa none repeat scroll 0 0;
+  background: #fff none repeat scroll 0 0;
 }
 .wrap-footer .wrap-social svg path {
   fill: #333;
@@ -1217,7 +1217,7 @@ form .error .hint {
   color: #dedede;
 }
 .wrap-outer-footer-institute a {
-  color: #fafafa;
+  color: #fff;
 }
 .wrap-outer-footer-institute .link-logo-mit {
   display: inline-block;
@@ -1226,7 +1226,7 @@ form .error .hint {
   fill: #ccc;
 }
 .wrap-outer-footer-institute .link-logo-mit .logo-mit .color {
-  fill: #fafafa;
+  fill: #fff;
 }
 .wrap-outer-footer-institute .about-mit {
   display: inline-block;
