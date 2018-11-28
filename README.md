@@ -10,6 +10,5 @@ This repo holds the work-in-progress living style guide for the MIT Libraries.
 * lib.mit.edu
 * ebooks app
 * publicaccessquicksubmit.mit.edu
-* forms/libraries server
+* thesis specs on libraries.mit.edu
 * solenoid
-* hamlet
