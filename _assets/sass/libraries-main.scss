@@ -3,15 +3,37 @@
 // this compile makes a plain base css that includes everything for 
 // header, footer, and basic content styling across apps
 
-// +Get the core styles
+// +Base - Utilities
 // ====================
-@import 'core';
+@import 'global/unsets';
+@import 'global/variables';
+@import 'global/helpers';
+
+// +Starter
+// ====================
+@import 'global/base';
+@import 'global/typography';
+@import 'global/layouts'; // various standard layouts
+
+// +Elements
+// ====================
+@import 'elements/content'; // general content styles
+@import 'elements/controls'; // buttons, link styles, sliders, etc.
+@import 'elements/forms';
+@import 'elements/modules'; // block level UI bits
+@import 'elements/tables';
+@import 'elements/header';
+@import 'elements/footer';
+
+// +Specific Views
+// ====================
+
+// +Utility
+// ====================
+@import 'global/vendor-overrides'; // overrides to vendor-provided styling
+@import 'global/shame';     // used for any bad-form/orphaned scss
+
 
 // +Select styles that need js 
 @import 'js-elements/expand-collapse';
 
-// TODO - split this into a separate compile
-// app specific styles
-// ====================
-//@import 'apps/ebooks';
-//@import 'apps/quicksubmit';
