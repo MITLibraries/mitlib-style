@@ -197,6 +197,9 @@ hr {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f23074', endColorstr='#544b8c',GradientType=1 );
   /* IE6-9 fallback on horizontal gradient */
 }
+.wrap-outer-header.reasons .wrap-header {
+  background: transparent;
+}
 
 .hd-1, .wrap-content h1,
 .wrap-content .hd-1 {
@@ -209,7 +212,7 @@ hr {
 .hd-2, .wrap-content h2,
 .wrap-content .hd-2, .wrap-outer-header-local .title-site {
   margin-bottom: .5em;
-  font-size: 3.6rem;
+  font-size: 3.2rem;
   line-height: 1;
   font-weight: 600;
 }
@@ -217,7 +220,7 @@ hr {
 .hd-3, .wrap-content h3,
 .wrap-content .hd-3 {
   margin-bottom: .5em;
-  font-size: 2.8rem;
+  font-size: 2.6rem;
   line-height: 1;
   font-weight: 400;
 }
@@ -265,7 +268,7 @@ hr {
 }
 
 .copy-lead, .panel .panel-heading {
-  font-size: 2.8rem;
+  font-size: 2.6rem;
 }
 
 .copy-base {
