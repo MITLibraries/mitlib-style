@@ -1,6 +1,6 @@
 # mitlib-style
 
-This repo holds the work-in-progress living style guide for the MIT Libraries.
+This repo holds the design system for the MIT Libraries. It is under active development.
 
 ## Examples!
 
@@ -9,6 +9,7 @@ This repo holds the work-in-progress living style guide for the MIT Libraries.
 ## In use on:
 * lib.mit.edu
 * ebooks app
+* TIMDEX API
 * publicaccessquicksubmit.mit.edu
 * thesis specs on libraries.mit.edu
 * solenoid
