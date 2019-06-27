@@ -19,6 +19,9 @@ $bp-screen-xl:                  1280px;
 // #COLORS
 // ----------------------------
 
+// NOTE: if updating color variables, you should also update
+// the guide helper scss and the examples file;
+
 // colors - grayscale
 $black:                         #000;
 $black-t:                       #000; // true black

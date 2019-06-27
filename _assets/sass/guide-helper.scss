@@ -1,10 +1,11 @@
+// This file creates the styles necessary to display the style guide on github pages 
 // set paths for guide display
 $image-path: '/mitlib-style/dest/i';
 
-// styles for guide display only (helpers)
+// get main styles guide css
 @import 'libraries-main';
 
-
+// make text on color bg readable
 @function contrast-color($color) {
   @if (lightness($color) > 50) {
     @return #333; // Lighter backgorund, return dark color
@@ -13,6 +14,7 @@ $image-path: '/mitlib-style/dest/i';
   }
 }
 
+// make the color swatches
 .box-color {
   display: inline-block;
   overflow: hidden;
