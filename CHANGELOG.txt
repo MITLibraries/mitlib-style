@@ -1,3 +1,4 @@
+3.1.2 - Removed app-specific files (ebooks, quicksubmit) as they are no longer used; all app specific files should be built in that app
 3.1.1 - add current state to local nav
 3.1.0 - new branding all over the place
 3.0.0 - new branding fall 2017

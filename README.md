@@ -1,6 +1,6 @@
 # mitlib-style
 
-This repo holds the design system for the MIT Libraries. It is under active development.
+This repo holds the design system for the MIT Libraries. 
 
 ## Examples!
 
