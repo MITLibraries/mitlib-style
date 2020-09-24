@@ -284,7 +284,7 @@
     margin-bottom: 20px;
   }
 
-  .wrap-usergroups {
+  .wrap-policies {
     width: 100%;
     border-top: 1px solid $gray;
     padding-top: 2rem;
@@ -331,7 +331,7 @@
     }
 
     .wrap-logo-lib, 
-    .wrap-usergroups, 
+    .wrap-policies, 
     .wrap-social {
       align-self: flex-end;
       margin-top: 0;
@@ -343,7 +343,7 @@
       margin-right: 4%;
     }
 
-    .wrap-usergroups {
+    .wrap-policies {
       order: 3;
       width: 100%;
       margin: 1rem 4% 0 0;
@@ -364,7 +364,7 @@
   // large screen - able to handle several inline items
   @media (min-width: $bp-screen-lg) {
 
-    .wrap-usergroups {
+    .wrap-policies {
       order: 2;
       width: auto;
     }
@@ -382,6 +382,9 @@
   .footer-main {
     display: flex;
     align-items: center;
+
+  .wrap-policies {
+    margin-left: 2%;
   }
 
   .wrap-sitemap {
