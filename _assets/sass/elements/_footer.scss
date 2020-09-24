@@ -101,7 +101,6 @@
   }
 
   .about-mit {
-    @extend .list-inline-pipe;
     display: inline-block;
     color: $gray-l3;
     text-transform: uppercase;
