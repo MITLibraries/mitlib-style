@@ -16,17 +16,17 @@ This repo holds the design system for the MIT Libraries. See the results at [htt
 
 ## Local development
 
+### Prerequisites
+
+You will need NPM, Gulp, and Bundler. According to [the Gulp documentation](https://gulpjs.com/docs/en/getting-started/quick-start/), you will also need to install gulp globally.
+
+### Startup
+
 Install tooling with bundler and NPM
 
 ```bash
 bundle install
 npm install
-```
-
-Run the build step via Gulp
-
-```bash
-gulp
 ```
 
 Start a local Jekyll server
@@ -35,4 +35,14 @@ Start a local Jekyll server
 bundle exec jekyll serve
 ```
 
+Start the Gulp "watch" task for live updates as you update styles
+
+```bash
+gulp watch
+```
+
 You should now see the design system at [localhost:4000](http://localhost:4000/).
+
+##Please note##
+
+This repository includes compiled assets in the `dest/` directory. Please be sure to commit those updates to any further work.
