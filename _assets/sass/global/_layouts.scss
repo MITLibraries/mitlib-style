@@ -392,10 +392,12 @@
 
     .wrap-sitemap {
       display: inline-block;
+      margin-bottom: 2rem;
 
       .item {
         display: block;
         margin-right: 10px;
+        margin-bottom: 5px;
       }
     }
   }
@@ -413,11 +415,14 @@
       }
 
       .wrap-sitemap {
+        display: inline-block;
         margin-left: 2%;
+        margin-bottom: auto;
         order: 1;
 
         .item {
           display: inline-block;
+          margin-bottom: auto;
         }
       }
     }
