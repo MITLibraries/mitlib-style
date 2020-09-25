@@ -385,11 +385,13 @@
   .wrap-middle {
     order: 2;
     display: flex;
+    flex: 1; // No other element gets a value, forcing this element to be greedy in its sizing
     flex-direction: column;
     align-items: flex-start;
 
     .wrap-policies {
-      background-color: lightgreen;
+      background-color: lightgreen; /* TODO: Remove me */
+      align-self: flex-start; // This overrides the flex-end applicable to vertial alignment in full footer.
       margin-left: 2%;
     }
 
