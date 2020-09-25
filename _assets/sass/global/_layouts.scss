@@ -285,6 +285,7 @@
   }
 
   .wrap-policies {
+    background-color: lightcoral; /* TODO: Remove me */
     width: 100%;
     border-top: 1px solid $gray;
     padding-top: 2rem;
@@ -344,10 +345,12 @@
     }
 
     .wrap-policies {
-      order: 3;
-      width: 100%;
-      margin: 1rem 4% 0 0;
+      background-color: red; /* TODO: Remove me */
+      order: 2;
+      margin: auto;
+      padding: auto;
       border-top: none;
+      width: auto;
 
       span {
         margin-top: 0;
@@ -356,22 +359,23 @@
     }
 
     .wrap-social {
-      order: 2;
-      margin-left: 4%;
+      order: 3;
+      margin-left: auto;
     }
   }
 
   // large screen - able to handle several inline items
   @media (min-width: $bp-screen-lg) {
 
-    .wrap-policies {
-      order: 2;
-      width: auto;
-    }
-
     .wrap-social {
       order: 3;
     }
+
+    .wrap-policies {
+      background-color: darkred; /* TODO: Remove me */
+      order: 2;
+    }
+
   }
 }
 
@@ -379,32 +383,62 @@
 .wrap-footer.footer-slim {
   padding: 1.5rem 4%;
 
-  .footer-main {
+  .wrap-middle {
+    order: 2;
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    align-items: flex-start;
 
-  .wrap-policies {
-    margin-left: 2%;
-  }
+    .wrap-policies {
+      background-color: lightgreen;
+      margin-left: 2%;
+    }
 
-  .wrap-sitemap {
-    margin-left: 2%;
+    .wrap-sitemap {
+      margin-left: 2%;
+      display: inline-block;
 
-    .item {
-      display: block;
-      margin-right: 10px;
+      .item {
+        display: block;
+        margin-right: 10px;
+      }
     }
   }
+
 
   // larger screen - able to handle several inline items
   @media (min-width: $bp-screen-md) {
 
-    .footer-main {
-      align-items: baseline;
+    .wrap-middle {
+      order: 2;
+
+      .wrap-policies {
+        order: 2;
+        background-color: green;
+      }
+
+      .wrap-sitemap {
+        order: 1;
+        background-color: blue;
+
+        .item {
+          display: inline-block;
+        }
+      }
     }
 
-    .wrap-sitemap .item {
-      display: inline-block;
+    .wrap-social {
+      order: 3;
+    }
+  }
+
+  @media (min-width: $bp-screen-lg) {
+    .wrap-policies {
+      background-color: darkgreen;
+    }
+
+    .wrap-sitemap {
+      background-color: darkblue;
     }
   }
 }
