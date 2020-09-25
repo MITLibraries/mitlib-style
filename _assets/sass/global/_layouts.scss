@@ -285,7 +285,6 @@
   }
 
   .wrap-policies {
-    background-color: lightcoral; /* TODO: Remove me */
     width: 100%;
     border-top: 1px solid $gray;
     padding-top: 2rem;
@@ -345,7 +344,6 @@
     }
 
     .wrap-policies {
-      background-color: red; /* TODO: Remove me */
       order: 2;
       padding: auto;
       border-top: none;
@@ -371,7 +369,6 @@
     }
 
     .wrap-policies {
-      background-color: darkred; /* TODO: Remove me */
       order: 2;
     }
 
@@ -390,7 +387,6 @@
     align-items: flex-start;
 
     .wrap-policies {
-      background-color: lightgreen; /* TODO: Remove me */
       align-self: flex-start; // This overrides the flex-end applicable to vertial alignment in full footer.
     }
 
@@ -414,13 +410,11 @@
       .wrap-policies {
         margin-left: 2%;
         order: 2;
-        background-color: green;
       }
 
       .wrap-sitemap {
         margin-left: 2%;
         order: 1;
-        background-color: blue;
 
         .item {
           display: inline-block;
@@ -435,11 +429,9 @@
 
   @media (min-width: $bp-screen-lg) {
     .wrap-policies {
-      background-color: darkgreen;
     }
 
     .wrap-sitemap {
-      background-color: darkblue;
     }
   }
 }
