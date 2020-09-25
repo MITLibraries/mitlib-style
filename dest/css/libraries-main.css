@@ -83,30 +83,27 @@ input[type=radio] {
   display: inline-block;
 }
 
-.list-inline-pipe, .wrap-footer .wrap-usergroups, .wrap-footer.footer-slim .sitemap-libraries-abbrev a, .wrap-outer-footer-institute .about-mit {
+.list-inline-pipe, .wrap-footer .wrap-policies, .wrap-footer.footer-slim .sitemap-libraries-abbrev a {
   padding-left: 0;
 }
-.list-inline-pipe li, .wrap-footer .wrap-usergroups li, .wrap-footer.footer-slim .sitemap-libraries-abbrev a li, .wrap-outer-footer-institute .about-mit li,
+.list-inline-pipe li, .wrap-footer .wrap-policies li, .wrap-footer.footer-slim .sitemap-libraries-abbrev a li,
 .list-inline-pipe .item,
-.wrap-footer .wrap-usergroups .item,
-.wrap-footer.footer-slim .sitemap-libraries-abbrev a .item,
-.wrap-outer-footer-institute .about-mit .item {
+.wrap-footer .wrap-policies .item,
+.wrap-footer.footer-slim .sitemap-libraries-abbrev a .item {
   display: inline-block;
   padding-right: 1rem;
 }
-.list-inline-pipe li:after, .wrap-footer .wrap-usergroups li:after, .wrap-footer.footer-slim .sitemap-libraries-abbrev a li:after, .wrap-outer-footer-institute .about-mit li:after,
+.list-inline-pipe li:after, .wrap-footer .wrap-policies li:after, .wrap-footer.footer-slim .sitemap-libraries-abbrev a li:after,
 .list-inline-pipe .item:after,
-.wrap-footer .wrap-usergroups .item:after,
-.wrap-footer.footer-slim .sitemap-libraries-abbrev a .item:after,
-.wrap-outer-footer-institute .about-mit .item:after {
+.wrap-footer .wrap-policies .item:after,
+.wrap-footer.footer-slim .sitemap-libraries-abbrev a .item:after {
   content: ' | ';
   margin-left: 1rem;
 }
-.list-inline-pipe li:last-child:after, .wrap-footer .wrap-usergroups li:last-child:after, .wrap-footer.footer-slim .sitemap-libraries-abbrev a li:last-child:after, .wrap-outer-footer-institute .about-mit li:last-child:after,
+.list-inline-pipe li:last-child:after, .wrap-footer .wrap-policies li:last-child:after, .wrap-footer.footer-slim .sitemap-libraries-abbrev a li:last-child:after,
 .list-inline-pipe .item:last-child:after,
-.wrap-footer .wrap-usergroups .item:last-child:after,
-.wrap-footer.footer-slim .sitemap-libraries-abbrev a .item:last-child:after,
-.wrap-outer-footer-institute .about-mit .item:last-child:after {
+.wrap-footer .wrap-policies .item:last-child:after,
+.wrap-footer.footer-slim .sitemap-libraries-abbrev a .item:last-child:after {
   content: '';
 }
 
@@ -500,16 +497,16 @@ hr {
   vertical-align: bottom;
   margin-bottom: 20px;
 }
-.wrap-footer .wrap-usergroups {
+.wrap-footer .wrap-policies {
   width: 100%;
   border-top: 1px solid #595959;
   padding-top: 2rem;
 }
-.wrap-footer .wrap-usergroups span {
+.wrap-footer .wrap-policies span {
   display: inline-block;
   margin: 1rem 1.5rem 1rem 0;
 }
-.wrap-footer .wrap-usergroups span:after {
+.wrap-footer .wrap-policies span:after {
   content: '';
 }
 .wrap-footer .wrap-social .text-find-us {
@@ -546,7 +543,7 @@ hr {
     margin: 4% 0 0 0;
   }
   .wrap-footer .wrap-logo-lib,
-  .wrap-footer .wrap-usergroups,
+  .wrap-footer .wrap-policies,
   .wrap-footer .wrap-social {
     -ms-flex-item-align: end;
         align-self: flex-end;
@@ -559,65 +556,95 @@ hr {
             order: 1;
     margin-right: 4%;
   }
-  .wrap-footer .wrap-usergroups {
-    -webkit-box-ordinal-group: 4;
-        -ms-flex-order: 3;
-            order: 3;
-    width: 100%;
-    margin: 1rem 4% 0 0;
+  .wrap-footer .wrap-policies {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    padding: auto;
     border-top: none;
+    width: auto;
   }
-  .wrap-footer .wrap-usergroups span {
+  .wrap-footer .wrap-policies span {
     margin-top: 0;
     margin-bottom: 0;
   }
   .wrap-footer .wrap-social {
-    -webkit-box-ordinal-group: 3;
-        -ms-flex-order: 2;
-            order: 2;
-    margin-left: 4%;
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+    margin-left: auto;
   }
 }
 @media (min-width: 1024px) {
-  .wrap-footer .wrap-usergroups {
-    -webkit-box-ordinal-group: 3;
-        -ms-flex-order: 2;
-            order: 2;
-    width: auto;
-  }
   .wrap-footer .wrap-social {
     -webkit-box-ordinal-group: 4;
         -ms-flex-order: 3;
             order: 3;
+  }
+  .wrap-footer .wrap-policies {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
   }
 }
 
 .wrap-footer.footer-slim {
   padding: 1.5rem 4%;
 }
-.wrap-footer.footer-slim .footer-main {
+.wrap-footer.footer-slim .wrap-middle {
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
-.wrap-footer.footer-slim .wrap-sitemap {
-  margin-left: 2%;
+.wrap-footer.footer-slim .wrap-middle .wrap-policies {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
 }
-.wrap-footer.footer-slim .wrap-sitemap .item {
+.wrap-footer.footer-slim .wrap-middle .wrap-sitemap {
+  display: inline-block;
+}
+.wrap-footer.footer-slim .wrap-middle .wrap-sitemap .item {
   display: block;
   margin-right: 10px;
 }
 @media (min-width: 768px) {
-  .wrap-footer.footer-slim .footer-main {
-    -webkit-box-align: baseline;
-        -ms-flex-align: baseline;
-            align-items: baseline;
+  .wrap-footer.footer-slim .wrap-middle {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
   }
-  .wrap-footer.footer-slim .wrap-sitemap .item {
+  .wrap-footer.footer-slim .wrap-middle .wrap-policies {
+    margin-left: 2%;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .wrap-footer.footer-slim .wrap-middle .wrap-sitemap {
+    margin-left: 2%;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .wrap-footer.footer-slim .wrap-middle .wrap-sitemap .item {
     display: inline-block;
+  }
+  .wrap-footer.footer-slim .wrap-social {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
   }
 }
 
@@ -1188,7 +1215,7 @@ form .error .hint {
   max-width: 100%;
   vertical-align: baseline;
 }
-.wrap-footer .wrap-usergroups {
+.wrap-footer .wrap-policies {
   font-size: 1.4rem;
 }
 .wrap-footer .wrap-social p, .wrap-footer .wrap-social a {
@@ -1219,11 +1246,19 @@ form .error .hint {
   font-size: 1rem;
   color: #dedede;
 }
+.wrap-outer-footer-institute .footer-info-institute {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+}
 .wrap-outer-footer-institute a {
   color: #fff;
-}
-.wrap-outer-footer-institute .link-logo-mit {
-  display: inline-block;
 }
 .wrap-outer-footer-institute .link-logo-mit .logo-mit {
   fill: #ccc;
@@ -1232,11 +1267,13 @@ form .error .hint {
   fill: #fff;
 }
 .wrap-outer-footer-institute .about-mit {
-  display: inline-block;
   color: #dedede;
+  margin-right: 4%;
   text-transform: uppercase;
+  white-space: nowrap;
 }
 .wrap-outer-footer-institute .license {
+  margin-left: auto;
   margin-top: 1rem;
   color: #dedede;
 }
