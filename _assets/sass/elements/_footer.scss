@@ -37,7 +37,7 @@
     }
   }
 
-  .wrap-usergroups {
+  .wrap-policies {
     @extend .list-inline-pipe;
     font-size: $fs-small;
   }
@@ -83,13 +83,18 @@
   font-size: $fs-xxsmall;
   color: $gray-l3;
 
+  .footer-info-institute {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+  }
+
   a {
     @extend %link;
     color: $white;
   }
 
   .link-logo-mit {
-    display: inline-block;
 
     .logo-mit {
       fill: $gray-l2;
@@ -101,13 +106,14 @@
   }
 
   .about-mit {
-    @extend .list-inline-pipe;
-    display: inline-block;
     color: $gray-l3;
+    margin-right: 4%;
     text-transform: uppercase;
+    white-space: nowrap;
   }
 
   .license {
+    margin-left: auto;
     margin-top: 1rem;
     color: $gray-l3;
   }

@@ -284,7 +284,7 @@
     margin-bottom: 20px;
   }
 
-  .wrap-usergroups {
+  .wrap-policies {
     width: 100%;
     border-top: 1px solid $gray;
     padding-top: 2rem;
@@ -331,7 +331,7 @@
     }
 
     .wrap-logo-lib, 
-    .wrap-usergroups, 
+    .wrap-policies, 
     .wrap-social {
       align-self: flex-end;
       margin-top: 0;
@@ -343,11 +343,11 @@
       margin-right: 4%;
     }
 
-    .wrap-usergroups {
-      order: 3;
-      width: 100%;
-      margin: 1rem 4% 0 0;
+    .wrap-policies {
+      order: 2;
+      padding: auto;
       border-top: none;
+      width: auto;
 
       span {
         margin-top: 0;
@@ -356,22 +356,22 @@
     }
 
     .wrap-social {
-      order: 2;
-      margin-left: 4%;
+      order: 3;
+      margin-left: auto;
     }
   }
 
   // large screen - able to handle several inline items
   @media (min-width: $bp-screen-lg) {
 
-    .wrap-usergroups {
-      order: 2;
-      width: auto;
-    }
-
     .wrap-social {
       order: 3;
     }
+
+    .wrap-policies {
+      order: 2;
+    }
+
   }
 }
 
@@ -379,29 +379,64 @@
 .wrap-footer.footer-slim {
   padding: 1.5rem 4%;
 
-  .footer-main {
+  .wrap-middle {
+    order: 2;
     display: flex;
-    align-items: center;
-  }
+    flex: 1; // No other element gets a value, forcing this element to be greedy in its sizing
+    flex-direction: column;
+    align-items: flex-start;
 
-  .wrap-sitemap {
-    margin-left: 2%;
+    .wrap-policies {
+      align-self: flex-start; // This overrides the flex-end applicable to vertial alignment in full footer.
+    }
 
-    .item {
-      display: block;
-      margin-right: 10px;
+    .wrap-sitemap {
+      display: inline-block;
+      margin-bottom: 2rem;
+
+      .item {
+        display: block;
+        margin-right: 10px;
+        margin-bottom: 5px;
+      }
     }
   }
+
 
   // larger screen - able to handle several inline items
   @media (min-width: $bp-screen-md) {
 
-    .footer-main {
-      align-items: baseline;
+    .wrap-middle {
+      order: 2;
+
+      .wrap-policies {
+        margin-left: 2%;
+        order: 2;
+      }
+
+      .wrap-sitemap {
+        display: inline-block;
+        margin-left: 2%;
+        margin-bottom: auto;
+        order: 1;
+
+        .item {
+          display: inline-block;
+          margin-bottom: auto;
+        }
+      }
     }
 
-    .wrap-sitemap .item {
-      display: inline-block;
+    .wrap-social {
+      order: 3;
+    }
+  }
+
+  @media (min-width: $bp-screen-lg) {
+    .wrap-policies {
+    }
+
+    .wrap-sitemap {
     }
   }
 }
