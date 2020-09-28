@@ -32,3 +32,4 @@ nbproject
 *.map
 _site
 node_modules
+npm-shrinkwrap.json
