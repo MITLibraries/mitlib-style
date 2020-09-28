@@ -84,7 +84,7 @@
 
   .fa {
     display: inline-block;
-    margin-right: .5em
+    margin-right: .5em;
   }
 
   &.success {
@@ -114,6 +114,9 @@
     display: flex;
     justify-content: space-between;
     background-color: #eee;
+    p {
+      margin-right: .5em;
+    }
   }
 }
 

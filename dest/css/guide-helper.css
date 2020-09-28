@@ -975,7 +975,7 @@ form .error .hint {
 }
 .alert-banner .fa {
   display: inline-block;
-  margin-right: 0.5em;
+  margin-right: .5em;
 }
 .alert-banner.success {
   border: 1px solid #008700;
@@ -1005,6 +1005,9 @@ form .error .hint {
       -ms-flex-pack: justify;
           justify-content: space-between;
   background-color: #eee;
+}
+.alert-banner.privacy-notice p {
+  margin-right: .5em;
 }
 
 @media (min-width: 768px) {
