@@ -949,6 +949,11 @@ sorting coming soon
   <p><i class="fa fa-info-circle fa-lg"></i> Info-style: Hmm, maybe you meant to enter a search term?</p>
 </div>
 
+<div class="alert alert-banner privacy-notice">
+  <p><i class="fa fa-info-circle fa-lg"></i> Privacy notice: Click the button. I dare you.</p>
+  <button class="btn button-primary" onclick="this.parentNode.style.display = 'none';">You're on.</button>
+</div>
+
 <div class="alert alert-banner error">
   <p><i class="fa fa-exclamation-triangle fa-lg"></i> Danger-style: Whoa! Hold up there, cowboy!</p>
 </div>

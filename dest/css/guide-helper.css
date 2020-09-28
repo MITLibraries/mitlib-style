@@ -992,6 +992,20 @@ form .error .hint {
   border-top: 5px solid #D50606;
   color: #000;
 }
+.alert-banner.privacy-notice {
+  position: fixed;
+  bottom: 40px;
+  left: 10%;
+  right: 10%;
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #eee;
+}
 
 @media (min-width: 768px) {
   .inline-action .message {
