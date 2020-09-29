@@ -1223,6 +1223,10 @@ form .error .hint {
   color: #fff;
   text-decoration: none;
 }
+.wrap-footer a:hover, .wrap-footer a:active, .wrap-footer a:focus {
+  text-decoration: underline;
+  color: #fff;
+}
 .wrap-footer .title {
   margin-bottom: .8rem;
 }
@@ -1283,6 +1287,9 @@ form .error .hint {
           align-items: baseline;
 }
 .wrap-outer-footer-institute a {
+  color: #fff;
+}
+.wrap-outer-footer-institute a:hover, .wrap-outer-footer-institute a:active, .wrap-outer-footer-institute a:focus {
   color: #fff;
 }
 .wrap-outer-footer-institute .link-logo-mit .logo-mit {

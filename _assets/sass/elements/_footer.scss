@@ -13,6 +13,13 @@
     @extend %link;
     color: $white;
     text-decoration: none;
+
+    &:hover,
+    &:active,
+    &:focus {
+      text-decoration: underline;
+      color: $white;
+    }
   }
 
   .title {
@@ -92,6 +99,11 @@
   a {
     @extend %link;
     color: $white;
+    &:hover,
+    &:active,
+    &:focus {
+      color: $white;
+    }
   }
 
   .link-logo-mit {
