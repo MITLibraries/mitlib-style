@@ -293,6 +293,10 @@
       display: inline-block;
       margin: 1rem 1.5rem 1rem 0;
 
+      &.item {
+      margin-right: 0;
+      }
+
       &:after {
         content:'';
       }

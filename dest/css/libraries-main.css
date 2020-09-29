@@ -506,6 +506,9 @@ hr {
   display: inline-block;
   margin: 1rem 1.5rem 1rem 0;
 }
+.wrap-footer .wrap-policies span.item {
+  margin-right: 0;
+}
 .wrap-footer .wrap-policies span:after {
   content: '';
 }
@@ -1258,9 +1261,9 @@ form .error .hint {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: end;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
 }
 .wrap-outer-footer-institute a {
   color: #fff;
