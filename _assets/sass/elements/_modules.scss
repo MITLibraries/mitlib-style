@@ -84,7 +84,7 @@
 
   .fa {
     display: inline-block;
-    margin-right: .5em
+    margin-right: .5em;
   }
 
   &.success {
@@ -103,6 +103,20 @@
     border: 1px solid $error;
     border-top: 5px solid $error;
     color: $black-t;
+  }
+
+  &.privacy-notice {
+    position: fixed;
+    bottom: 40px;
+    left: 10%;
+    right: 10%;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    background-color: #eee;
+    p {
+      margin-right: .5em;
+    }
   }
 }
 

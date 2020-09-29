@@ -975,7 +975,7 @@ form .error .hint {
 }
 .alert-banner .fa {
   display: inline-block;
-  margin-right: 0.5em;
+  margin-right: .5em;
 }
 .alert-banner.success {
   border: 1px solid #008700;
@@ -991,6 +991,23 @@ form .error .hint {
   border: 1px solid #D50606;
   border-top: 5px solid #D50606;
   color: #000;
+}
+.alert-banner.privacy-notice {
+  position: fixed;
+  bottom: 40px;
+  left: 10%;
+  right: 10%;
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #eee;
+}
+.alert-banner.privacy-notice p {
+  margin-right: .5em;
 }
 
 @media (min-width: 768px) {

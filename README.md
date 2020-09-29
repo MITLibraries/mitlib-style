@@ -41,8 +41,9 @@ Start the Gulp "watch" task for live updates as you update styles
 gulp watch
 ```
 
-You should now see the design system at [localhost:4000](http://localhost:4000/).
+You should now see the design system at [localhost:4000](http://localhost:4000/). 
+In the event that your changes don't appear, try stopping the `gulp watch` command, then run `gulp` to compile the assets to `dest/` and restart your Jekyll server.
 
-##Please note##
+## Please note
 
 This repository includes compiled assets in the `dest/` directory. Please be sure to commit those updates to any further work.
