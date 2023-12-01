@@ -1,6 +1,3 @@
-# Ignore: docs files
-.ruby-version
-
 # Numerous always-ignore extensions
 *.diff
 *.err
