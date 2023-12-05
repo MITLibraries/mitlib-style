@@ -1,54 +1,36 @@
 <!DOCTYPE html>
-<!--[if lte IE 9]><html class="no-js lte-ie9" lang="en"><![endif]-->
-<!--[if !(IE 8) | !(IE 9) ]><!-->
 <html lang="en-US" class="no-js">
-<!--<![endif]-->
-<head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Base Libraries Page</title>
+  <!--<![endif]-->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Base Libraries Page</title>
 
-  {% include assets-site-head.html %}
+    {% include assets-site-head.html %}
 
-  <!-- github pages css -->
-  <link rel="stylesheet" href="{{ '/dest/css/guide-helper.css?v=' | append: site.github.build_revision | relative_url }}">
+    <!-- github pages css -->
+    <link
+      rel="stylesheet"
+      href="{{ '/dest/css/libraries-main.min.css?v=' | append: site.github.build_revision | relative_url }}"
+    />
+  </head>
 
-</head>
+  <body class="">
+    <a id="skip" class="skip sr sr-focusable" href="#content-main">Skip to main content</a>
 
-<body class="">
-  <a id="skip" class="skip sr sr-focusable" href="#content-main">Skip to main content</a>
+    <div class="wrap-page">
+      {% include notice-global.html %} {% include header-site-slim.html %} {% include header-local.html %} {% include
+      breadcrumb.html %}
 
-  <div class="wrap-page">
-
-    {% include notice-global.html %}
-
-    {% include header-site-slim.html %}
-
-    {% include header-local.html %}
-
-    {% include breadcrumb.html %}
-
-    <div class="wrap-outer-content layout-band">
-
-      <div class="wrap-content">
-        <main id="content-main" class="content-main" role="main">
-
-          {{ content }}
-
-        </main>
-        <!-- close content-main -->
-
+      <div class="wrap-outer-content layout-band">
+        <div class="wrap-content">
+          <main id="content-main" class="content-main" role="main">{{ content }}</main>
+          <!-- close content-main -->
+        </div>
       </div>
+
+      {% include footer-site-slim.html %} {% include footer-site.html %} {% include scripts-site-foot.html %}
     </div>
-
-  {% include footer-site-slim.html %}
-
-  {% include footer-site.html %}
-
-  {% include scripts-site-foot.html %}
-
-  </div>
-  <!-- close wrap-page -->
-
-</body>
+    <!-- close wrap-page -->
+  </body>
 </html>

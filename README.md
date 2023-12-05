@@ -18,15 +18,12 @@ This repo holds the design system for the MIT Libraries. See the results at [htt
 
 ### Prerequisites
 
-You will need NPM, Gulp, and Bundler. According to [the Gulp documentation](https://gulpjs.com/docs/en/getting-started/quick-start/), you will also need to install gulp globally.
+You will need the version of ruby specified in `.ruby-version`
 
 ### Startup
 
-Install tooling with bundler and NPM
-
 ```bash
 bundle install
-npm install
 ```
 
 Start a local Jekyll server
@@ -35,15 +32,20 @@ Start a local Jekyll server
 bundle exec jekyll serve
 ```
 
-Start the Gulp "watch" task for live updates as you update styles
+## Compiling CSS (IMPORTANT!)
 
-```bash
-gulp watch
-```
+This repository includes compiled assets in the `dest/` directory. At this time, you must manually generate them via:
 
-You should now see the design system at [localhost:4000](http://localhost:4000/). 
-In the event that your changes don't appear, try stopping the `gulp watch` command, then run `gulp` to compile the assets to `dest/` and restart your Jekyll server.
+`bundle exec sass _assets/sass/libraries-main.scss dest/css/libraries-main.css`
 
-## Please note
+and
 
-This repository includes compiled assets in the `dest/` directory. Please be sure to commit those updates to any further work.
+`bundle exec sass --style=compressed _assets/sass/libraries-main.scss dest/css/libraries-main.min.css`
+
+Please be sure to commit those updates when making changes as they are used by other projects.
+
+## Concatenating JavaScript
+
+This is not automatic, but we change it so infrequently maybe it doesn't matter? Gulp was used at one point to do this,
+but it stopped working in this repo so it was all removed. If you change JS, please make sure to manually update the
+concatenated versions in `dest/js/*.js`. Sorry!
