@@ -1209,7 +1209,7 @@ form .error .hint {
 .wrap-outer-footer-institute .footer-info-institute {
   display: flex;
   justify-content: space-between;
-  align-items: baseline;
+  align-items: start;
 }
 .wrap-outer-footer-institute a {
   color: #fff;

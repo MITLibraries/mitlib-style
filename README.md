@@ -36,11 +36,7 @@ bundle exec jekyll serve
 
 This repository includes compiled assets in the `dest/` directory. At this time, you must manually generate them via:
 
-`bundle exec sass _assets/sass/libraries-main.scss dest/css/libraries-main.css`
-
-and
-
-`bundle exec sass --style=compressed _assets/sass/libraries-main.scss dest/css/libraries-main.min.css`
+`make compile`
 
 Please be sure to commit those updates when making changes as they are used by other projects.
 
