@@ -16,7 +16,7 @@
   @include clearfix;
   max-width: 114rem;
   margin: 0 auto;
-  padding: 10px 4%;
+  padding: 20px 4%;
 }
 
 // generic grid options
@@ -270,18 +270,13 @@
   .identity {
     margin-top: 4rem;
     margin-bottom: 2rem;
+    align-items: flex-end;
   }
 
   .wrap-logo-lib {
     display: inline-block;
     vertical-align: bottom;
     margin: 0 20px 20px 0;
-  }
-
-  .wrap-social {
-    display: inline-block;
-    vertical-align: bottom;
-    margin-bottom: 20px;
   }
 
   .wrap-policies {
@@ -301,10 +296,6 @@
         content:'';
       }
     }
-  }
-
-  .wrap-social .text-find-us {
-    display: none;
   }
 
   // bigger than small mobile - able to handle columns ok
@@ -330,13 +321,11 @@
     .identity {
       display: flex;
       flex-wrap: wrap;
-      justify-content: space-between;
       margin: 4% 0 0 0;
     }
 
     .wrap-logo-lib, 
-    .wrap-policies, 
-    .wrap-social {
+    .wrap-policies {
       align-self: flex-end;
       margin-top: 0;
       margin-bottom: 0;
@@ -358,19 +347,10 @@
         margin-bottom: 0;
       }
     }
-
-    .wrap-social {
-      order: 3;
-      margin-left: auto;
-    }
   }
 
   // large screen - able to handle several inline items
   @media (min-width: $bp-screen-lg) {
-
-    .wrap-social {
-      order: 3;
-    }
 
     .wrap-policies {
       order: 2;
@@ -429,10 +409,6 @@
           margin-bottom: auto;
         }
       }
-    }
-
-    .wrap-social {
-      order: 3;
     }
   }
 
