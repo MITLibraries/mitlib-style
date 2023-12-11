@@ -286,7 +286,7 @@ hr {
 .wrap-footer-institute {
   max-width: 114rem;
   margin: 0 auto;
-  padding: 10px 4%;
+  padding: 20px 4%;
 }
 .wrap-gridband:after,
 .wrap-notice:after,
@@ -471,16 +471,12 @@ hr {
 .wrap-footer .identity {
   margin-top: 4rem;
   margin-bottom: 2rem;
+  align-items: flex-end;
 }
 .wrap-footer .wrap-logo-lib {
   display: inline-block;
   vertical-align: bottom;
   margin: 0 20px 20px 0;
-}
-.wrap-footer .wrap-social {
-  display: inline-block;
-  vertical-align: bottom;
-  margin-bottom: 20px;
 }
 .wrap-footer .wrap-policies {
   width: 100%;
@@ -496,9 +492,6 @@ hr {
 }
 .wrap-footer .wrap-policies span:after {
   content: "";
-}
-.wrap-footer .wrap-social .text-find-us {
-  display: none;
 }
 @media (min-width: 768px) {
   .wrap-footer .wrap-sitemap {
@@ -517,12 +510,10 @@ hr {
   .wrap-footer .identity {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
     margin: 4% 0 0 0;
   }
   .wrap-footer .wrap-logo-lib,
-  .wrap-footer .wrap-policies,
-  .wrap-footer .wrap-social {
+  .wrap-footer .wrap-policies {
     align-self: flex-end;
     margin-top: 0;
     margin-bottom: 0;
@@ -541,15 +532,8 @@ hr {
     margin-top: 0;
     margin-bottom: 0;
   }
-  .wrap-footer .wrap-social {
-    order: 3;
-    margin-left: auto;
-  }
 }
 @media (min-width: 1024px) {
-  .wrap-footer .wrap-social {
-    order: 3;
-  }
   .wrap-footer .wrap-policies {
     order: 2;
   }
@@ -594,9 +578,6 @@ hr {
   .wrap-footer.footer-slim .wrap-middle .wrap-sitemap .item {
     display: inline-block;
     margin-bottom: auto;
-  }
-  .wrap-footer.footer-slim .wrap-social {
-    order: 3;
   }
 }
 .wrap-footer-institute {
@@ -1147,8 +1128,7 @@ form .error .hint {
 }
 
 .wrap-footer {
-  background-image: url("https://cdn.mitlibrary.net/files/branding/local/vi-shape7-tp.svg");
-  background-size: 200px 100px;
+  background: #000 url("https://cdn.mitlibrary.net/files/branding/local/vi-shape7-tp.svg") no-repeat 10% center;
 }
 .wrap-footer a {
   color: #fff;
